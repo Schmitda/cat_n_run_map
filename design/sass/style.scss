@@ -1,0 +1,176 @@
+/**COLORS**/
+$primary-color: #59c7ae;
+$success-color: #ef6064;
+
+$transition-duration: 500ms;
+
+
+
+/*INCLUDES*/
+@import "default_margin_padding";
+
+html, body{
+  font-family: "robotoregular", Arial, Helvetica, SansSerif;
+  background-color: #e1e1e1;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+
+header {
+  height: 50px;
+  width: 100%;
+  z-index: 5;
+  background-color: $primary-color;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+html, body {
+  margin: 0;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  padding: 0 20px;
+  display: block;
+}
+
+header a:hover{
+  background-color: darken($primary-color,10%);
+  transition-duration: $transition-duration;
+}
+
+header .right{
+  display: flex;
+}
+
+header .right a{
+  border-left:1px solid white;
+}
+
+header .right a:last-child{
+  border-right:1px solid white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.flex.full-space {
+  height: 100%;
+}
+
+.menu-left {
+  /* flex: 1 2 300px; */
+  flex-basis: 400px;
+}
+
+main.game-map {
+  flex: 1 0;
+  position: relative;
+}
+
+.menu-left {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.tab {
+  font-size: 12px;
+  width: 100%;
+  background-color: lightgray;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+i.fa.fa-ticket {}
+
+.top-right {
+  position: fixed;
+  top: 75px;
+  right: 25px;
+  z-index: 100;
+  display: flex;
+  /* width: 100px; */
+}
+
+main.game-map {
+}
+
+.view-item {
+  /* padding: 10px; */
+  background-color: white;
+  /* border: 1px solid black; */
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.game-map {
+  width: 2000px;
+  height: 100%;
+  background: url('../background/DeepForest_01.png');
+  background-size: cover;
+  background-repeat: repeat-x;
+  overflow-x: auto;
+  position: relative;
+  right: 0px;
+  left: 0px;
+}
+
+.element .background-image{
+  z-index: 100;
+  height: 50px;
+}
+
+.menu-left {
+  border-right: 5px solid #59c7ae;
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@include scrollbars(.5em, slategray);
+
