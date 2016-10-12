@@ -20,6 +20,7 @@ $modal-dialog: (
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   right: 0;
   bottom: 0;
 }
@@ -27,6 +28,21 @@ $modal-dialog: (
 .modal-header{
   background-color: $primary-color;
   color: white;
+  position: relative;
+  .close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 64px;
+    background-color: $primary-color;
+    cursor: pointer;
+    transition-duration: $transition-duration;
+  }
+
+  .close:hover{
+    background-color: lighten($primary-color, 10%);
+  }
 }
 
 .background {

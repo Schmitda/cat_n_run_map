@@ -23,7 +23,30 @@ $kind:(
   flex: 1;
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
 .white-color{
+  color: white!important;
+}
+
+.white-color a{
+  color: white;
+}
+
+.white-color a:hover{
   color: white;
 }
 

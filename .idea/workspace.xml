@@ -2,252 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d63bab3-ca83-4753-b7fd-f4fc931fa015" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/Roboto-Black-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/Roboto-Black-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/Roboto-Black-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/specimen_files/Roboto-Black-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/Roboto-BlackItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/Roboto-BlackItalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/Roboto-BlackItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/specimen_files/Roboto-BlackItalic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/Roboto-Bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/Roboto-Bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/Roboto-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/specimen_files/Roboto-Bold-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/specimen_files/RobotoCondensed-Bold-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/RobotoCondensed-BoldItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/RobotoCondensed-BoldItalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/RobotoCondensed-BoldItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/specimen_files/RobotoCondensed-BoldItalic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/Roboto-BoldItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/Roboto-BoldItalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/Roboto-BoldItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/specimen_files/Roboto-BoldItalic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/RobotoCondensed-Regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/RobotoCondensed-Regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/RobotoCondensed-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/specimen_files/RobotoCondensed-Regular-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/RobotoCondensed-Italic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/RobotoCondensed-Italic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/RobotoCondensed-Italic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/specimen_files/RobotoCondensed-Italic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/Roboto-Italic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/Roboto-Italic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/Roboto-Italic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/specimen_files/Roboto-Italic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/Roboto-Light-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/Roboto-Light-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/Roboto-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/specimen_files/Roboto-Light-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/specimen_files/RobotoCondensed-Light-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/RobotoCondensed-LightItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/RobotoCondensed-LightItalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/RobotoCondensed-LightItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/specimen_files/RobotoCondensed-LightItalic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/Roboto-LightItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/Roboto-LightItalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/Roboto-LightItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/specimen_files/Roboto-LightItalic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/specimen_files/Roboto-Medium-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/Roboto-MediumItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/Roboto-MediumItalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/Roboto-MediumItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/specimen_files/Roboto-MediumItalic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/specimen_files/Roboto-Regular-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/Roboto-Thin-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/Roboto-Thin-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/Roboto-Thin-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/specimen_files/Roboto-Thin-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/Roboto-ThinItalic-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/Roboto-ThinItalic-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/Roboto-ThinItalic-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/specimen_files/Roboto-ThinItalic-cleartype.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/globals.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/helpers/Encrypter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/helpers/Messager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/helpers/Utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/company.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/team.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/routes/backend/backend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/routes/backend/user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/routes/frontend/frontend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/app.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/app.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/app.routing.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/core/user-service.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/main.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/shared/shared.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/users/users-list.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/users/users.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/users/users.routing.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/config/systemjs.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/Roboto-Black-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/Roboto-Black-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_black_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/Roboto-BlackItalic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/Roboto-BlackItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_blackitalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/Roboto-Bold-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/Roboto-Bold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/RobotoCondensed-Bold-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondensed_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/RobotoCondensed-BoldItalic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/RobotoCondensed-BoldItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_boldcondenseditalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/Roboto-BoldItalic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/Roboto-BoldItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_bolditalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/RobotoCondensed-Regular-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/RobotoCondensed-Regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condensed_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/RobotoCondensed-Italic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/RobotoCondensed-Italic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_condenseditalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/Roboto-Italic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/Roboto-Italic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_italic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/Roboto-Light-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/Roboto-Light-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_light_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/RobotoCondensed-Light-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondensed_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/RobotoCondensed-LightItalic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/RobotoCondensed-LightItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightcondenseditalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/Roboto-LightItalic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/Roboto-LightItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_lightitalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/Roboto-Medium-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_medium_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/Roboto-MediumItalic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/Roboto-MediumItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_mediumitalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/Roboto-Regular-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_regular_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/Roboto-Thin-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/Roboto-Thin-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thin_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/Roboto-ThinItalic-demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/Roboto-ThinItalic-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/specimen_files/grid_12-825-55-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/specimen_files/specimen_stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/fonts/roboto_thinitalic_macroman/stylesheet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_dashboard.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_default_margin_padding.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_font.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_global.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_login.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_modal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_my-number-input.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_my-toggle.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_my_date.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_myselect.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_register.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_reset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_shadows.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_tabs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodemon.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsconfig.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.clang-format" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-cli-build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/environment.dev.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/environment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/environment.prod.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/karma-test-shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/e2e/app.e2e.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/e2e/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/e2e/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/shared/index.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/wochenplan.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/wochenplan.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/wochenplan.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/wochenplan.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/manifest.webapp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/system-config.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tslint.json" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/Config.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/WebApi.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/middleware/request-logger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/middleware/request-logger.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/middleware/request-logger.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/DeviceMongoose.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/IDevice.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/IUser.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/UserMongoose.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/routes/backend/custom-router.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/routes/backend/device-router.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/routes/frontend/frontend.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tsd.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/company.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/team.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/routes/backend/backend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/routes/backend/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typings.json" afterPath="$PROJECT_DIR$/typings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/frontend/frontend.js" afterPath="$PROJECT_DIR$/dev_back/routes/frontend/frontend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/sass/_modal.scss" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_modal.scss" />
     </list>
     <ignored path="wochenplan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -268,42 +50,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="users.routing.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.routing.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_font.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_font.scss">
+      <file leaf-file-name="custom-router.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/custom-router.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -312,61 +60,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/style.scss">
+      <file leaf-file-name="frontend.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_back/routes/frontend/frontend.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeviceMongoose.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_back/models/DeviceMongoose.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/Config.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="systemjs.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/assets/config/systemjs.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.routing.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/app.routing.ts">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users-list.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/users/users-list.component.ts">
+      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_button.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="439">
+                <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request-logger.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_back/middleware/request-logger.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nodemon.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodemon.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -402,7 +183,9 @@
         <option value="$PROJECT_DIR$/dev_public/app/users/users-list.component.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/index.html" />
         <option value="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
+        <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -411,6 +194,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -444,28 +230,60 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="seed" />
+              <option name="myItemId" value="jump_run_map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="seed" />
+              <option name="myItemId" value="jump_run_map" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="seed" />
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="middleware" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,13 +294,15 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Danis\PhpstormProjects\wochenplan" />
-      <recent name="C:\Users\Danis\PhpstormProjects\wochenplan\dev_public\assets\sass" />
-      <recent name="C:\Users\Danis\PhpstormProjects\wochenplan\dev_public\assets" />
-      <recent name="C:\Users\Danis\PhpstormProjects\wochenplan\dev_back" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_back" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\assets\sass" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\config" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_back\models" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_back\routes\frontend" />
     </key>
   </component>
   <component name="RunManager">
@@ -547,16 +367,18 @@
       <workItem from="1475480986564" duration="3591000" />
       <workItem from="1475485835777" duration="286000" />
       <workItem from="1475486237524" duration="5000" />
+      <workItem from="1476292138822" duration="943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4996000" />
+    <option name="totallyTimeSpent" value="5939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29174483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -570,7 +392,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -593,107 +414,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/config/systemjs.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/platform-browser/src/facade/collection.d.ts" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodemon.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users-list.component.ts" />
     <entry file="file://$PROJECT_DIR$/assets/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/bower.json">
+    <entry file="file://$PROJECT_DIR$/bower.json" />
+    <entry file="file://$PROJECT_DIR$/dev_back/models/company.js" />
+    <entry file="file://$PROJECT_DIR$/dev_back/models/user.js" />
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/company.js" />
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/user.js" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_tabs.scss" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_default_margin_padding.scss" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_dashboard.scss" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/specimen_files/grid_12-825-55-15.css" />
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/frontend/frontend.js" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/core/user-service.service.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
+    <entry file="file://$PROJECT_DIR$/server.js" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/main.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/shared.module.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/application_ref.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/router/src/interfaces.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/@angular/platform-browser/src/facade/collection.d.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.js" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.routing.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/config/systemjs.config.js" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/app.routing.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users-list.component.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.module.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/index.html" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_font.scss" />
+    <entry file="file://$PROJECT_DIR$/gulpfile.js" />
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
+    <entry file="file://$PROJECT_DIR$/dev_back/helpers/Utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/helpers/Encrypter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -701,84 +459,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/helpers/Utils.js">
+    <entry file="file://$PROJECT_DIR$/dev_back/helpers/Encrypter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/company.js">
+    <entry file="file://$PROJECT_DIR$/config/globals.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/user.js">
+    <entry file="file://$PROJECT_DIR$/config/Config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsd.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/company.js" />
-    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_tabs.scss">
+    <entry file="file://$PROJECT_DIR$/server.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_default_margin_padding.scss">
+    <entry file="file://$PROJECT_DIR$/dev_back/WebApi.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_helper.scss">
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/custom-router.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_dashboard.scss">
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/frontend/frontend.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/models/DeviceMongoose.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Config.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_button.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/fonts/roboto_bold_macroman/specimen_files/grid_12-825-55-15.css">
+    <entry file="file://$PROJECT_DIR$/dev_back/middleware/request-logger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/routes/frontend/frontend.js">
+    <entry file="file://$PROJECT_DIR$/nodemon.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -786,156 +579,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/user-service.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/shared.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/core/src/application_ref.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/router/src/interfaces.d.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/platform-browser/src/facade/collection.d.ts" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/config/systemjs.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="87" selection-start-line="5" selection-start-column="87" selection-end-line="5" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/users/users.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_font.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="439">
+            <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
