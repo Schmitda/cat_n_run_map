@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jump & Run Map-Editor</title>
+    <link rel="stylesheet" href="fonts/roboto_regular_macroman/stylesheet.css">
+    <link rel="stylesheet" href="libs/gridle/css/grid-flex.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+<header>
+    <nav class="space-between flex">
+        <div class="left">
+            <a href="">Jump & Run Map-Editor</a>
+        </div>
+        <div class="right">
+            <a href="">New</a>
+            <a href="">Save</a>
+            <a href="">Publish</a>
+            <a href="">Logoff</a>
+        </div>
+    </nav>
+</header>
+
+<div class="flex full-space">
+    <div class="menu-left">
+        <div class="tab-component">
+            <div class="tab">
+                Background
+            </div>
+            <div class="hidden-content">
+                <div class="element full-width">
+                    <div class="background-image" background="background/DeepForest_01.png" alt=""></div>
+                </div>
+                <div class="element full-width">
+                    <div class="background-image" background="background/DeepForest_03.png" alt=""></div>
+                </div>
+                <div class="element full-width">
+                    <div class="background-image" background="background/DeepForest_night.png" alt=""></div>
+                </div>
+                <div class="element full-width">
+
+                </div>
+                <div class="element full-width">
+
+                </div>
+                <div class="element full-width">
+
+                </div>
+                <div class="element full-width">
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-component">
+            <div class="tab">
+                Chars
+            </div>
+            <div class="hidden-content">
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-component">
+            <div class="tab">
+                Map
+            </div>
+            <div class="hidden-content">
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-component">
+            <div class="tab">
+                Decoration
+            </div>
+            <div class="hidden-content">
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+                <div class="element">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="game-map">
+        <div class="top-right">
+            <div class="tile-view view-item">
+                <i class="fa fa-ticket"></i>
+            </div>
+            <div class="chars-view view-item">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="view-all view-item">
+                <i class="fa fa-eye"></i>
+            </div>
+        </div>
+        <div class="game-map">
+        </div>
+    </main>
+</div>
+</div>
+
+<script>
+    backgroundImages = document.querySelectorAll(".background-image");
+    for($i = 0; $i < backgroundImages.length; $i++){
+        backgroundUrl = backgroundImages[$i].getAttribute('background');
+        console.log("url('"+backgroundUrl+"')");
+        backgroundImages[$i].style.background = "url('"+backgroundUrl+"')";
+        backgroundImages[$i].style.backgroundSize = "contain"
+    }
+</script>
+
+</body>
+</html>
