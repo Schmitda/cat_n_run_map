@@ -3,3 +3,4 @@ app/assets/libs/*
 sessions/*
 typings/*
 design/node_modules/*
+.idea/workspace.xml

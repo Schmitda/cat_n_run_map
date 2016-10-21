@@ -1,14 +1,7 @@
-/**COLORS**/
-$primary-color: #e24d4d;
-$success-color: #ef6064;
-$green-success-color: #79ef7f;
-$link-color-inverted: #85d9ff;
-
-$transition-duration: 500ms;
-
-
-
 /*INCLUDES*/
+@import "variables";
+
+
 @import "reset";
 @import 'default_margin_padding';
 @import "helper";
@@ -45,6 +38,16 @@ main {
 
 .white{
   background-color: white;
+}
+
+.flex.full-space {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 input, select, textarea {
@@ -141,3 +144,13 @@ input:focus, textarea:focus {
   background-color: darken(white,5%);
   transition-duration: $transition-duration;
 }
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em; }
+
+::-webkit-scrollbar-thumb {
+  background: slategray; }
+
+::-webkit-scrollbar-track {
+  background: #b8c0c8; }

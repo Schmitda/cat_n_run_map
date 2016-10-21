@@ -4,7 +4,7 @@ export class Config{
             case undefined:
             case 'development':
                 return {
-                    url : 'mongodb://localhost:27017/taskmirror',
+                    url : 'mongodb://localhost:27017/mapeditor',
                     salt: "(qd5yBxWgmEdxEGb)JEl1iB2dAubsLWHS9jCiW$Z",
                     secret: "(qd5yBxWgmEdxEGb)JEl1iB2dAubsLWHS9jCiW$Z",
 
@@ -28,7 +28,7 @@ export class Config{
 
             case 'production':
                 return {
-                    url : 'mongodb://localhost:27017/taskmirror',
+                    url : 'mongodb://localhost:27017/mapeditor',
                     salt: "(qd5yBxWgmEdxEGb)JEl1iB2dAubsLWHS9jCiW$Z",
                     secret: "(qd5yBxWgmEdxEGb)JEl1iB2dAubsLWHS9jCiW$Z",
 

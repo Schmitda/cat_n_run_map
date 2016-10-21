@@ -11,14 +11,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var user_service_service_1 = require("./user-service.service");
+var my_nav_component_1 = require("./my-nav.component");
 var CoreModule = (function () {
     function CoreModule() {
     }
     CoreModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule],
-            /*  declarations: [ TitleComponent ],
-              exports:      [ TitleComponent ],*/
+            declarations: [my_nav_component_1.MyNavComponent],
+            exports: [my_nav_component_1.MyNavComponent],
             providers: [user_service_service_1.UserService]
         }), 
         __metadata('design:paramtypes', [])

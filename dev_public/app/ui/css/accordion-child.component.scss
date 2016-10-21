@@ -1,0 +1,18 @@
+@import "../../../assets/sass/variables";
+
+.accordion-title {
+  font-size: 12px;
+  width: 100%;
+  background-color: $primary-color;
+  border-bottom: 1px solid $light-primary-color;
+  padding: 10px 5px;
+  color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.accordion-title:hover {
+  background-color: $light-primary-color;
+  transition-duration: $transition-duration;
+  color: black;
+}
