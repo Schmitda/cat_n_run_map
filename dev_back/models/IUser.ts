@@ -1,12 +1,14 @@
 interface IUser {
-   __id:string;
-   _name:string;
-   _firstname:string;
-   _lastname:string;
-   _created_at: Date;
-   _password:string;
-   _email:string;
-   _color:string;
+   _id:string;
+   name:string;
+   firstname:string;
+   lastname:string;
+   created_at: Date;
+   password:string;
+   email:string;
+   color:string;
+   verificationUrl: string;
+   sessionPassword: string;
 };
 
 export = IUser;

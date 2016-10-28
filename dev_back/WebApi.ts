@@ -9,6 +9,7 @@ import expressSession = require('express-session');
 var FileStore = require('session-file-store')(expressSession);
 import cookieParser = require('cookie-parser');
 import {Config} from "../config/Config";
+import userRouter = require("./routes/backend/user-router");
 
 
 
@@ -46,6 +47,7 @@ export class WebApi{
 
     private configureRoutes(app: express.Express){
         app.use('/customer', customerRouter);
+        app.use('/api/user',userRouter);
         app.use('/', frontendRouter);
     }
 

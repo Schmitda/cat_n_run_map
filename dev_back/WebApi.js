@@ -9,6 +9,7 @@ var expressSession = require('express-session');
 var FileStore = require('session-file-store')(expressSession);
 var cookieParser = require('cookie-parser');
 var Config_1 = require("../config/Config");
+var userRouter = require("./routes/backend/user-router");
 var WebApi = (function () {
     function WebApi(app, port) {
         this.app = app;
@@ -42,6 +43,7 @@ var WebApi = (function () {
     };
     WebApi.prototype.configureRoutes = function (app) {
         app.use('/customer', customerRouter);
+        app.use('/api/user', userRouter);
         app.use('/', frontendRouter);
     };
     WebApi.prototype.run = function () {
