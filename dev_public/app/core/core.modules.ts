@@ -5,12 +5,15 @@ import {
 import {CommonModule}      from '@angular/common';
 import {UserService} from "./user-service.service";
 import {MyNavComponent} from "./my-nav.component";
+import {AuthGuard} from "../auth/auth.service";
+import {BrowserModule} from "@angular/platform-browser";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, BrowserModule, HttpModule],
     declarations: [MyNavComponent],
     exports: [MyNavComponent],
-    providers: [UserService]
+    providers: [UserService, AuthGuard]
 })
 export class CoreModule {
 }

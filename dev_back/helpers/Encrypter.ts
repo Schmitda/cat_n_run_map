@@ -26,6 +26,10 @@ export class Encrypter {
     public verifyPassword(password:string, hash:string):Observable<any> {
         return Rx.Observable.create(function (o) {
             bcrypt.compare(password, hash, function (err, res) {
+                console.log(password);
+                console.log(hash);
+                console.log(err);
+                console.log(res);
                 o.onNext(res);
                 o.onCompleted();
             });

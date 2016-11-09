@@ -27,6 +27,10 @@ var Encrypter = (function () {
     Encrypter.prototype.verifyPassword = function (password, hash) {
         return Rx.Observable.create(function (o) {
             bcrypt.compare(password, hash, function (err, res) {
+                console.log(password);
+                console.log(hash);
+                console.log(err);
+                console.log(res);
                 o.onNext(res);
                 o.onCompleted();
             });

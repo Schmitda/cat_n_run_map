@@ -265,6 +265,9 @@ table {
 .flex {
   display: flex; }
 
+.hide-overflow {
+  overflow: hidden; }
+
 .flex-1 {
   flex: 1; }
 

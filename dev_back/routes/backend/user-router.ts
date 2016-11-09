@@ -35,10 +35,11 @@ userRouter.get('/createNatiiDaniel', (req: express.Request, res: express.Respons
 });
 
 
-userRouter.post('/login', (req: express.Request, res: exporess.Response) => {
-    User.find({username: req.body.username}).exec((err, user) => {
+userRouter.post('/login', (req: express.Request, res: express.Response) => {
+    User.findOne({username: req.body.username}).exec((err, user) => {
         if(err)
             res.status(400).send(err);
+        console.log(user);
         var encrypter = new Encrypter();
         encrypter.verifyPassword(req.body.password, user.password)
             .subscribe(

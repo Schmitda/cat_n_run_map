@@ -9,25 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var user_service_service_1 = require("./user-service.service");
-var my_nav_component_1 = require("./my-nav.component");
-var auth_service_1 = require("../auth/auth.service");
-var platform_browser_1 = require("@angular/platform-browser");
-var http_1 = require("@angular/http");
-var CoreModule = (function () {
-    function CoreModule() {
+var AccordionItemComponent = (function () {
+    function AccordionItemComponent() {
     }
-    CoreModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule],
-            declarations: [my_nav_component_1.MyNavComponent],
-            exports: [my_nav_component_1.MyNavComponent],
-            providers: [user_service_service_1.UserService, auth_service_1.AuthGuard]
+    AccordionItemComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'accordion-item',
+            templateUrl: '../templates/accordion-item.component.html',
+            styleUrls: ['../css/accordion-item.component.min.css'],
         }), 
         __metadata('design:paramtypes', [])
-    ], CoreModule);
-    return CoreModule;
+    ], AccordionItemComponent);
+    return AccordionItemComponent;
 }());
-exports.CoreModule = CoreModule;
-//# sourceMappingURL=core.modules.js.map
+exports.AccordionItemComponent = AccordionItemComponent;
+//# sourceMappingURL=accordion-item.component.js.map

@@ -29,9 +29,10 @@ userRouter.get('/createNatiiDaniel', function (req, res) {
     });
 });
 userRouter.post('/login', function (req, res) {
-    User.find({ username: req.body.username }).exec(function (err, user) {
+    User.findOne({ username: req.body.username }).exec(function (err, user) {
         if (err)
             res.status(400).send(err);
+        console.log(user);
         var encrypter = new Encrypter_1.Encrypter();
         encrypter.verifyPassword(req.body.password, user.password)
             .subscribe(function (result) {

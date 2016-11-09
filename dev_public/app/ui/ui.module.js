@@ -12,14 +12,15 @@ var core_1 = require("@angular/core");
 var accordion_component_1 = require("./components/accordion.component");
 var accordion_child_component_1 = require("./components/accordion-child.component");
 var shared_module_1 = require("../shared/shared.module");
+var accordion_item_component_1 = require("./components/accordion-item.component");
 var UIModule = (function () {
     function UIModule() {
     }
     UIModule = __decorate([
         core_1.NgModule({
-            exports: [accordion_component_1.AccordionComponent, accordion_child_component_1.AccordionChildComponent],
+            exports: [accordion_component_1.AccordionComponent, accordion_child_component_1.AccordionChildComponent, accordion_item_component_1.AccordionItemComponent],
             imports: [shared_module_1.SharedModule],
-            declarations: [accordion_component_1.AccordionComponent, accordion_child_component_1.AccordionChildComponent,],
+            declarations: [accordion_component_1.AccordionComponent, accordion_child_component_1.AccordionChildComponent, accordion_item_component_1.AccordionItemComponent],
         }), 
         __metadata('design:paramtypes', [])
     ], UIModule);

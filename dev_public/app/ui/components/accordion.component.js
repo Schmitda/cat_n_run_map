@@ -11,8 +11,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AccordionComponent = (function () {
     function AccordionComponent() {
+        this.accordionChildren = [];
     }
+    AccordionComponent.prototype.addAccordion = function (accordionChild) {
+        this.accordionChildren.push(accordionChild);
+    };
     AccordionComponent.prototype.ngOnInit = function () { };
+    AccordionComponent.prototype.openChanged = function (accordionChild) {
+        for (var _i = 0, _a = this.accordionChildren; _i < _a.length; _i++) {
+            var ac = _a[_i];
+            if (ac !== accordionChild) {
+                ac.close();
+            }
+        }
+    };
     AccordionComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
