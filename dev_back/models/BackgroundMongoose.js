@@ -1,6 +1,5 @@
 "use strict";
 var mongoose = require("mongoose");
-var Background_1 = require("../../dev_public/app/models/Background");
 var backgroundSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -17,5 +16,5 @@ var backgroundSchema = new mongoose.Schema({
     },
 });
 var Background = mongoose.model("Background", backgroundSchema);
-module.exports = Background_1.Background;
-//# sourceMappingURL=BackgroundMongoose.js.map
+module.exports = Background;
+//# sourceMappingURL=backgroundMongoose.js.map

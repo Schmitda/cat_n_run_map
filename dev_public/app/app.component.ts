@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 <div class="wrapper">
     <my-nav></my-nav>
     <div class="flex full-space">
-    <router-outlet class=""></router-outlet>
+    <router-outlet></router-outlet>
     </div>
 </div>
 `,

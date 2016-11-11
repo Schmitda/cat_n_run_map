@@ -23,6 +23,18 @@ $kind:(
   overflow: hidden;
 }
 
+.small-window{
+  width: 600px;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  top:50%;
+  left: 50%;
+  border-radius: 0;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid $primary-color;
+}
+
 .flex-1{
   flex: 1;
 }

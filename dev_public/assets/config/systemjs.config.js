@@ -21,6 +21,8 @@
             '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
             '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+            'ng2-file-upload': 'npm:ng2-file-upload/ng2-file-upload.js',
+            'ng2-uploader': 'npm:ng2-uploader/src/directives/ng-file-select.js',
             // other libraries
             'rxjs':                       'npm:rxjs',
             'angular2-in-memory-web-api': 'npm:angular2-in-memory-web-api',
@@ -36,6 +38,10 @@
             },
             'angular2-in-memory-web-api': {
                 main: './index.js',
+                defaultExtension: 'js'
+            },
+            'ng2-uploader': {
+                format: 'cjs',
                 defaultExtension: 'js'
             }
         }

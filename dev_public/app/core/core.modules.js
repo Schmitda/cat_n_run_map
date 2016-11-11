@@ -15,6 +15,8 @@ var my_nav_component_1 = require("./my-nav.component");
 var auth_service_1 = require("../auth/auth.service");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
+var background_service_1 = require("../background/services/background.service");
+var file_service_1 = require("./services/file.service");
 var CoreModule = (function () {
     function CoreModule() {
     }
@@ -22,8 +24,8 @@ var CoreModule = (function () {
         core_1.NgModule({
             imports: [common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule],
             declarations: [my_nav_component_1.MyNavComponent],
-            exports: [my_nav_component_1.MyNavComponent],
-            providers: [user_service_service_1.UserService, auth_service_1.AuthGuard]
+            exports: [my_nav_component_1.MyNavComponent, common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule],
+            providers: [user_service_service_1.UserService, auth_service_1.AuthGuard, background_service_1.BackgroundService, file_service_1.FileService]
         }), 
         __metadata('design:paramtypes', [])
     ], CoreModule);

@@ -4,6 +4,7 @@ var auth_service_1 = require("./auth/auth.service");
 exports.routes = [
     { path: '', redirectTo: 'map', pathMatch: 'full' },
     { path: 'map', loadChildren: 'app/map/map.module#MapModule', canActivate: [auth_service_1.AuthGuard] },
+    { path: 'background', loadChildren: 'app/background/background.module#BackgroundModule' },
     { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
 ];
 exports.routing = router_1.RouterModule.forRoot(exports.routes);

@@ -2,6 +2,16 @@
 var Background = (function () {
     function Background() {
     }
+    Object.defineProperty(Background.prototype, "createdBy", {
+        get: function () {
+            return this._createdBy;
+        },
+        set: function (value) {
+            this._createdBy = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     Object.defineProperty(Background.prototype, "_id", {
         get: function () {
             return this.__id;
