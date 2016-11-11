@@ -18,6 +18,7 @@ Following global node libraries are required:
 
 Install them via NPM or your prefered package manager
 `npm install typings tsd nodemon gulp bower -g`
+`npm install ng2-file-upload --save`
 
 
  `-g` Installs them globaly (for every project)
