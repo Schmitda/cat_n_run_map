@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var Observable_1 = require("rxjs/Observable");
-var file_service_1 = require("../../core/services/file.service");
+var file_service_1 = require("../../../core/services/file.service");
 var BackgroundService = (function () {
     function BackgroundService(http, fileService) {
         this.http = http;
@@ -56,10 +56,9 @@ var BackgroundService = (function () {
     };
     BackgroundService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http, (typeof (_a = typeof file_service_1.FileService !== 'undefined' && file_service_1.FileService) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [http_1.Http, file_service_1.FileService])
     ], BackgroundService);
     return BackgroundService;
-    var _a;
 }());
 exports.BackgroundService = BackgroundService;
 //# sourceMappingURL=background.service.js.map

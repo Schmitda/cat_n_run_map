@@ -4,7 +4,7 @@ import {Observable} from "rxjs/Observable";
 import {Observer} from "rxjs/Observer";
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
 import {Background} from "../../models/Background";
-import {FileService} from "../../core/services/file.service";
+import {FileService} from "../../../core/services/file.service";
 @Injectable()
 
 export class BackgroundService {
