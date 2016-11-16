@@ -15,7 +15,7 @@ var my_nav_component_1 = require("./my-nav.component");
 var auth_service_1 = require("../auth/auth.service");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
-var background_service_1 = require("../background/services/background.service");
+var background_service_1 = require("../elements/background/services/background.service");
 var file_service_1 = require("./services/file.service");
 var CoreModule = (function () {
     function CoreModule() {

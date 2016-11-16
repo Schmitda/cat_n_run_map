@@ -8,7 +8,7 @@ import {MyNavComponent} from "./my-nav.component";
 import {AuthGuard} from "../auth/auth.service";
 import {BrowserModule} from "@angular/platform-browser";
 import {HttpModule} from "@angular/http";
-import {BackgroundService} from "../background/services/background.service";
+import {BackgroundService} from "../elements/background/services/background.service";
 import {ReactiveFormsModule} from "@angular/forms";
 import {FileService} from "./services/file.service";
 

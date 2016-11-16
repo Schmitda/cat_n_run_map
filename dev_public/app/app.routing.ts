@@ -7,6 +7,7 @@ export const routes: Routes = [
     { path: '', /*component: AppComponent, redirectTo: 'users' ,*/ redirectTo: 'map', pathMatch: 'full'},
     { path: 'map', loadChildren: 'app/map/map.module#MapModule', canActivate: [AuthGuard] },
     { path: 'background', loadChildren: 'app/background/background.module#BackgroundModule'},
+    { path: 'decoration', loadChildren: 'app/decoration/decoration.module#DecorationModule'},
     { path: 'login', loadChildren: 'app/login/login.module#LoginModule' },
 ];
 

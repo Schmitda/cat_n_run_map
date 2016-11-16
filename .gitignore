@@ -4,3 +4,7 @@ sessions/*
 typings/*
 design/node_modules/*
 .idea/workspace.xml
+.lock
+.js
+.js.map
+.idea/workspace.xml
