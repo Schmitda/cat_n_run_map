@@ -12,26 +12,6 @@ var Element = (function () {
         enumerable: true,
         configurable: true
     });
-    Object.defineProperty(Element.prototype, "xcoord", {
-        get: function () {
-            return this._xcoord;
-        },
-        set: function (value) {
-            this._xcoord = value;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Element.prototype, "ycoord", {
-        get: function () {
-            return this._ycoord;
-        },
-        set: function (value) {
-            this._ycoord = value;
-        },
-        enumerable: true,
-        configurable: true
-    });
     Object.defineProperty(Element.prototype, "width", {
         get: function () {
             return this._width;

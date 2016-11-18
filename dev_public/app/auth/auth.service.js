@@ -11,7 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var Observable_1 = require("rxjs/Observable");
-var user_service_service_1 = require("../core/user-service.service");
+require('rxjs/add/observable/of');
+var user_service_service_1 = require("../core/services/user-service.service");
 var AuthGuard = (function () {
     function AuthGuard(userService, router) {
         this.userService = userService;

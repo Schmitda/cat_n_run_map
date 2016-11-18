@@ -1,9 +1,8 @@
-import {NgModule} from "@angular/core";
 import {BackgroundComponent} from "./components/background.component";
-import {RouterModule} from "@angular/router";
+import {SharedModule} from "../../shared/shared.module";
 import {BackgroundRouting} from "./background.routing";
-import {ReactiveFormsModule} from "@angular/forms";
-import {SharedModule} from "../shared/shared.module";
+import {NgModule} from "@angular/core";
+
 @NgModule({
     imports: [
         BackgroundRouting,

@@ -10,22 +10,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
-var user_service_service_1 = require("./user-service.service");
+var user_service_service_1 = require("./services/user-service.service");
 var my_nav_component_1 = require("./my-nav.component");
 var auth_service_1 = require("../auth/auth.service");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
 var background_service_1 = require("../elements/background/services/background.service");
+var forms_1 = require("@angular/forms");
 var file_service_1 = require("./services/file.service");
+var form_generator_service_1 = require("../shared/form-generator.service");
 var CoreModule = (function () {
     function CoreModule() {
     }
     CoreModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule],
+            imports: [common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.ReactiveFormsModule],
             declarations: [my_nav_component_1.MyNavComponent],
             exports: [my_nav_component_1.MyNavComponent, common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule],
-            providers: [user_service_service_1.UserService, auth_service_1.AuthGuard, background_service_1.BackgroundService, file_service_1.FileService]
+            providers: [user_service_service_1.UserService, auth_service_1.AuthGuard, background_service_1.BackgroundService, file_service_1.FileService, form_generator_service_1.FormGenerator]
         }), 
         __metadata('design:paramtypes', [])
     ], CoreModule);

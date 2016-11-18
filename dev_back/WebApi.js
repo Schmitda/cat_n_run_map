@@ -1,7 +1,6 @@
 "use strict";
 var express = require('express');
 var requestLogger = require("./middleware/request-logger");
-var customerRouter = require("./routes/backend/custom-router");
 var frontendRouter = require("./routes/frontend/frontend");
 var bodyParser = require("body-parser");
 var methodOverride = require('method-override');
@@ -43,7 +42,6 @@ var WebApi = (function () {
         app.use('/nm', express.static(__dirname + '/../node_modules'));
     };
     WebApi.prototype.configureRoutes = function (app) {
-        app.use('/customer', customerRouter);
         app.use('/api/background', backgroundRouter);
         app.use('/api/user', userRouter);
         app.use('/', frontendRouter);

@@ -1,6 +1,5 @@
 import express = require('express');
 import requestLogger = require("./middleware/request-logger");
-import customerRouter = require("./routes/backend/custom-router");
 import frontendRouter = require("./routes/frontend/frontend");
 import bodyParser = require("body-parser");
 import mongoose = require('mongoose');
@@ -47,7 +46,6 @@ export class WebApi{
     }
 
     private configureRoutes(app: express.Express){
-        app.use('/customer', customerRouter);
         app.use('/api/background', backgroundRouter);
         app.use('/api/user',userRouter);
         app.use('/', frontendRouter);

@@ -24,14 +24,6 @@ backgroundRouter.get('/', (req: express.Request, res: express.Response) => {
 });
 
 
-backgroundRouter.post('/file/:name', (req: express.Request, res: express.Response) => {
-    uploadBackground(req,res,function(err) {
-        if(err) {
-            return res.end("Error uploading file.");
-        }
-        res.json({source: req.body.source});
-    });
-});
 
 backgroundRouter.get('/:id', (req: express.Request, res: express.Response) => {
     Background.findById(req.params.id).exec()

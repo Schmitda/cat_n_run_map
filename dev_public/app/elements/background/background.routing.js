@@ -9,8 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var background_component_1 = require("./components/background.component");
 var router_1 = require("@angular/router");
+var background_component_1 = require("./components/background.component");
 var BackgroundRouting = (function () {
     function BackgroundRouting() {
     }

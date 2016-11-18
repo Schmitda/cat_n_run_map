@@ -20,14 +20,6 @@ backgroundRouter.get('/', function (req, res) {
         res.json(result);
     });
 });
-backgroundRouter.post('/file/:name', function (req, res) {
-    uploadBackground(req, res, function (err) {
-        if (err) {
-            return res.end("Error uploading file.");
-        }
-        res.json({ source: req.body.source });
-    });
-});
 backgroundRouter.get('/:id', function (req, res) {
     Background.findById(req.params.id).exec()
         .then(function (result) {

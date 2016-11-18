@@ -3,8 +3,8 @@ import {Response, Http} from "@angular/http";
 import {Observable} from "rxjs/Observable";
 import {Observer} from "rxjs/Observer";
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
-import {Background} from "../../models/Background";
 import {FileService} from "../../../core/services/file.service";
+import {Background} from "../../../models/Background";
 @Injectable()
 
 export class BackgroundService {
@@ -13,26 +13,11 @@ export class BackgroundService {
 
 
     public save(background: Background): Observable<Background> {
-        return this.http.post('/api/background', background)
+        let form = this.fileService.jsonToFormData(background);
+        return this.http.post('/api/background', form)
             .map(this.extractData);
     }
 
-    public uploadImageAndSave(background:Background, files: File[]|File): Observable<Background> {
-        return Observable.create((observer:Observer) => {
-            this.fileService.makeFileRequest('/api/background/file/'+background.name, files)
-                .subscribe(
-                    source => {
-                        background.source = source.source;
-                        this.save(background)
-                            .subscribe(background => {
-                                observer.next(background);
-                                observer.complete();
-                            });
-                    }
-                )
-        })
-
-    }
 
     public getAllBackgrounds(): Observable<Background[]> {
         return this.http.get('/api/background')

@@ -7,6 +7,7 @@ export class Element {
     private _source:string;
 
 
+
     get source(): string {
         return this._source;
     }
@@ -15,21 +16,6 @@ export class Element {
         this._source = value;
     }
 
-    get xcoord(): number {
-        return this._xcoord;
-    }
-
-    set xcoord(value: number) {
-        this._xcoord = value;
-    }
-
-    get ycoord(): number {
-        return this._ycoord;
-    }
-
-    set ycoord(value: number) {
-        this._ycoord = value;
-    }
 
     get width(): number {
         return this._width;

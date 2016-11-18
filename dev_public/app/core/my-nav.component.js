@@ -9,10 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require("@angular/router");
+var user_service_service_1 = require("./services/user-service.service");
 var MyNavComponent = (function () {
-    function MyNavComponent() {
+    function MyNavComponent(router, userService) {
+        var _this = this;
+        this.router = router;
+        this.userService = userService;
+        this.userService.currentUser.
+            subscribe(function (value) {
+            if (value == null) {
+                _this.router.navigate(['/login']);
+            }
+        });
     }
     MyNavComponent.prototype.ngOnInit = function () { };
+    MyNavComponent.prototype.goToMap = function () {
+        this.router.navigate(['/map']);
+    };
+    MyNavComponent.prototype.logout = function () {
+        this.userService.logoff();
+    };
     MyNavComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -20,7 +37,7 @@ var MyNavComponent = (function () {
             templateUrl: 'templates/my-nav.component.html',
             styleUrls: ['css/my-nav.component.min.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router, user_service_service_1.UserService])
     ], MyNavComponent);
     return MyNavComponent;
 }());

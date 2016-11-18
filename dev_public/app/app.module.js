@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require("./app.component");
 var core_modules_1 = require("./core/core.modules");
 var app_routing_1 = require("./app.routing");
@@ -18,7 +17,7 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [core_modules_1.CoreModule, app_routing_1.routing, platform_browser_1.BrowserModule],
+            imports: [core_modules_1.CoreModule, app_routing_1.routing],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 

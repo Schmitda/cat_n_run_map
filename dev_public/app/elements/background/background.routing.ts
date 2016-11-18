@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
-import {BackgroundComponent} from "./components/background.component";
 import {RouterModule} from "@angular/router";
+import {BackgroundComponent} from "./components/background.component";
 @NgModule({
     imports: [
         RouterModule.forChild([

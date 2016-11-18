@@ -1,10 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, FormBuilder, Validators} from "@angular/forms";
-import {Background} from "../../models/Background";
-import {BackgroundService} from "../services/background.service";
 import {Observable} from "rxjs/Observable";
 import {Observer} from "rxjs";
 import {Http} from "@angular/http";
+import {BackgroundService} from "../services/background.service";
 
 @Component({
     moduleId: module.id,
@@ -24,10 +23,11 @@ export class BackgroundComponent implements OnInit {
     }
 
     private submit(){
-        console.log(this.form)
         if(this.form.valid){
             let background = this.form.value;
-            this.backgroundService.uploadImageAndSave(background, this.file).subscribe( () => {});
+            background.source = this.file;
+            this.backgroundService.save(background)
+                .subscribe(() => {});
         }
     }
 

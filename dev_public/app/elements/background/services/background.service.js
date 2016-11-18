@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var Observable_1 = require("rxjs/Observable");
 var file_service_1 = require("../../../core/services/file.service");
 var BackgroundService = (function () {
     function BackgroundService(http, fileService) {
@@ -18,22 +17,9 @@ var BackgroundService = (function () {
         this.fileService = fileService;
     }
     BackgroundService.prototype.save = function (background) {
-        return this.http.post('/api/background', background)
+        var form = this.fileService.jsonToFormData(background);
+        return this.http.post('/api/background', form)
             .map(this.extractData);
-    };
-    BackgroundService.prototype.uploadImageAndSave = function (background, files) {
-        var _this = this;
-        return Observable_1.Observable.create(function (observer) {
-            _this.fileService.makeFileRequest('/api/background/file/' + background.name, files)
-                .subscribe(function (source) {
-                background.source = source.source;
-                _this.save(background)
-                    .subscribe(function (background) {
-                    observer.next(background);
-                    observer.complete();
-                });
-            });
-        });
     };
     BackgroundService.prototype.getAllBackgrounds = function () {
         return this.http.get('/api/background')

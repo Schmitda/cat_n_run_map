@@ -21,10 +21,11 @@ var BackgroundComponent = (function () {
         });
     }
     BackgroundComponent.prototype.submit = function () {
-        console.log(this.form);
         if (this.form.valid) {
             var background = this.form.value;
-            this.backgroundService.uploadImageAndSave(background, this.file).subscribe(function () { });
+            background.source = this.file;
+            this.backgroundService.save(background)
+                .subscribe(function () { });
         }
     };
     BackgroundComponent.prototype.uploadFileTest = function (event) {
