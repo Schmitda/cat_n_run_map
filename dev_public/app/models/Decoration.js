@@ -4,6 +4,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+var Element_1 = require("./Element");
 var Decoration = (function (_super) {
     __extends(Decoration, _super);
     function Decoration() {
@@ -20,6 +21,6 @@ var Decoration = (function (_super) {
         configurable: true
     });
     return Decoration;
-}(Element));
+}(Element_1.Element));
 exports.Decoration = Decoration;
 //# sourceMappingURL=Decoration.js.map

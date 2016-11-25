@@ -1,3 +1,4 @@
+import {Element} from "./Element";
 export class Decoration extends Element{
 
     private _zcoord:number;

@@ -10,6 +10,9 @@ var cookieParser = require('cookie-parser');
 var Config_1 = require("../config/Config");
 var userRouter = require("./routes/backend/user-router");
 var backgroundRouter = require("./routes/backend/background.router");
+var collectibleRouter = require("./routes/backend/collectible.router");
+var decorationRouter = require("./routes/backend/decoration.router");
+var characterRouter = require("./routes/backend/character.router");
 var WebApi = (function () {
     function WebApi(app, port) {
         this.app = app;
@@ -43,6 +46,9 @@ var WebApi = (function () {
     };
     WebApi.prototype.configureRoutes = function (app) {
         app.use('/api/background', backgroundRouter);
+        app.use('/api/decoration', decorationRouter);
+        app.use('/api/collectible', collectibleRouter);
+        app.use('/api/character', characterRouter);
         app.use('/api/user', userRouter);
         app.use('/', frontendRouter);
     };

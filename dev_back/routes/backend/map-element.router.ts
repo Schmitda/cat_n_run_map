@@ -1,6 +1,5 @@
 import express = require("express");
-import MapElement = require('../../models/MapElementMongoose');
-import IMapElement = require("../../models/IMapElement");
+import MapElement = require('../../models/MapElement');
 
 
 let mapelementRouter = express.Router();

@@ -1,6 +1,7 @@
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs/Observable";
 import {Observer} from "rxjs/Observer";
+import {FormGroup} from "@angular/forms";
 @Injectable()
 
 export class FileService {
@@ -27,6 +28,21 @@ export class FileService {
         }
         return fd;
     };
+
+    public calculateImageSize(file: File, form: FormGroup):Observable<{key:string}>{
+        var _URL = window.URL || window.webkitURL;
+        var img = new Image();
+        var _form = form;
+        img.onload = function(){
+            if(_form.controls.width){
+                _form.controls.width.setValue(this.width);
+            }
+            if(_form.controls.height){
+                _form.controls.height.setValue(this.height);
+            }
+        };
+        img.src = _URL.createObjectURL(file);
+    }
 
 
     public makeFileRequest(url: string, files: File[]|File): Observable {

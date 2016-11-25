@@ -1,6 +1,5 @@
 "use strict";
 var mongoose = require("mongoose");
-var Decoration_1 = require("../../dev_public/app/models/Decoration");
 var decorationSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -26,6 +25,7 @@ var decorationSchema = new mongoose.Schema({
     zcoord: {
         type: Number,
         required: true,
+        default: 500,
     },
     createdBy: {
         type: mongoose.Schema.Types.ObjectId,
@@ -34,5 +34,5 @@ var decorationSchema = new mongoose.Schema({
     },
 });
 var Decoration = mongoose.model("Decoration", decorationSchema);
-module.exports = Decoration_1.Decoration;
+module.exports = Decoration;
 //# sourceMappingURL=DecorationMongoose.js.map

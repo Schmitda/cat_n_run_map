@@ -1,28 +1,58 @@
 @import "../../../assets/sass/variables";
 
-:host{
+:host {
   height: 100%;
   display: flex;
   flex: 1;
   width: 100%;
 }
 
-.scroll{
+.scroll {
   width: calc(100% - 400px);
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-.menu-left{
+.menu-left {
   border-right: 5px solid #59c7ae;
   background-color: white;
+  z-index: 100;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   flex-basis: 400px;
+  max-width: 400px;
 }
 
-.add-element{
+.add-element-wrapper {
+  width: 100%;
+}
+
+.add-element {
   display: block;
   padding: 5px 0;
   background-color: #e1e1e1;
 }
 
+.background-selection .img {
+  max-height: 50px;
+  height: 50px;
+  width: 100%;
+}
+
+.background-selection .img.pointer {
+  border-bottom: 3px solid black;
+}
+
+.flex-selection img {
+  max-height: 50px;
+  padding: 4px;
+}
+
+.flex-selection img.pointer:hover {
+  background-color: $light-primary-color;
+  transition-duration: $transition-duration;
+}
+
+
+.flex-selection.selected{
+  background-color: $light-primary-color;
+}

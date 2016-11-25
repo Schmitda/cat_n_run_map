@@ -1,20 +1,34 @@
 <div class="menu-left">
     <accordion>
         <accordion-child title="Background">
-            <accordion-item>Test</accordion-item>
-            <accordion-item><a routerLink="/background/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
+            <accordion-item class="full-width background-selection" *ngFor="let background of backgrounds">
+                <div class="" (click)="stopPropagation($event)">
+                    <div class="img pointer" (click)="selectBackground(background)" [style.background-image]="'url(' + background.source + ')'" style="background-repeat: repeat-x; background-size: contain;"></div>
+                </div>
+            </accordion-item>
+            <accordion-item class="add-element-wrapper"><a routerLink="/background/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
         <accordion-child title="Characters">
-            <accordion-item><a routerLink="/character/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
+            <accordion-item class="add-element-wrapper"><a routerLink="/character/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
         <accordion-child title="Map-Elements">
-            <accordion-item><a routerLink="/mapElement/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
+            <accordion-item class="add-element-wrapper"><a routerLink="/mapElement/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
-        <accordion-child title="Decoration">
-            <accordion-item><a routerLink="/decoration/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
+        <accordion-child #myChild  title="Decoration">
+            <accordion-item [class.selected]="decoration._id === mapService.selected?._id" class="flex-selection decoration-selection" *ngFor="let decoration of decorations">
+                <div (click)="stopPropagation($event)">
+                    <img [src]="decoration.source" alt="" class="pointer" (click)="selectDecoration(decoration)">
+                </div>
+            </accordion-item>
+            <accordion-item class="add-element-wrapper"><a routerLink="/decoration/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
         <accordion-child title="Collectibles">
-            <accordion-item><a routerLink="/collectibles/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
+            <accordion-item [class.selected]="collectible._id === mapService.selected?._id" class="flex-selection collectible-selection" *ngFor="let collectible of collectibles">
+                <div (click)="stopPropagation($event)">
+                    <img [src]="collectible.source" alt="" class="pointer" (click)="selectCollectible(collectible)">
+                </div>
+            </accordion-item>
+            <accordion-item class="add-element-wrapper"><a routerLink="/collectible/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
     </accordion>
 </div>

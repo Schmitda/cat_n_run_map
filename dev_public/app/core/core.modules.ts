@@ -12,12 +12,28 @@ import {BackgroundService} from "../elements/background/services/background.serv
 import {ReactiveFormsModule} from "@angular/forms";
 import {FileService} from "./services/file.service";
 import {FormGenerator} from "../shared/form-generator.service";
+import {CollectibleService} from "../elements/collectible/services/collectible.service";
+import {DecorationService} from "../elements/decoration/services/decoration.service";
+import {CharacterService} from "../elements/character/services/character.service";
+import {MapElementService} from "../elements/map-element/services/map-element.service";
+import {MapService} from "../shared/map.service";
 
 @NgModule({
     imports: [CommonModule, BrowserModule, HttpModule, ReactiveFormsModule],
     declarations: [MyNavComponent],
     exports: [MyNavComponent, CommonModule, BrowserModule, HttpModule],
-    providers: [UserService, AuthGuard, BackgroundService, FileService, FormGenerator]
+    providers: [
+        UserService,
+        AuthGuard,
+        BackgroundService,
+        FileService,
+        FormGenerator,
+        CollectibleService,
+        DecorationService,
+        CharacterService,
+        MapElementService,
+        MapService,
+    ]
 })
 export class CoreModule {
 }

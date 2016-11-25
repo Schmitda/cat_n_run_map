@@ -1,6 +1,18 @@
 "use strict";
 var express = require("express");
-var Collectible = require('../../models/CollectibleMongoose');
+var Collectible = require('../../models/Collectible');
+var multer = require('multer');
+var storageCollectible = multer.diskStorage({
+    destination: function (req, file, callback) {
+        callback(null, './dev_public/assets/uploads/collectible');
+    },
+    filename: function (req, file, callback) {
+        var filename = req.body.name + "." + file.originalname.split('.').pop();
+        req.body.source = "assets/uploads/collectible/" + filename;
+        callback(null, filename);
+    }
+});
+var upload = multer({ storage: storageCollectible }).single('source');
 var collectibleRouter = express.Router();
 collectibleRouter.get('/', function (req, res) {
     Collectible.find().exec()
@@ -15,11 +27,19 @@ collectibleRouter.get('/:id', function (req, res) {
     });
 });
 collectibleRouter.post('/', function (req, res) {
-    var collectible = new Collectible(req.body);
-    Collectible.createdBy = req.session.user;
-    collectible.save()
-        .then(function (collectible) {
-        res.json(collectible);
+    upload(req, res, function (err) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        var collectible = new Collectible(req.body);
+        collectible.createdBy = req.session.user;
+        collectible.save()
+            .then(function (collectible) {
+            res.json(collectible);
+        }).catch(function (err) {
+            console.log(err);
+        });
     });
 });
 collectibleRouter.delete('/:id', function (req, res) {

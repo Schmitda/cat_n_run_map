@@ -10,12 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var file_service_1 = require("../../../core/services/file.service");
 var DecorationService = (function () {
-    function DecorationService(http) {
+    function DecorationService(http, fileService) {
         this.http = http;
+        this.fileService = fileService;
     }
     DecorationService.prototype.save = function (decoration) {
-        return this.http.post('/api/decoration', decoration)
+        var form = this.fileService.jsonToFormData(decoration);
+        return this.http.post('/api/decoration', form)
             .map(this.extractData);
     };
     DecorationService.prototype.getAll = function () {
@@ -39,7 +42,7 @@ var DecorationService = (function () {
     };
     DecorationService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
+        __metadata('design:paramtypes', [http_1.Http, file_service_1.FileService])
     ], DecorationService);
     return DecorationService;
 }());

@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var add_decoration_component_1 = require("./components/add-decoration.component");
-var decoration_component_1 = require("./components/decoration.component");
 var decoration_routing_1 = require("./decoration.routing");
 var shared_module_1 = require("../../shared/shared.module");
 var DecorationModule = (function () {
@@ -20,7 +19,7 @@ var DecorationModule = (function () {
         core_1.NgModule({
             imports: [decoration_routing_1.DecorationRouting, shared_module_1.SharedModule],
             exports: [],
-            declarations: [add_decoration_component_1.AddDecorationComponent, decoration_component_1.DecorationComponent],
+            declarations: [add_decoration_component_1.AddDecorationComponent],
             providers: []
         }), 
         __metadata('design:paramtypes', [])

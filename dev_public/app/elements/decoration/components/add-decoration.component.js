@@ -11,12 +11,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var forms_1 = require("@angular/forms");
 var form_generator_service_1 = require("../../../shared/form-generator.service");
+var decoration_service_1 = require("../services/decoration.service");
+var router_1 = require("@angular/router");
+var file_service_1 = require("../../../core/services/file.service");
 var AddDecorationComponent = (function () {
-    function AddDecorationComponent(formGenerator) {
+    function AddDecorationComponent(formGenerator, decorationService, router, fileService) {
         this.formGenerator = formGenerator;
+        this.decorationService = decorationService;
+        this.router = router;
+        this.fileService = fileService;
         this.form = this.formGenerator.generateElementForm();
-        this.form.addControl('zcoord', new forms_1.FormControl(100, forms_1.Validators.required));
+        this.form.addControl('zcoord', new forms_1.FormControl(500));
     }
+    AddDecorationComponent.prototype.setFile = function (event) {
+        this.file = event.srcElement.files[0];
+        this.fileService.calculateImageSize(this.file, this.form);
+    };
+    AddDecorationComponent.prototype.submit = function () {
+        var _this = this;
+        if (this.form.valid) {
+            var decoration = this.form.value;
+            decoration.source = this.file;
+            this.decorationService.save(decoration)
+                .subscribe(function () {
+                _this.router.navigate(['/map']);
+            });
+        }
+    };
     AddDecorationComponent.prototype.ngOnInit = function () {
     };
     AddDecorationComponent = __decorate([
@@ -24,9 +45,8 @@ var AddDecorationComponent = (function () {
             moduleId: module.id,
             selector: '',
             templateUrl: '../templates/add-decoration.component.html',
-            styleUrls: ['../css/add-decoration.component.min.scss'],
         }), 
-        __metadata('design:paramtypes', [form_generator_service_1.FormGenerator])
+        __metadata('design:paramtypes', [form_generator_service_1.FormGenerator, decoration_service_1.DecorationService, router_1.Router, file_service_1.FileService])
     ], AddDecorationComponent);
     return AddDecorationComponent;
 }());

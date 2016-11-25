@@ -7,7 +7,7 @@ import {SharedModule} from "../../shared/shared.module";
 @NgModule({
     imports: [DecorationRouting, SharedModule],
     exports: [],
-    declarations: [AddDecorationComponent, DecorationComponent],
+    declarations: [AddDecorationComponent],
     providers: []
 })
 

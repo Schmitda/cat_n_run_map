@@ -1,7 +1,18 @@
 import express = require("express");
 import Decoration = require('../../models/DecorationMongoose');
-import IDecoration = require("../../models/IDecoration");
+var multer = require('multer');
+var storage =   multer.diskStorage({
+    destination: function (req, file, callback) {
+        callback(null, './dev_public/assets/uploads/decoration');
+    },
+    filename: function (req, file, callback) {
+        let filename = req.body.name + "." + file.originalname.split('.').pop();
+        req.body.source = "assets/uploads/decoration/" + filename;
+        callback(null, filename);
+    }
+});
 
+var upload = multer({ storage : storage}).single('source');
 
 let decorationRouter = express.Router();
 decorationRouter.get('/', (req: express.Request, res: express.Response) => {
@@ -19,12 +30,21 @@ decorationRouter.get('/:id', (req: express.Request, res: express.Response) => {
 });
 
 decorationRouter.post('/', (req: express.Request, res: express.Response) => {
-    let decoration = new Decoration(req.body);
-    Decoration.createdBy = req.session.user;
-    decoration.save()
-        .then((decoration: IDecoration) => {
-            res.json(decoration);
-        });
+    upload(req, res, function(err){
+        if(err){
+            console.log(err);
+        }
+        let decoration = new Decoration(req.body);
+        decoration.createdBy = req.session.user;
+        decoration.save()
+            .then((decoration: IDecoration) => {
+                res.json(decoration);
+            })
+            .catch(err=> {
+                console.log(err);
+            });
+    });
+
 });
 
 decorationRouter.delete('/:id', (req: express.Request, res: express.Response) => {

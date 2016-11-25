@@ -8,22 +8,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var DecorationComponent = (function () {
-    function DecorationComponent() {
+var core_1 = require("@angular/core");
+var shared_module_1 = require("../../shared/shared.module");
+var character_routing_1 = require("./character.routing");
+var add_character_component_1 = require("./components/add-character.component");
+var CharacterModule = (function () {
+    function CharacterModule() {
     }
-    DecorationComponent.prototype.ngOnInit = function () {
-    };
-    DecorationComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: '',
-            templateUrl: '../templates/decoration.component.html',
-            styleUrls: ['../css/decoration.component.min.scss'],
+    CharacterModule = __decorate([
+        core_1.NgModule({
+            imports: [
+                shared_module_1.SharedModule,
+                character_routing_1.CharacterRouting
+            ],
+            exports: [],
+            declarations: [
+                add_character_component_1.AddCharacterComponent
+            ],
+            providers: []
         }), 
         __metadata('design:paramtypes', [])
-    ], DecorationComponent);
-    return DecorationComponent;
+    ], CharacterModule);
+    return CharacterModule;
 }());
-exports.DecorationComponent = DecorationComponent;
-//# sourceMappingURL=decoration.component.js.map
+exports.CharacterModule = CharacterModule;
+//# sourceMappingURL=character.module.js.map

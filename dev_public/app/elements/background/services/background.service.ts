@@ -13,19 +13,20 @@ export class BackgroundService {
 
 
     public save(background: Background): Observable<Background> {
+        delete background._id;
         let form = this.fileService.jsonToFormData(background);
         return this.http.post('/api/background', form)
             .map(this.extractData);
     }
 
 
-    public getAllBackgrounds(): Observable<Background[]> {
+    public getAll(): Observable<Background[]> {
         return this.http.get('/api/background')
             .map(this.extractData);
     }
 
-    public getByIdBackgrounds(background:Background): Observable<Background[]> {
-        return this.http.get('/api/background/' + background._id)
+    public getById(id:string): Observable<Background[]> {
+        return this.http.get('/api/background/' + id)
             .map(this.extractData);
     }
 

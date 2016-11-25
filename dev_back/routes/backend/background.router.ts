@@ -7,7 +7,7 @@ var storageBackground =   multer.diskStorage({
         callback(null, './dev_public/assets/uploads/background');
     },
     filename: function (req, file, callback) {
-        let filename = req.params.name + "." + file.originalname.split('.').pop();
+        let filename = req.body.name + "." + file.originalname.split('.').pop();
         req.body.source = "assets/uploads/background/" + filename;
         callback(null, filename);
     }
@@ -34,12 +34,18 @@ backgroundRouter.get('/:id', (req: express.Request, res: express.Response) => {
 
 
 backgroundRouter.post('/', (req: express.Request, res: express.Response) => {
-    let background = new Background(req.body);
-    background.createdBy = req.session.user;
-    background.save()
-        .then((background: IBackground) => {
-            res.json(background);
-        });
+    uploadBackground(req,res, function(err){
+        if(err){
+            console.log(err);
+            return;
+        }
+        let background = new Background(req.body);
+        background.createdBy = req.session.user;
+        background.save()
+            .then((background: IBackground) => {
+                res.json(background);
+            });
+    });
 });
 
 backgroundRouter.delete('/:id', (req: express.Request, res: express.Response) => {

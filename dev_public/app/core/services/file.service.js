@@ -38,6 +38,20 @@ var FileService = (function () {
         return fd;
     };
     ;
+    FileService.prototype.calculateImageSize = function (file, form) {
+        var _URL = window.URL || window.webkitURL;
+        var img = new Image();
+        var _form = form;
+        img.onload = function () {
+            if (_form.controls.width) {
+                _form.controls.width.setValue(this.width);
+            }
+            if (_form.controls.height) {
+                _form.controls.height.setValue(this.height);
+            }
+        };
+        img.src = _URL.createObjectURL(file);
+    };
     FileService.prototype.makeFileRequest = function (url, files) {
         return Observable_1.Observable.create(function (observer) {
             var formData = new FormData(), xhr = new XMLHttpRequest();

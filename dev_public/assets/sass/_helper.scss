@@ -19,6 +19,10 @@ $kind:(
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .hide-overflow{
   overflow: hidden;
 }

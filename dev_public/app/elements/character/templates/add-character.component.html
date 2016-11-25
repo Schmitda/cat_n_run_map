@@ -1,0 +1,52 @@
+<div class="small-window shadow-2dp">
+    <h1 class="font-large primary-color text-center margin-bottom-small">Add character</h1>
+    <hr>
+    <form class="margin-top-small" [formGroup]="form" (submit)="submit()">
+        <div class="form-group">
+            <label for="">Character name</label>
+            <input type="text" formControlName="name">
+        </div>
+
+        <div class="form-group">
+            <label for="">Upload walk animation</label>
+            <input (change)="onWalkAnimationFileUpload($event)" type="file" multiple="multiple">
+        </div>
+
+        <div class="form-group">
+            <label for="">Upload jump animation</label>
+            <input (change)="onJumpAnimationFileUpload($event)" type="file" multiple="multiple">
+        </div>
+
+        <div class="form-group">
+            <label for="">Upload hurt animation</label>
+            <input (change)="onHurtAnimationFileUpload($event)" type="file" multiple="multiple">
+        </div>
+
+        <div class="form-group">
+            <label for="">Upload die animation</label>
+            <input (change)="onDieAnimationFileUpload($event)" type="file" multiple="multiple">
+        </div>
+
+        <div class="form-group">
+            <label for="">Upload stand animation</label>
+            <input (change)="onStandAnimationFileUpload($event)" type="file" multiple="multiple">
+        </div>
+
+        <div class="form-group">
+            <label for="">Upload shoot animation</label>
+            <input (change)="onShootAnimationFileUpload($event)" type="file" multiple="multiple">
+        </div>
+
+        <div class="form-group">
+            <label for="">Width</label>
+            <input type="number" formControlName="width">
+        </div>
+
+        <div class="form-group">
+            <label for="">Height</label>
+            <input type="number" formControlName="height">
+        </div>
+
+        <button class="btn full-width" type="button" (click)="submit()">Save character</button>
+    </form>
+</div>

@@ -1,6 +1,6 @@
 "use strict";
 var express = require("express");
-var MapElement = require('../../models/MapElementMongoose');
+var MapElement = require('../../models/MapElement');
 var mapelementRouter = express.Router();
 mapelementRouter.get('/', function (req, res) {
     MapElement.find().exec()

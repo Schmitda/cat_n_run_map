@@ -1,17 +1,18 @@
 import {Injectable} from "@angular/core";
 import {Response, Http} from "@angular/http";
 import {Observable} from "rxjs";
-import {BehaviorSubject} from "rxjs/BehaviorSubject";
 import {Decoration} from "../../../models/Decoration";
+import {FileService} from "../../../core/services/file.service";
 @Injectable()
 
 export class DecorationService{
-    constructor(private http: Http) {
+    constructor(private http: Http, private fileService: FileService) {
     }
 
 
     public save(decoration:Decoration):Observable<Decoration>{
-        return this.http.post('/api/decoration', decoration)
+        let form = this.fileService.jsonToFormData(decoration);
+        return this.http.post('/api/decoration', form)
             .map(this.extractData);
     }
 

@@ -14,20 +14,21 @@ var MapElementService = (function () {
     function MapElementService(http) {
         this.http = http;
     }
-    MapElementService.prototype.save = function (mapelement) {
-        return this.http.post('/api/collectible', mapelement)
+    MapElementService.prototype.save = function (mapElement) {
+        delete mapElement._id;
+        return this.http.post('/api/collectible', mapElement)
             .map(this.extractData);
     };
-    MapElementService.prototype.getAllMapElements = function () {
+    MapElementService.prototype.getAll = function () {
         return this.http.get('/api/collectible')
             .map(this.extractData);
     };
-    MapElementService.prototype.getByIdMapElements = function () {
-        return this.http.get('/api/collectible/' + mapelement._id)
+    MapElementService.prototype.getById = function (id) {
+        return this.http.get('/api/collectible/' + id)
             .map(this.extractData);
     };
-    MapElementService.prototype.update = function (mapelement) {
-        return this.http.put('/api/collectible/' + mapelement._id, mapelement)
+    MapElementService.prototype.update = function (mapElement) {
+        return this.http.put('/api/collectible/' + mapElement._id, mapElement)
             .map(this.extractData);
     };
     MapElementService.prototype.delete = function (id) {

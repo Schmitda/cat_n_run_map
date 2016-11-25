@@ -17,16 +17,17 @@ var BackgroundService = (function () {
         this.fileService = fileService;
     }
     BackgroundService.prototype.save = function (background) {
+        delete background._id;
         var form = this.fileService.jsonToFormData(background);
         return this.http.post('/api/background', form)
             .map(this.extractData);
     };
-    BackgroundService.prototype.getAllBackgrounds = function () {
+    BackgroundService.prototype.getAll = function () {
         return this.http.get('/api/background')
             .map(this.extractData);
     };
-    BackgroundService.prototype.getByIdBackgrounds = function (background) {
-        return this.http.get('/api/background/' + background._id)
+    BackgroundService.prototype.getById = function (id) {
+        return this.http.get('/api/background/' + id)
             .map(this.extractData);
     };
     BackgroundService.prototype.update = function (background) {

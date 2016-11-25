@@ -2,81 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d63bab3-ca83-4753-b7fd-f4fc931fa015" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/shared/form-generator.service.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/DeviceMongoose.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/DeviceMongoose.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/DeviceMongoose.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/IDevice.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/IDevice.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/models/IDevice.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/routes/backend/custom-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/routes/backend/custom-router.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_back/routes/backend/custom-router.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/InterfaceTemplate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/InterfaceTemplate.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/InterfaceTemplate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/ModelTemplate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/ModuleTemplate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/MongooseTemplate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/RouterTemplate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/RouterTemplate.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/RouterTemplate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/ServiceTemplate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/calendar.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/component/component/ComponentTemplate.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/component/css/{{name}}.component.min.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/component/templates/{{name}}.component.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/user-service.service.js" afterPath="$PROJECT_DIR$/dev_public/app/core/services/user-service.service.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/user-service.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/services/user-service.service.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/user-service.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/services/user-service.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/Collectible.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/MapElement.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/models/Collectible.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/models/MapElement.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/shared/SelectElement.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/shared/SelectStructure.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/shared/map.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/assets/css/loading.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nggenerator/commands.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nggenerator/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nggenerator/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nggenerator/model_config.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/character.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/character.service.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/character.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/decoration.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/decoration.service.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/decoration.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/decoration.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/decoration.component.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/decoration.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/decoration.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/assets/uploads/background/Forest.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/assets/uploads/background/Forest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/assets/uploads/background/Forest.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/assets/uploads/background/Test.docx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/assets/uploads/background/Test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/assets/uploads/background/undefined.docx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.js" afterPath="$PROJECT_DIR$/dev_back/WebApi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.js.map" afterPath="$PROJECT_DIR$/dev_back/WebApi.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.ts" afterPath="$PROJECT_DIR$/dev_back/WebApi.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.js" afterPath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.js.map" afterPath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts" afterPath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js.map" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.module.js" afterPath="$PROJECT_DIR$/dev_public/app/app.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.module.js.map" afterPath="$PROJECT_DIR$/dev_public/app/app.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.module.ts" afterPath="$PROJECT_DIR$/dev_public/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/character.router.js" afterPath="$PROJECT_DIR$/dev_back/routes/backend/character.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/character.router.js.map" afterPath="$PROJECT_DIR$/dev_back/routes/backend/character.router.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/character.router.ts" afterPath="$PROJECT_DIR$/dev_back/routes/backend/character.router.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/collectible.router.js" afterPath="$PROJECT_DIR$/dev_back/routes/backend/collectible.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/collectible.router.js.map" afterPath="$PROJECT_DIR$/dev_back/routes/backend/collectible.router.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/collectible.router.ts" afterPath="$PROJECT_DIR$/dev_back/routes/backend/collectible.router.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.js" afterPath="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.js.map" afterPath="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.ts" afterPath="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/map-element.router.js" afterPath="$PROJECT_DIR$/dev_back/routes/backend/map-element.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/map-element.router.js.map" afterPath="$PROJECT_DIR$/dev_back/routes/backend/map-element.router.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/map-element.router.ts" afterPath="$PROJECT_DIR$/dev_back/routes/backend/map-element.router.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.routing.js" afterPath="$PROJECT_DIR$/dev_public/app/app.routing.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.routing.js.map" afterPath="$PROJECT_DIR$/dev_public/app/app.routing.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.routing.ts" afterPath="$PROJECT_DIR$/dev_public/app/app.routing.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/auth/auth.service.js" afterPath="$PROJECT_DIR$/dev_public/app/auth/auth.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/auth/auth.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/auth/auth.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/auth/auth.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/auth/auth.service.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.js" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js" afterPath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/services/file.service.js" afterPath="$PROJECT_DIR$/dev_public/app/core/services/file.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/services/file.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/services/file.service.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/services/file.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/services/file.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" afterPath="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/background.module.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/background.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/background.module.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/background.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/background.module.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/background.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/background.routing.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/background.routing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/background.routing.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/background.routing.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/background.routing.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/background.routing.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/templates/background.component.html" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/templates/background.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/login/components/login.component.js" afterPath="$PROJECT_DIR$/dev_public/app/login/components/login.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/login/components/login.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/login/components/login.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/login/components/login.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/login/components/login.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/templates/add-character.component.html" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/templates/add-character.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/collectible/templates/add-collectible.component.html" afterPath="$PROJECT_DIR$/dev_public/app/elements/collectible/templates/add-collectible.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/index.html" afterPath="$PROJECT_DIR$/dev_public/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/css/game-map.component.min.css" afterPath="$PROJECT_DIR$/dev_public/app/map/css/game-map.component.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss" afterPath="$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/css/map.component.min.css" afterPath="$PROJECT_DIR$/dev_public/app/map/css/map.component.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/css/map.component.scss" afterPath="$PROJECT_DIR$/dev_public/app/map/css/map.component.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/map.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/map.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Element.js" afterPath="$PROJECT_DIR$/dev_public/app/models/Element.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Element.js.map" afterPath="$PROJECT_DIR$/dev_public/app/models/Element.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Element.ts" afterPath="$PROJECT_DIR$/dev_public/app/models/Element.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Decoration.js" afterPath="$PROJECT_DIR$/dev_public/app/models/Decoration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Decoration.js.map" afterPath="$PROJECT_DIR$/dev_public/app/models/Decoration.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Decoration.ts" afterPath="$PROJECT_DIR$/dev_public/app/models/Decoration.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/templates/accordion-child.component.html" afterPath="$PROJECT_DIR$/dev_public/app/ui/templates/accordion-child.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/css/style.css" afterPath="$PROJECT_DIR$/dev_public/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/sass/style.scss" afterPath="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
     </list>
     <ignored path="wochenplan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,55 +124,29 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Element.ts" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/dev_public/app/models/Element.ts">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="272">
-                    <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Decoration.ts" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/dev_public/app/models/Decoration.ts">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="221">
-                    <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="wochenplan" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="form-generator.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/shared/form-generator.service.ts">
+      <file leaf-file-name="map.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/map.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#accordion-item#0;n#accordion-child#0;n#accordion#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/shared/map.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -147,86 +154,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decoration.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.ts">
+      <file leaf-file-name="map.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/map.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shared.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/shared/shared.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="60" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add-decoration.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.routing.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/app.routing.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+            <state relative-caret-position="306">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decoration.routing.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.routing.ts">
+      <file leaf-file-name="game-map.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/map.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.modules.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts">
+      <file leaf-file-name="Decoration.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/models/Decoration.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+            <state relative-caret-position="17">
+              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="background.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/templates/background.component.html">
+      <file leaf-file-name="game-map.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="621">
+              <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Collectible.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/models/Collectible.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="decoration.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/templates/decoration.component.html">
+      <file leaf-file-name="SelectStructure.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/shared/SelectStructure.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -235,11 +228,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add-decoration.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html">
+      <file leaf-file-name="core.modules.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="56" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="56" />
+            <state relative-caret-position="272">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -261,57 +254,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dev_public/app/ui/components/accordion-item.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/ui.module.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/menu.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/accordion-child.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/accordion-item.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/components/accordion-child.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/background/css/background.component.min.scss" />
-        <option value="$PROJECT_DIR$/dev_public/app/background/background.routing.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
-        <option value="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
-        <option value="$PROJECT_DIR$/dev_public/app/shared/shared.module.ts" />
-        <option value="$PROJECT_DIR$/dev_back/models/BackgroundMongoose.ts" />
-        <option value="$PROJECT_DIR$/dev_back/models/IBackground.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/models/Background.ts" />
-        <option value="$PROJECT_DIR$/templates/RouterTemplate.ts" />
-        <option value="$PROJECT_DIR$/dev_public/assets/config/systemjs.config.js" />
-        <option value="$PROJECT_DIR$/dev_public/app/background/background.module.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/background/templates/background.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/services/FileService.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/background/services/background.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/background/components/background.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/css/map.component.scss" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/background/background.routing.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/background/background.module.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/templates/map.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/dev_back/models/CollectibleMongoose.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/shared/SelectElement.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/shared/SelectStructure.ts" />
+        <option value="$PROJECT_DIR$/dev_back/models/Collectible.ts" />
         <option value="$PROJECT_DIR$/dev_back/routes/backend/collectible.router.ts" />
         <option value="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" />
-        <option value="$PROJECT_DIR$/dev_back/WebApi.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/auth/auth.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/services/user-service.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/my-nav.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.js" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/services/file.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/models/Element.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/shared/form-generator.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html" />
         <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.routing.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/background/templates/background.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.js" />
+        <option value="$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts" />
+        <option value="$PROJECT_DIR$/sessions/Bw9yJnWuUh-4gUx6UIs3JH_33BxvzZTb.json" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/decoration.router.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/core/services/file.service.ts" />
+        <option value="$PROJECT_DIR$/nggenerator/model.js" />
+        <option value="$PROJECT_DIR$/dev_back/models/ICharacter.ts" />
+        <option value="$PROJECT_DIR$/dev_back/models/undefined.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/models/Character.ts" />
+        <option value="$PROJECT_DIR$/dev_back/models/Character.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/character/character.routing.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/character/character.module.ts" />
+        <option value="$PROJECT_DIR$/character.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/dev_back/WebApi.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/character/templates/add-character.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.ts" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/character.router.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/index.html" />
+        <option value="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
+        <option value="$PROJECT_DIR$/dev_public/app/models/MapElement.ts" />
+        <option value="$PROJECT_DIR$/dev_back/models/MapElement.ts" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/map-element.router.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/accordion-child.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/css/map.component.min.css" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/collectible/templates/add-collectible.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/models/Decoration.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/models/Collectible.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/templates/map.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/shared/map.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/css/map.component.scss" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/map.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
       </list>
     </option>
   </component>
@@ -357,6 +350,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -469,7 +464,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,37 +486,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="decoration" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev_public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="decoration" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -547,15 +512,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="decoration" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -577,71 +538,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="decoration" />
+              <option name="myItemId" value="map" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev_public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev_public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -741,8 +642,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -758,12 +657,13 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_back\models" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\models" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\assets\css" />
       <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map" />
       <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\ui\templates" />
-      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\ui\components" />
-      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\auth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\elements\character\services" />
       <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\core\services" />
       <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\assets\img\forest" />
     </key>
@@ -847,25 +747,29 @@
       <workItem from="1478848909243" duration="1281000" />
       <workItem from="1478850248927" duration="8949000" />
       <workItem from="1479455306076" duration="5232000" />
+      <workItem from="1479557715645" duration="68000" />
+      <workItem from="1479732585124" duration="1529000" />
+      <workItem from="1479914899715" duration="11800000" />
+      <workItem from="1480059515821" duration="10586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47821000" />
+    <option name="totallyTimeSpent" value="71804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29174483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29174483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -893,303 +797,67 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dev_public/app/background/background.routing.ts" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/background/background.module.ts" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/background/templates/background.component.html" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/background/services/background.service.js" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/background/services/background.service.ts" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/background/components/background.component.ts" />
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/map.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/background.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/background.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/map.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/collectible.router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/IUser.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/IDevice.ts">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/UserMongoose.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/BackgroundMongoose.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/background.router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/DeviceMongoose.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/WebApi.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/character.router.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1478851288930" expanded="true" signature="117:227" ph="..." />
-            <marker date="1478851288930" expanded="true" signature="173:220" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/auth/auth.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/auth/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/map.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/map.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/services/user-service.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/my-nav.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/collectible/components/add-collectible.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/services/file.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-135">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="13" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts">
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/background.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Element.ts">
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/background.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Decoration.ts">
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/templates/background.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/services/decoration.service.ts">
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/character/character.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
+        <state relative-caret-position="221">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/character/character.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character.service.ts" />
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1198,79 +866,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="153">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/WebApi.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/character/templates/add-character.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Character.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/character/components/add-character.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/models/Character.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Element.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/character.router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="113" column="3" selection-start-line="113" selection-start-column="3" selection-end-line="113" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/app.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/decoration.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/shared.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="60" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/form-generator.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="16" column="74" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/templates/background.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/templates/decoration.component.html">
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/css/loading.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1278,20 +954,251 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html">
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="385">
+          <caret line="147" column="21" selection-start-line="147" selection-start-column="21" selection-end-line="147" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts">
+    <entry file="file://$PROJECT_DIR$/dev_public/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/models/Collectible.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="6" selection-start-line="4" selection-start-column="4" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/models/MapElement.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/map-element.router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/models/MapElement.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/map.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/map.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/map-element/services/map-element.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/img/forest/deep_forest/DeepForest_01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/accordion.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/accordion.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/accordion-child.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_helper.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/map.component.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/collectible/templates/add-collectible.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/typescriptCompiler/external/lib.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="6777" column="10" selection-start-line="6777" selection-start-column="10" selection-end-line="6777" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/SelectStructure.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Decoration.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Collectible.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/map.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#accordion-item#0;n#accordion-child#0;n#accordion#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/map.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/map.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/map.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

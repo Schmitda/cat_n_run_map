@@ -10,20 +10,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var file_service_1 = require("../../../core/services/file.service");
 var CharacterService = (function () {
-    function CharacterService(http) {
+    function CharacterService(http, fileService) {
         this.http = http;
+        this.fileService = fileService;
     }
     CharacterService.prototype.save = function (character) {
-        return this.http.post('/api/character', character)
+        if (name._id) {
+            delete name._id;
+        }
+        var form = this.fileService.jsonToFormData(character);
+        return this.http.post('/api/character', form)
             .map(this.extractData);
     };
-    CharacterService.prototype.getAllCharacters = function () {
+    CharacterService.prototype.getAll = function () {
         return this.http.get('/api/character')
             .map(this.extractData);
     };
-    CharacterService.prototype.getByIdCharacters = function () {
-        return this.http.get('/api/character/' + character._id)
+    CharacterService.prototype.getById = function (id) {
+        return this.http.get('/api/character/' + id)
             .map(this.extractData);
     };
     CharacterService.prototype.update = function (character) {
@@ -39,7 +45,7 @@ var CharacterService = (function () {
     };
     CharacterService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
+        __metadata('design:paramtypes', [http_1.Http, file_service_1.FileService])
     ], CharacterService);
     return CharacterService;
 }());

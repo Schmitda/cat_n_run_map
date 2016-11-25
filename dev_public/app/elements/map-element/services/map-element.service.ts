@@ -2,6 +2,7 @@ import {Injectable} from "@angular/core";
 import {Response, Http} from "@angular/http";
 import {Observable} from "rxjs";
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
+import {MapElement} from "../../../models/MapElement";
 @Injectable()
 
 export class MapElementService{
@@ -9,23 +10,24 @@ export class MapElementService{
     }
 
 
-    public save(mapelement:MapElement):Observable<MapElement>{
-        return this.http.post('/api/collectible', mapelement)
+    public save(mapElement:MapElement):Observable<MapElement>{
+        delete mapElement._id;
+        return this.http.post('/api/collectible', mapElement)
             .map(this.extractData);
     }
 
-    public getAllMapElements():Observable<MapElement[]>{
+    public getAll():Observable<MapElement[]>{
         return this.http.get('/api/collectible')
             .map(this.extractData);
     }
 
-    public getByIdMapElements():Observable<MapElement[]>{
-        return this.http.get('/api/collectible/' + mapelement._id)
+    public getById(id:string):Observable<MapElement[]>{
+        return this.http.get('/api/collectible/' + id)
             .map(this.extractData);
     }
 
-    public update(mapelement:MapElement):Observable<MapElement>{
-        return this.http.put('/api/collectible/' + mapelement._id, mapelement)
+    public update(mapElement:MapElement):Observable<MapElement>{
+        return this.http.put('/api/collectible/' + mapElement._id, mapElement)
             .map(this.extractData);
     }
 

@@ -10,6 +10,9 @@ import cookieParser = require('cookie-parser');
 import {Config} from "../config/Config";
 import userRouter = require("./routes/backend/user-router");
 import backgroundRouter = require("./routes/backend/background.router");
+import collectibleRouter = require("./routes/backend/collectible.router");
+import decorationRouter = require("./routes/backend/decoration.router");
+import characterRouter = require("./routes/backend/character.router");
 
 
 
@@ -47,6 +50,9 @@ export class WebApi{
 
     private configureRoutes(app: express.Express){
         app.use('/api/background', backgroundRouter);
+        app.use('/api/decoration', decorationRouter);
+        app.use('/api/collectible', collectibleRouter);
+        app.use('/api/character', characterRouter);
         app.use('/api/user',userRouter);
         app.use('/', frontendRouter);
     }

@@ -7,7 +7,7 @@ var storageBackground = multer.diskStorage({
         callback(null, './dev_public/assets/uploads/background');
     },
     filename: function (req, file, callback) {
-        var filename = req.params.name + "." + file.originalname.split('.').pop();
+        var filename = req.body.name + "." + file.originalname.split('.').pop();
         req.body.source = "assets/uploads/background/" + filename;
         callback(null, filename);
     }
@@ -27,11 +27,17 @@ backgroundRouter.get('/:id', function (req, res) {
     });
 });
 backgroundRouter.post('/', function (req, res) {
-    var background = new Background(req.body);
-    background.createdBy = req.session.user;
-    background.save()
-        .then(function (background) {
-        res.json(background);
+    uploadBackground(req, res, function (err) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        var background = new Background(req.body);
+        background.createdBy = req.session.user;
+        background.save()
+            .then(function (background) {
+            res.json(background);
+        });
     });
 });
 backgroundRouter.delete('/:id', function (req, res) {

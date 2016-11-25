@@ -1,7 +1,4 @@
 import mongoose = require("mongoose");
-import {Decoration} from "../../dev_public/app/models/Decoration";
-
-interface DecorationModel extends Decoration, mongoose.Document { }
 
 var decorationSchema = new mongoose.Schema({
     name: {
@@ -28,6 +25,7 @@ var decorationSchema = new mongoose.Schema({
     zcoord: {
         type: Number,
         required: true,
+        default: 500,
     },
     createdBy: {
         type: mongoose.Schema.Types.ObjectId,
@@ -36,5 +34,5 @@ var decorationSchema = new mongoose.Schema({
     },
 });
 
-var Decoration = mongoose.model<DecorationModel>("Decoration", decorationSchema);
+var Decoration = mongoose.model("Decoration", decorationSchema);
 export = Decoration;

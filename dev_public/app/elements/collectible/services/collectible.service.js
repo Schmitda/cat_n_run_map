@@ -10,20 +10,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var file_service_1 = require("../../../core/services/file.service");
 var CollectibleService = (function () {
-    function CollectibleService(http) {
+    function CollectibleService(http, fileService) {
         this.http = http;
+        this.fileService = fileService;
     }
     CollectibleService.prototype.save = function (collectible) {
-        return this.http.post('/api/collectible', collectible)
+        delete collectible._id;
+        var form = this.fileService.jsonToFormData(collectible);
+        return this.http.post('/api/collectible', form)
             .map(this.extractData);
     };
-    CollectibleService.prototype.getAllCollectibles = function () {
+    CollectibleService.prototype.getAll = function () {
         return this.http.get('/api/collectible')
             .map(this.extractData);
     };
-    CollectibleService.prototype.getByIdCollectibles = function () {
-        return this.http.get('/api/collectible/' + collectible._id)
+    CollectibleService.prototype.getById = function (id) {
+        return this.http.get('/api/collectible/' + id)
             .map(this.extractData);
     };
     CollectibleService.prototype.update = function (collectible) {
@@ -39,7 +43,7 @@ var CollectibleService = (function () {
     };
     CollectibleService = __decorate([
         core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
+        __metadata('design:paramtypes', [http_1.Http, file_service_1.FileService])
     ], CollectibleService);
     return CollectibleService;
 }());

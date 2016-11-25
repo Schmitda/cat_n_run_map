@@ -154,3 +154,9 @@ input:focus, textarea:focus {
 
 ::-webkit-scrollbar-track {
   background: #b8c0c8; }
+
+.middle-of-page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
