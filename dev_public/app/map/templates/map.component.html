@@ -1,5 +1,6 @@
 <div class="menu-left">
     <accordion>
+
         <accordion-child title="Background">
             <accordion-item class="full-width background-selection" *ngFor="let background of backgrounds">
                 <div class="" (click)="stopPropagation($event)">
@@ -8,12 +9,25 @@
             </accordion-item>
             <accordion-item class="add-element-wrapper"><a routerLink="/background/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
+
         <accordion-child title="Characters">
+            <accordion-item [class.selected]="character.id === mapService.selected?._id" class="flex-selection map-element-selection" *ngFor="let character of characters">
+                <div (click)="stopPropagation($event)">
+                    <img [src]="character.walkAnimation[0]" alt="" class="pointer" (click)="selectCharacter(character)">
+                </div>
+            </accordion-item>
             <accordion-item class="add-element-wrapper"><a routerLink="/character/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
+
         <accordion-child title="Map-Elements">
+            <accordion-item [class.selected]="mapElement.id === mapService.selected?._id" class="flex-selection map-element-selection" *ngFor="let mapElement of mapElements">
+                <div (click)="stopPropagation($event)">
+                    <img [src]="mapElement.source" alt="" class="pointer" (click)="selectMapElement(mapElement)">
+                </div>
+            </accordion-item>
             <accordion-item class="add-element-wrapper"><a routerLink="/mapElement/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
+
         <accordion-child #myChild  title="Decoration">
             <accordion-item [class.selected]="decoration._id === mapService.selected?._id" class="flex-selection decoration-selection" *ngFor="let decoration of decorations">
                 <div (click)="stopPropagation($event)">
@@ -22,6 +36,7 @@
             </accordion-item>
             <accordion-item class="add-element-wrapper"><a routerLink="/decoration/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
+
         <accordion-child title="Collectibles">
             <accordion-item [class.selected]="collectible._id === mapService.selected?._id" class="flex-selection collectible-selection" *ngFor="let collectible of collectibles">
                 <div (click)="stopPropagation($event)">
@@ -30,8 +45,9 @@
             </accordion-item>
             <accordion-item class="add-element-wrapper"><a routerLink="/collectible/add" class="text-center add-element"><i class="fa fa-plus"></i></a></accordion-item>
         </accordion-child>
+
     </accordion>
 </div>
 <div class="flex flex-1 scroll">
-<game-map></game-map>
+    <game-map></game-map>
 </div>

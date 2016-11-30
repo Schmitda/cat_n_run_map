@@ -16,6 +16,7 @@ export class CharacterService{
             delete name._id;
         }
         let form = this.fileService.jsonToFormData(character);
+        console.log(form);
         return this.http.post('/api/character', form)
             .map(this.extractData);
     }

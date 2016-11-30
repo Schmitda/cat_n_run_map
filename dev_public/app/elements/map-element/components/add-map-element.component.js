@@ -9,19 +9,45 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var forms_1 = require("@angular/forms");
+var form_generator_service_1 = require("../../../shared/form-generator.service");
+var map_element_service_1 = require("../services/map-element.service");
+var router_1 = require("@angular/router");
+var file_service_1 = require("../../../core/services/file.service");
 var AddMapElementComponent = (function () {
-    function AddMapElementComponent() {
+    function AddMapElementComponent(formGenerator, mapElementService, router, fileService) {
+        this.formGenerator = formGenerator;
+        this.mapElementService = mapElementService;
+        this.router = router;
+        this.fileService = fileService;
+        this.form = this.formGenerator.generateElementForm();
+        this.form.addControl('zcoord', new forms_1.FormControl(500));
     }
+    AddMapElementComponent.prototype.setFile = function (event) {
+        this.file = event.srcElement.files[0];
+        this.fileService.calculateImageSize(this.file, this.form);
+    };
+    AddMapElementComponent.prototype.submit = function () {
+        var _this = this;
+        if (this.form.valid) {
+            var mapElement = this.form.value;
+            mapElement.source = this.file;
+            this.mapElementService.save(mapElement)
+                .subscribe(function () {
+                _this.router.navigate(['/map']);
+            });
+        }
+    };
     AddMapElementComponent.prototype.ngOnInit = function () {
     };
     AddMapElementComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: '',
-            templateUrl: '../templates/add-mapelement.component.html',
-            styleUrls: ['../css/add-mapelement.component.min.scss'],
+            templateUrl: '../templates/add-map-element.component.html',
+            styleUrls: ['../css/add-map-element.component.min.scss'],
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [form_generator_service_1.FormGenerator, map_element_service_1.MapElementService, router_1.Router, file_service_1.FileService])
     ], AddMapElementComponent);
     return AddMapElementComponent;
 }());

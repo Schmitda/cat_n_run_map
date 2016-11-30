@@ -1,6 +1,18 @@
 "use strict";
 var express = require("express");
 var MapElement = require('../../models/MapElement');
+var multer = require('multer');
+var storage = multer.diskStorage({
+    destination: function (req, file, callback) {
+        callback(null, './dev_public/assets/uploads/mapElement');
+    },
+    filename: function (req, file, callback) {
+        var filename = req.body.name + "." + file.originalname.split('.').pop();
+        req.body.source = "assets/uploads/mapElement/" + filename;
+        callback(null, filename);
+    }
+});
+var upload = multer({ storage: storage }).single('source');
 var mapelementRouter = express.Router();
 mapelementRouter.get('/', function (req, res) {
     MapElement.find().exec()
@@ -15,11 +27,19 @@ mapelementRouter.get('/:id', function (req, res) {
     });
 });
 mapelementRouter.post('/', function (req, res) {
-    var mapelement = new MapElement(req.body);
-    MapElement.createdBy = req.session.user;
-    mapelement.save()
-        .then(function (mapelement) {
-        res.json(mapelement);
+    upload(req, res, function (err) {
+        if (err) {
+            console.log(err);
+        }
+        var mapElement = new MapElement(req.body);
+        mapElement.createdBy = req.session.user;
+        mapElement.save()
+            .then(function (mapElement) {
+            res.json(mapElement);
+        })
+            .catch(function (err) {
+            console.log(err);
+        });
     });
 });
 mapelementRouter.delete('/:id', function (req, res) {

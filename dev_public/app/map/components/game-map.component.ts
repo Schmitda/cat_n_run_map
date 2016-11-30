@@ -70,7 +70,11 @@ export class GameMapComponent implements OnInit, AfterViewInit {
                 this.img.src = "";
                 this.selectedElement = null;
             }else{
-                this.img.src = obj.source;
+                if(obj.source){
+                    this.img.src = obj.source;
+                }else{
+                    this.img.src = obj.walkAnimation[0];
+                }
                 this.img.addEventListener('mousemove', this.onMousemoveOnImage);
                 this.selectedElement = obj;
             }

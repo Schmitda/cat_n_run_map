@@ -21,6 +21,7 @@ var CharacterService = (function () {
             delete name._id;
         }
         var form = this.fileService.jsonToFormData(character);
+        console.log(form);
         return this.http.post('/api/character', form)
             .map(this.extractData);
     };

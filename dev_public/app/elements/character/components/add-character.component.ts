@@ -4,6 +4,7 @@ import {FormGenerator} from "../../../shared/form-generator.service";
 import {Character} from "../../../models/Character";
 import {Router} from "@angular/router";
 import {CharacterService} from "../services/character.service";
+import {FileService} from "../../../core/services/file.service";
 
 @Component({
     moduleId: module.id,
@@ -13,17 +14,17 @@ import {CharacterService} from "../services/character.service";
 })
 export class AddCharacterComponent implements OnInit {
     private form: Form;
-    private walkAnimationFiles: File[] = [];
-    private jumpAnimationFiles: File[] = [];
-    private hurtAnimationFiles: File[] = [];
-    private dieAnimationFiles: File[] = [];
-    private standAnimationFiles: File[] = [];
-    private shootAnimationFiles: File[] = [];
+    private walkAnimationFiles: FileList;
+    private jumpAnimationFiles: FileList;
+    private hurtAnimationFiles: FileList;
+    private dieAnimationFiles: FileList;
+    private standAnimationFiles: FileList;
+    private shootAnimationFiles: FileList;
     private character: Character = {};
 
 
 
-    constructor(private fb: FormBuilder, private formGenerator: FormGenerator, private characterService: CharacterService, private router:Router) {
+    constructor(private fb: FormBuilder, private formGenerator: FormGenerator, private characterService: CharacterService, private router:Router, private fileService: FileService) {
         this.form = this.formGenerator.generateElementForm();
         this.form.addControl('walkAnimation', new FormControl(''));
         this.form.addControl('jumpAnimation', new FormControl(''));
@@ -37,42 +38,39 @@ export class AddCharacterComponent implements OnInit {
     }
 
     private onWalkAnimationFileUpload(event){
-        for(let $i = 0; $i < event.srcElement.files.length; $i++){
-           this.walkAnimationFiles.push(event.srcElement.files[$i]);
-        }
+        this.fileService.calculateImageSize(event.srcElement.files[0], this.form);
+        this.walkAnimationFiles = event.srcElement.files;
     }
 
     private onJumpAnimationFileUpload(event){
         this.jumpAnimationFiles = event.srcElement.files;
-        this.character.jumpAnimation = this.jumpAnimationFiles;
     }
 
     private onHurtAnimationFileUpload(event){
         this.hurtAnimationFiles = event.srcElement.files;
-        this.character.hurtAnimation = this.hurtAnimationFiles;
     }
 
     private onDieAnimationFileUpload(event){
         this.dieAnimationFiles = event.srcElement.files;
-        this.character.dieAnimation = this.dieAnimationFiles;
     }
 
     private onStandAnimationFileUpload(event){
         this.standAnimationFiles = event.srcElement.files;
-        this.character.standAnimation = this.standAnimationFiles;
     }
 
     private onShootAnimationFileUpload(event){
         this.shootAnimationFiles = event.srcElement.files;
-        this.character.shootAnimation = this.shootAnimationFiles;
     }
 
     private submit(){
         if(this.form.valid){
             this.character = this.form.value;
-            console.log(this.walkAnimationFiles);
             this.character.walkAnimation = this.walkAnimationFiles;
-            console.log(this.character);
+            this.character.shootAnimation = this.shootAnimationFiles;
+            this.character.standAnimation = this.standAnimationFiles;
+            this.character.dieAnimation = this.dieAnimationFiles;
+            this.character.jumpAnimation = this.jumpAnimationFiles;
+            this.character.hurtAnimation = this.hurtAnimationFiles;
             this.characterService.save(this.character)
                 .subscribe(()=> {
                     this.router.navigate(['/map']);

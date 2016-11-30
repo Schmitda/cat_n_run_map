@@ -12,7 +12,7 @@ export class FileService {
         for(var property in obj) {
             if(obj.hasOwnProperty(property)) {
                 if(namespace) {
-                    formKey = namespace + '[' + property + ']';
+                    formKey = namespace + '[' + (isNaN(property) ? property : "") + ']';
                 } else {
                     formKey = property;
                 }

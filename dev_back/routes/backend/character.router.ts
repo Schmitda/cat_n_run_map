@@ -1,102 +1,58 @@
 import express = require("express");
 import Character = require('../../models/Character');
 var multer = require('multer');
-/*
-var walkAnimation =   multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './dev_public/assets/uploads/character/walkAnimation');
-    },
-    filename: function (req, file, callback) {
-        let filename = req.body.name + "." + file.originalname.split('.').pop();
-        req.body.source = "assets/uploads/character/walkAnimation/" + filename;
-        callback(null, filename);
-    }
-});
 
-var jumpAnimation =   multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './dev_public/assets/uploads/character/jumpAnimation');
-    },
-    filename: function (req, file, callback) {
-        let filename = req.body.name + "." + file.originalname.split('.').pop();
-        req.body.source = "assets/uploads/character/jumpAnimation/" + filename;
-        callback(null, filename);
-    }
-});
 
-var hurtAnimation =   multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './dev_public/assets/uploads/character/hurtAnimation');
-    },
-    filename: function (req, file, callback) {
-        let filename = req.body.name + "." + file.originalname.split('.').pop();
-        req.body.source = "assets/uploads/character/hurtAnimation/" + filename;
-        callback(null, filename);
+function getSavePathForAnimation(file):string{
+    var dest;
+    switch (file.fieldname){
+        case "walkAnimation[]":
+            dest = './dev_public/assets/uploads/character/walkAnimation';
+            break;
+        case "jumpAnimation[]":
+            dest = './dev_public/assets/uploads/character/jumpAnimation';
+            break;
+        case "hurtAnimation[]":
+            dest = './dev_public/assets/uploads/character/hurtAnimation';
+            break;
+        case "dieAnimation[]":
+            dest = './dev_public/assets/uploads/character/dieAnimation';
+            break;
+        case "shootAnimation[]":
+            dest = './dev_public/assets/uploads/character/shootAnimation';
+            break;
     }
-});
-
-var dieAnimation =   multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './dev_public/assets/uploads/character/dieAnimation');
-    },
-    filename: function (req, file, callback) {
-        let filename = req.body.name + "." + file.originalname.split('.').pop();
-        req.body.source = "assets/uploads/character/dieAnimation/" + filename;
-        callback(null, filename);
-    }
-});
-
-var runAnimation =   multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './dev_public/assets/uploads/character/runAnimation');
-    },
-    filename: function (req, file, callback) {
-        let filename = req.body.name + "." + file.originalname.split('.').pop();
-        req.body.source = "assets/uploads/character/runAnimation/" + filename;
-        callback(null, filename);
-    }
-});
-
-var standAnimation =   multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './dev_public/assets/uploads/character/standAnimation');
-    },
-    filename: function (req, file, callback) {
-        let filename = req.body.name + "." + file.originalname.split('.').pop();
-        req.body.source = "assets/uploads/character/standAnimation/" + filename;
-        callback(null, filename);
-    }
-});
-
-var shootAnimation =   multer.diskStorage({
-    destination: function (req, file, callback) {
-        callback(null, './dev_public/assets/uploads/character/shootAnimation');
-    },
-    filename: function (req, file, callback) {
-        let filename = req.body.name + "." + file.originalname.split('.').pop();
-        req.body.source = "assets/uploads/character/shootAnimation/" + filename;
-        callback(null, filename);
-    }
-});
-*/
+    return dest;
+}
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        console.log(file);
-        //var code = JSON.parse(req.body.model).empCode;
-        var dest = './dev_public/assets//uploads/';
-      /*  mkdirp(dest, function (err) {
-            if (err) cb(err, dest);
-            else cb(null, dest);
-        });*/
+        cb(null, getSavePathForAnimation(file));
     },
     filename: function (req, file, cb) {
-        console.log(file);
-        cb(null, Date.now()+'-'+file.originalname);
+        if(file.mimetype.indexOf("image") > -1){
+            let date = new Date();
+            let year = date.getFullYear();
+            let month = date.getMonth() + 1;
+            let day = date.getDate();
+
+            month = month > 9 ? month : "0" + month;
+            day = day > 9 ? day : "0" + day;
+
+            var fileName = year + "" + month + "" + day + '_'+file.originalname;
+            let tempArrayName = file.fieldname.replace("[]", "");
+            if(!(req.body[tempArrayName] instanceof Array)){
+                req.body[tempArrayName] =  [];
+                req.body[tempArrayName].push(getSavePathForAnimation(file).replace('./dev_public/', '') + "/" + fileName);
+            }else{
+                req.body[tempArrayName].push(getSavePathForAnimation(file).replace('./dev_public/', '') + "/" + fileName);
+            }
+            cb(null, fileName);
+        }
     }
 });
 
-var walkAnimation = multer({ dest: './dev_public/assets/uploads/character/walkAnimation'});
+var upload = multer({ storage: storage }).any();
 
 let characterRouter = express.Router();
 characterRouter.get('/', (req: express.Request, res: express.Response) => {
@@ -113,9 +69,15 @@ characterRouter.get('/:id', (req: express.Request, res: express.Response) => {
         })
 });
 
-var upload = multer({storage: storage});
 
-characterRouter.post('/', walkAnimation.array('walkAnimation'), (req: express.Request, res: express.Response) => {
+characterRouter.post('/', (req: express.Request, res: express.Response) => {
+    upload(req, res, function(err){
+        console.log(req.body);
+        let character = new Character(req.body);
+        character.save((err, character) => {
+            res.json(character);
+        })
+    });
    /* let character = new Character(req.body);
     Character.createdBy = req.session.user;
     character.save()

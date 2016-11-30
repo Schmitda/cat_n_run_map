@@ -63,7 +63,12 @@ var GameMapComponent = (function () {
                 _this.selectedElement = null;
             }
             else {
-                _this.img.src = obj.source;
+                if (obj.source) {
+                    _this.img.src = obj.source;
+                }
+                else {
+                    _this.img.src = obj.walkAnimation[0];
+                }
                 _this.img.addEventListener('mousemove', _this.onMousemoveOnImage);
                 _this.selectedElement = obj;
             }

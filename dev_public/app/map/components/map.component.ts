@@ -62,6 +62,14 @@ export class MapComponent implements OnInit {
         this.mapService.selectElement(collectible);
     }
 
+    private selectCharacter(character: Character){
+        this.mapService.selectElement(character);
+    }
+
+    private selectMapElement(mapElement: MapElement){
+        this.mapService.selectElement(mapElement);
+    }
+
     private loadAll(){
         this.loadCharacter();
         this.loadDecoration();

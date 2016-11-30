@@ -8,7 +8,6 @@ export class MapService{
     private _selected: Element;
     private _notifySelected:BehaviorSubject<Element>;
 
-
     constructor() {
         this._notifySelected = new BehaviorSubject(undefined);
     }
@@ -23,11 +22,9 @@ export class MapService{
         }
     }
 
-
     get notifySelected(): BehaviorSubject<Element> {
         return this._notifySelected;
     }
-
 
     get selected(): Element {
         return this._selected;

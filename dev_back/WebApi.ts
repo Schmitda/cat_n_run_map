@@ -13,6 +13,7 @@ import backgroundRouter = require("./routes/backend/background.router");
 import collectibleRouter = require("./routes/backend/collectible.router");
 import decorationRouter = require("./routes/backend/decoration.router");
 import characterRouter = require("./routes/backend/character.router");
+import mapelementRouter = require("./routes/backend/map-element.router");
 
 
 
@@ -53,6 +54,7 @@ export class WebApi{
         app.use('/api/decoration', decorationRouter);
         app.use('/api/collectible', collectibleRouter);
         app.use('/api/character', characterRouter);
+        app.use('/api/mapElement', mapelementRouter);
         app.use('/api/user',userRouter);
         app.use('/', frontendRouter);
     }

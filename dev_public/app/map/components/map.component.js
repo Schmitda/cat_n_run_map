@@ -48,6 +48,12 @@ var MapComponent = (function () {
     MapComponent.prototype.selectCollectible = function (collectible) {
         this.mapService.selectElement(collectible);
     };
+    MapComponent.prototype.selectCharacter = function (character) {
+        this.mapService.selectElement(character);
+    };
+    MapComponent.prototype.selectMapElement = function (mapElement) {
+        this.mapService.selectElement(mapElement);
+    };
     MapComponent.prototype.loadAll = function () {
         this.loadCharacter();
         this.loadDecoration();

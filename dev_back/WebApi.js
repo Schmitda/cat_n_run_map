@@ -13,6 +13,7 @@ var backgroundRouter = require("./routes/backend/background.router");
 var collectibleRouter = require("./routes/backend/collectible.router");
 var decorationRouter = require("./routes/backend/decoration.router");
 var characterRouter = require("./routes/backend/character.router");
+var mapelementRouter = require("./routes/backend/map-element.router");
 var WebApi = (function () {
     function WebApi(app, port) {
         this.app = app;
@@ -49,6 +50,7 @@ var WebApi = (function () {
         app.use('/api/decoration', decorationRouter);
         app.use('/api/collectible', collectibleRouter);
         app.use('/api/character', characterRouter);
+        app.use('/api/mapElement', mapelementRouter);
         app.use('/api/user', userRouter);
         app.use('/', frontendRouter);
     };

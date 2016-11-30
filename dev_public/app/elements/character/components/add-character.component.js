@@ -13,18 +13,14 @@ var forms_1 = require("@angular/forms");
 var form_generator_service_1 = require("../../../shared/form-generator.service");
 var router_1 = require("@angular/router");
 var character_service_1 = require("../services/character.service");
+var file_service_1 = require("../../../core/services/file.service");
 var AddCharacterComponent = (function () {
-    function AddCharacterComponent(fb, formGenerator, characterService, router) {
+    function AddCharacterComponent(fb, formGenerator, characterService, router, fileService) {
         this.fb = fb;
         this.formGenerator = formGenerator;
         this.characterService = characterService;
         this.router = router;
-        this.walkAnimationFiles = [];
-        this.jumpAnimationFiles = [];
-        this.hurtAnimationFiles = [];
-        this.dieAnimationFiles = [];
-        this.standAnimationFiles = [];
-        this.shootAnimationFiles = [];
+        this.fileService = fileService;
         this.character = {};
         this.form = this.formGenerator.generateElementForm();
         this.form.addControl('walkAnimation', new forms_1.FormControl(''));
@@ -38,37 +34,34 @@ var AddCharacterComponent = (function () {
         this.form.addControl('health', new forms_1.FormControl(1));
     }
     AddCharacterComponent.prototype.onWalkAnimationFileUpload = function (event) {
-        for (var $i = 0; $i < event.srcElement.files.length; $i++) {
-            this.walkAnimationFiles.push(event.srcElement.files[$i]);
-        }
+        this.fileService.calculateImageSize(event.srcElement.files[0], this.form);
+        this.walkAnimationFiles = event.srcElement.files;
     };
     AddCharacterComponent.prototype.onJumpAnimationFileUpload = function (event) {
         this.jumpAnimationFiles = event.srcElement.files;
-        this.character.jumpAnimation = this.jumpAnimationFiles;
     };
     AddCharacterComponent.prototype.onHurtAnimationFileUpload = function (event) {
         this.hurtAnimationFiles = event.srcElement.files;
-        this.character.hurtAnimation = this.hurtAnimationFiles;
     };
     AddCharacterComponent.prototype.onDieAnimationFileUpload = function (event) {
         this.dieAnimationFiles = event.srcElement.files;
-        this.character.dieAnimation = this.dieAnimationFiles;
     };
     AddCharacterComponent.prototype.onStandAnimationFileUpload = function (event) {
         this.standAnimationFiles = event.srcElement.files;
-        this.character.standAnimation = this.standAnimationFiles;
     };
     AddCharacterComponent.prototype.onShootAnimationFileUpload = function (event) {
         this.shootAnimationFiles = event.srcElement.files;
-        this.character.shootAnimation = this.shootAnimationFiles;
     };
     AddCharacterComponent.prototype.submit = function () {
         var _this = this;
         if (this.form.valid) {
             this.character = this.form.value;
-            console.log(this.walkAnimationFiles);
             this.character.walkAnimation = this.walkAnimationFiles;
-            console.log(this.character);
+            this.character.shootAnimation = this.shootAnimationFiles;
+            this.character.standAnimation = this.standAnimationFiles;
+            this.character.dieAnimation = this.dieAnimationFiles;
+            this.character.jumpAnimation = this.jumpAnimationFiles;
+            this.character.hurtAnimation = this.hurtAnimationFiles;
             this.characterService.save(this.character)
                 .subscribe(function () {
                 _this.router.navigate(['/map']);
@@ -84,7 +77,7 @@ var AddCharacterComponent = (function () {
             templateUrl: '../templates/add-character.component.html',
             styleUrls: ['../css/add-character.component.min.css'],
         }), 
-        __metadata('design:paramtypes', [forms_1.FormBuilder, form_generator_service_1.FormGenerator, character_service_1.CharacterService, router_1.Router])
+        __metadata('design:paramtypes', [forms_1.FormBuilder, form_generator_service_1.FormGenerator, character_service_1.CharacterService, router_1.Router, file_service_1.FileService])
     ], AddCharacterComponent);
     return AddCharacterComponent;
 }());
