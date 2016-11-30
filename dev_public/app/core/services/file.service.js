@@ -44,10 +44,10 @@ var FileService = (function () {
         var _form = form;
         img.onload = function () {
             if (_form.controls.width) {
-                _form.controls.width.setValue(this.width);
+                _form.controls.width.setValue(this.width / 2);
             }
             if (_form.controls.height) {
-                _form.controls.height.setValue(this.height);
+                _form.controls.height.setValue(this.height / 2);
             }
         };
         img.src = _URL.createObjectURL(file);

@@ -1,7 +1,7 @@
 <div class="small-window shadow-2dp">
     <h1 class="font-large primary-color text-center margin-bottom-small">Add decoration</h1>
     <hr>
-    <form class="margin-top-small" [formGroup]="form" (submit)="submit()">
+    <form class="margin-top-small" novalidate [formGroup]="form" (submit)="submit()">
         <div class="form-group">
             <label for="">Decoration name</label>
             <input type="text" formControlName="name">

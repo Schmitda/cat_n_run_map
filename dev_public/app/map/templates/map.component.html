@@ -11,7 +11,7 @@
         </accordion-child>
 
         <accordion-child title="Characters">
-            <accordion-item [class.selected]="character.id === mapService.selected?._id" class="flex-selection map-element-selection" *ngFor="let character of characters">
+            <accordion-item [class.selected]="character._id === mapService.selected?._id" class="flex-selection map-element-selection" *ngFor="let character of characters">
                 <div (click)="stopPropagation($event)">
                     <img [src]="character.walkAnimation[0]" alt="" class="pointer" (click)="selectCharacter(character)">
                 </div>
@@ -20,7 +20,7 @@
         </accordion-child>
 
         <accordion-child title="Map-Elements">
-            <accordion-item [class.selected]="mapElement.id === mapService.selected?._id" class="flex-selection map-element-selection" *ngFor="let mapElement of mapElements">
+            <accordion-item [class.selected]="mapElement._id === mapService.selected?._id" class="flex-selection map-element-selection" *ngFor="let mapElement of mapElements">
                 <div (click)="stopPropagation($event)">
                     <img [src]="mapElement.source" alt="" class="pointer" (click)="selectMapElement(mapElement)">
                 </div>
