@@ -17916,7 +17916,7 @@ ol.ui.horizontal.list li:before,
 }
 
 /*******************************
-         Element Types
+         BaseElement Types
 *******************************/
 
 /*--------------------
@@ -23079,7 +23079,7 @@ Floated Menu / Item
   opacity: 1;
 }
 
-/* First / Last Element */
+/* First / Last BaseElement */
 
 .ui.message > :first-child {
   margin-top: 0em;

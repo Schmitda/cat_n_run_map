@@ -1,0 +1,25 @@
+
+.modal-item {
+  padding: 15px 30px;
+  border-bottom: 1px solid lightgray;
+  color: #272727;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
+.modal-item:hover {
+  cursor: pointer;
+  background-color: #e1e1e1;
+  transition-duration: 500ms;
+}
+
+:host{
+  transform: translate(-50%,-50%);
+  position: absolute;
+  z-index: 10001;
+  left:50%;
+  top:50%;
+  background-color: white;
+}
+

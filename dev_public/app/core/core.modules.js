@@ -24,14 +24,19 @@ var decoration_service_1 = require("../elements/decoration/services/decoration.s
 var character_service_1 = require("../elements/character/services/character.service");
 var map_element_service_1 = require("../elements/map-element/services/map-element.service");
 var map_service_1 = require("../shared/map.service");
+var map_creator_service_1 = require("../shared/map-creator.service");
+var overlay_component_1 = require("../ui/components/overlay.component");
+var overlay_service_1 = require("../ui/services/overlay.service");
+var element_context_menu_modal_component_1 = require("../ui/components/element-context-menu-modal.component");
+var modal_service_1 = require("../ui/services/modal.service");
 var CoreModule = (function () {
     function CoreModule() {
     }
     CoreModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.ReactiveFormsModule],
-            declarations: [my_nav_component_1.MyNavComponent],
-            exports: [my_nav_component_1.MyNavComponent, common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule],
+            declarations: [my_nav_component_1.MyNavComponent, element_context_menu_modal_component_1.ElementContextMenuModalComponent, overlay_component_1.OverlayComponent],
+            exports: [my_nav_component_1.MyNavComponent, common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule, element_context_menu_modal_component_1.ElementContextMenuModalComponent, overlay_component_1.OverlayComponent],
             providers: [
                 user_service_service_1.UserService,
                 auth_service_1.AuthGuard,
@@ -43,6 +48,9 @@ var CoreModule = (function () {
                 character_service_1.CharacterService,
                 map_element_service_1.MapElementService,
                 map_service_1.MapService,
+                map_creator_service_1.MapCreator,
+                overlay_service_1.OverlayService,
+                modal_service_1.ModalService
             ]
         }), 
         __metadata('design:paramtypes', [])

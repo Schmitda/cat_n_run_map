@@ -285,6 +285,9 @@ table {
 .flex-1 {
   flex: 1; }
 
+.hidden {
+  display: none; }
+
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */

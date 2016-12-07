@@ -10282,7 +10282,7 @@ $.fn.popup = function(parameters) {
               if(mutation.removedNodes) {
                 [].forEach.call(mutation.removedNodes, function(node) {
                   if(node == element || $(node).find(element).length > 0) {
-                    module.debug('Element removed from DOM, tearing down events');
+                    module.debug('BaseElement removed from DOM, tearing down events');
                     module.destroy();
                   }
                 });
@@ -16514,7 +16514,7 @@ $.fn.sticky = function(parameters) {
               if(mutation.removedNodes) {
                 [].forEach.call(mutation.removedNodes, function(node) {
                   if(node == element || $(node).find(element).length > 0) {
-                    module.debug('Element removed from DOM, tearing down events');
+                    module.debug('BaseElement removed from DOM, tearing down events');
                     module.destroy();
                   }
                 });
@@ -17241,7 +17241,7 @@ $.fn.sticky.settings = {
 
   error         : {
     container      : 'Sticky element must be inside a relative container',
-    visible        : 'Element is hidden, you must call refresh after element becomes visible. Use silent setting to surpress this warning in production.',
+    visible        : 'BaseElement is hidden, you must call refresh after element becomes visible. Use silent setting to surpress this warning in production.',
     method         : 'The method you called is not defined.',
     invalidContext : 'Context specified does not exist',
     elementSize    : 'Sticky element is larger than its container, cannot create sticky.'
@@ -19267,7 +19267,7 @@ $.fn.transition.settings = {
 
   // possible errors
   error: {
-    noAnimation : 'Element is no longer attached to DOM. Unable to animate.  Use silent setting to surpress this warning in production.',
+    noAnimation : 'BaseElement is no longer attached to DOM. Unable to animate.  Use silent setting to surpress this warning in production.',
     repeated    : 'That animation is already occurring, cancelling repeated animation',
     method      : 'The method you called is not defined',
     support     : 'This browser does not support CSS animations'
@@ -19452,7 +19452,7 @@ $.api = $.fn.api = function(parameters) {
         query: function() {
 
           if(module.is.disabled()) {
-            module.debug('Element is disabled API request aborted');
+            module.debug('BaseElement is disabled API request aborted');
             return;
           }
 
@@ -20191,7 +20191,7 @@ $.api = $.fn.api = function(parameters) {
               performance.push({
                 'Name'           : message[0],
                 'Arguments'      : [].slice.call(message, 1) || '',
-                //'Element'        : element,
+                //'BaseElement'        : element,
                 'Execution Time' : executionTime
               });
             }
@@ -21348,7 +21348,7 @@ $.fn.visibility = function(parameters) {
               if(mutation.removedNodes) {
                 [].forEach.call(mutation.removedNodes, function(node) {
                   if(node == element || $(node).find(element).length > 0) {
-                    module.debug('Element removed from DOM, tearing down events');
+                    module.debug('BaseElement removed from DOM, tearing down events');
                     module.destroy();
                   }
                 });
@@ -21477,7 +21477,7 @@ $.fn.visibility = function(parameters) {
             module.create.placeholder();
             module.debug('Added placeholder', $placeholder);
             settings.onTopPassed = function() {
-              module.debug('Element passed, adding fixed position', $module);
+              module.debug('BaseElement passed, adding fixed position', $module);
               module.show.placeholder();
               module.set.fixed();
               if(settings.transition) {
@@ -21487,7 +21487,7 @@ $.fn.visibility = function(parameters) {
               }
             };
             settings.onTopPassedReverse = function() {
-              module.debug('Element returned to position, removing fixed', $module);
+              module.debug('BaseElement returned to position, removing fixed', $module);
               module.hide.placeholder();
               module.remove.fixed();
             };
@@ -22432,7 +22432,7 @@ $.fn.visibility.settings = {
 
   error : {
     method  : 'The method you called is not defined.',
-    visible : 'Element is hidden, you must call refresh after element becomes visible'
+    visible : 'BaseElement is hidden, you must call refresh after element becomes visible'
   }
 
 };

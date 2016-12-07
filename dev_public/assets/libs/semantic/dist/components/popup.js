@@ -212,7 +212,7 @@ $.fn.popup = function(parameters) {
               if(mutation.removedNodes) {
                 [].forEach.call(mutation.removedNodes, function(node) {
                   if(node == element || $(node).find(element).length > 0) {
-                    module.debug('Element removed from DOM, tearing down events');
+                    module.debug('BaseElement removed from DOM, tearing down events');
                     module.destroy();
                   }
                 });

@@ -26,10 +26,11 @@ export class MapComponent implements OnInit {
     private decorations: Decoration[];
     private backgrounds: Background[];
 
+
     @HostListener('mousemove', ['$event'])
     onMousemove(event: MouseEvent) {
         if(this.mapService.selected){
-            this.gameMap.hideImg();
+
         }
     }
 
@@ -51,23 +52,28 @@ export class MapComponent implements OnInit {
     }
 
     private selectBackground(background:Background){
+        this.mapService.selectedType = 'background';
         this.gameMap.setBackground(background);
     }
 
     private selectDecoration(decoration:Decoration){
+        this.mapService.selectedType = 'decoration';
         this.mapService.selectElement(decoration);
     }
 
     private selectCollectible(collectible:Collectible){
         this.mapService.selectElement(collectible);
+        this.mapService.selectedType = 'collectible';
     }
 
     private selectCharacter(character: Character){
         this.mapService.selectElement(character);
+        this.mapService.selectedType = 'character';
     }
 
     private selectMapElement(mapElement: MapElement){
         this.mapService.selectElement(mapElement);
+        this.mapService.selectedType = 'mapElement';
     }
 
     private loadAll(){

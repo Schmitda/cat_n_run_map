@@ -17,11 +17,17 @@ import {DecorationService} from "../elements/decoration/services/decoration.serv
 import {CharacterService} from "../elements/character/services/character.service";
 import {MapElementService} from "../elements/map-element/services/map-element.service";
 import {MapService} from "../shared/map.service";
+import {MapCreator} from "../shared/map-creator.service";
+import {OverlayComponent} from "../ui/components/overlay.component";
+import {OverlayService}  from "../ui/services/overlay.service";
+import {ElementContextMenuModalComponent} from "../ui/components/element-context-menu-modal.component";
+import {ModalService} from "../ui/services/modal.service";
+import {ModalComponent} from "../ui/components/modal.component";
 
 @NgModule({
     imports: [CommonModule, BrowserModule, HttpModule, ReactiveFormsModule],
-    declarations: [MyNavComponent],
-    exports: [MyNavComponent, CommonModule, BrowserModule, HttpModule],
+    declarations: [MyNavComponent, ElementContextMenuModalComponent, OverlayComponent],
+    exports: [MyNavComponent, CommonModule, BrowserModule, HttpModule, ElementContextMenuModalComponent, OverlayComponent],
     providers: [
         UserService,
         AuthGuard,
@@ -33,6 +39,9 @@ import {MapService} from "../shared/map.service";
         CharacterService,
         MapElementService,
         MapService,
+        MapCreator,
+        OverlayService,
+        ModalService
     ]
 })
 export class CoreModule {

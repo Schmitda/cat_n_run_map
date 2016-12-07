@@ -190,7 +190,7 @@ $.fn.sticky = function(parameters) {
               if(mutation.removedNodes) {
                 [].forEach.call(mutation.removedNodes, function(node) {
                   if(node == element || $(node).find(element).length > 0) {
-                    module.debug('Element removed from DOM, tearing down events');
+                    module.debug('BaseElement removed from DOM, tearing down events');
                     module.destroy();
                   }
                 });
@@ -917,7 +917,7 @@ $.fn.sticky.settings = {
 
   error         : {
     container      : 'Sticky element must be inside a relative container',
-    visible        : 'Element is hidden, you must call refresh after element becomes visible. Use silent setting to surpress this warning in production.',
+    visible        : 'BaseElement is hidden, you must call refresh after element becomes visible. Use silent setting to surpress this warning in production.',
     method         : 'The method you called is not defined.',
     invalidContext : 'Context specified does not exist',
     elementSize    : 'Sticky element is larger than its container, cannot create sticky.'

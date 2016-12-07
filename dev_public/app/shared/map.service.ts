@@ -7,12 +7,18 @@ import {BehaviorSubject} from "rxjs/BehaviorSubject";
 export class MapService{
     private _selected: Element;
     private _notifySelected:BehaviorSubject<Element>;
+    public selectedType: string;
 
     constructor() {
         this._notifySelected = new BehaviorSubject(undefined);
     }
 
-    public selectElement(obj: Element){
+    public selectElement(obj: Element|null){
+        if(obj === null){
+            this._selected = null;
+            this._notifySelected.next(null);
+            return;
+        }
         if(this._selected && this._selected._id == obj._id){
             this._selected = null;
             this._notifySelected.next(null);

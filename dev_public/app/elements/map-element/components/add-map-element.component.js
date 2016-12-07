@@ -21,7 +21,7 @@ var AddMapElementComponent = (function () {
         this.router = router;
         this.fileService = fileService;
         this.form = this.formGenerator.generateElementForm();
-        this.form.addControl('zcoord', new forms_1.FormControl(500));
+        this.form.addControl('zCoord', new forms_1.FormControl(500));
     }
     AddMapElementComponent.prototype.setFile = function (event) {
         this.file = event.srcElement.files[0];

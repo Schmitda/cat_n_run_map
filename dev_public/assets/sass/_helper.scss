@@ -43,6 +43,10 @@ $kind:(
   flex: 1;
 }
 
+.hidden{
+  display: none;
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */

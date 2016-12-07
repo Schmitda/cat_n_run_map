@@ -72,7 +72,7 @@ function parser(file, callback) {
       active    = false,
       yaml      = [],
       categories = [
-        'UI Element',
+        'UI BaseElement',
         'UI Global',
         'UI Collection',
         'UI View',

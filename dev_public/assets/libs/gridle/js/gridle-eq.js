@@ -9,7 +9,7 @@
     /**
      * Class for dimension change detection.
      *
-     * @param {Element|Element[]|Elements|jQuery} element
+     * @param {Element|BaseElement[]|Elements|jQuery} element
      * @param {Function} callback
      *
      * @constructor

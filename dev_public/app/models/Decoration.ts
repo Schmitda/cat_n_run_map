@@ -1,14 +1,14 @@
 import {Element} from "./Element";
 export class Decoration extends Element{
 
-    private _zcoord:number;
+    private _zCoord:number;
 
 
-    get zcoord(): number {
-        return this._zcoord;
+    get zCoord(): number {
+        return this._zCoord;
     }
 
-    set zcoord(value: number) {
-        this._zcoord = value;
+    set zCoord(value: number) {
+        this._zCoord = value;
     }
 }

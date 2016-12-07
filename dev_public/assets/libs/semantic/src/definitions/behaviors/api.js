@@ -172,7 +172,7 @@ $.api = $.fn.api = function(parameters) {
         query: function() {
 
           if(module.is.disabled()) {
-            module.debug('Element is disabled API request aborted');
+            module.debug('BaseElement is disabled API request aborted');
             return;
           }
 
@@ -911,7 +911,7 @@ $.api = $.fn.api = function(parameters) {
               performance.push({
                 'Name'           : message[0],
                 'Arguments'      : [].slice.call(message, 1) || '',
-                //'Element'        : element,
+                //'BaseElement'        : element,
                 'Execution Time' : executionTime
               });
             }

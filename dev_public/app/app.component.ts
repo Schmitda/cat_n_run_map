@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
     <div class="flex full-space">
     <router-outlet></router-outlet>
     </div>
+    <element-context-menu-modal></element-context-menu-modal>
+    <overlay-component></overlay-component>
 </div>
 `,
 })

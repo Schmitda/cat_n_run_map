@@ -48,7 +48,7 @@ var characterSchema = new mongoose.Schema({
             type: String
         }
     ],
-    zcoord: {
+    zCoord: {
         type: Number,
         default: 1000,
         required: true

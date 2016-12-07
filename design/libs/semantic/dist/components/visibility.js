@@ -191,7 +191,7 @@ $.fn.visibility = function(parameters) {
               if(mutation.removedNodes) {
                 [].forEach.call(mutation.removedNodes, function(node) {
                   if(node == element || $(node).find(element).length > 0) {
-                    module.debug('Element removed from DOM, tearing down events');
+                    module.debug('BaseElement removed from DOM, tearing down events');
                     module.destroy();
                   }
                 });
@@ -320,7 +320,7 @@ $.fn.visibility = function(parameters) {
             module.create.placeholder();
             module.debug('Added placeholder', $placeholder);
             settings.onTopPassed = function() {
-              module.debug('Element passed, adding fixed position', $module);
+              module.debug('BaseElement passed, adding fixed position', $module);
               module.show.placeholder();
               module.set.fixed();
               if(settings.transition) {
@@ -330,7 +330,7 @@ $.fn.visibility = function(parameters) {
               }
             };
             settings.onTopPassedReverse = function() {
-              module.debug('Element returned to position, removing fixed', $module);
+              module.debug('BaseElement returned to position, removing fixed', $module);
               module.hide.placeholder();
               module.remove.fixed();
             };
@@ -1275,7 +1275,7 @@ $.fn.visibility.settings = {
 
   error : {
     method  : 'The method you called is not defined.',
-    visible : 'Element is hidden, you must call refresh after element becomes visible'
+    visible : 'BaseElement is hidden, you must call refresh after element becomes visible'
   }
 
 };

@@ -31,7 +31,6 @@ var MapComponent = (function () {
     }
     MapComponent.prototype.onMousemove = function (event) {
         if (this.mapService.selected) {
-            this.gameMap.hideImg();
         }
     };
     MapComponent.prototype.stopPropagation = function (event) {
@@ -40,19 +39,24 @@ var MapComponent = (function () {
         }
     };
     MapComponent.prototype.selectBackground = function (background) {
+        this.mapService.selectedType = 'background';
         this.gameMap.setBackground(background);
     };
     MapComponent.prototype.selectDecoration = function (decoration) {
+        this.mapService.selectedType = 'decoration';
         this.mapService.selectElement(decoration);
     };
     MapComponent.prototype.selectCollectible = function (collectible) {
         this.mapService.selectElement(collectible);
+        this.mapService.selectedType = 'collectible';
     };
     MapComponent.prototype.selectCharacter = function (character) {
         this.mapService.selectElement(character);
+        this.mapService.selectedType = 'character';
     };
     MapComponent.prototype.selectMapElement = function (mapElement) {
         this.mapService.selectElement(mapElement);
+        this.mapService.selectedType = 'mapElement';
     };
     MapComponent.prototype.loadAll = function () {
         this.loadCharacter();

@@ -1,84 +1,112 @@
-import {Component, OnInit, AfterViewInit} from '@angular/core';
+import {Component, OnInit, AfterViewInit, ComponentFactoryResolver, ViewContainerRef, ComponentRef, ElementRef, NgZone} from '@angular/core';
 import {BackgroundService} from "../../elements/background/services/background.service";
 import {CharacterService} from "../../elements/character/services/character.service";
 import {MapElementService} from "../../elements/map-element/services/map-element.service";
 import {DecorationService} from "../../elements/decoration/services/decoration.service";
 import {CollectibleService} from "../../elements/collectible/services/collectible.service";
-import {Collectible} from "../../models/Collectible";
-import {Character} from "../../models/Character";
-import {MapElement} from "../../models/MapElement";
 import {Decoration} from "../../models/Decoration";
 import {Background} from "../../models/Background";
 import {HostBinding} from "@angular/core";
 import {HostListener} from "@angular/core";
 import {MapService} from "../../shared/map.service";
 import {Element} from "../../models/Element";
+import {MapCreator} from "../../shared/map-creator.service";
+import {DecorationComponent} from "./decoration.component";
+import {ViewChild} from "@angular/core";
+import {ModalComponent} from "../../ui/components/modal.component";
 
 @Component({
     moduleId: module.id,
     selector: 'game-map',
     templateUrl: '../templates/game-map.component.html',
     styleUrls: ['../css/game-map.component.min.css'],
-
+    entryComponents: [DecorationComponent]
 })
 export class GameMapComponent implements OnInit, AfterViewInit {
-
     private background: Background;
-    private selectedElement: Element;
-    private img;
+    private selectedElement: Element = {};
+    private _moveingComponent: any = null;
+    @ViewChild('image') image;
+
 
     @HostListener('mousemove', ['$event'])
-    onMousemove(event: MouseEvent) {
-        event.stopPropagation();
-        if(this.selectedElement){
-            this.img.style.display = "block";
-            this.img.setAttribute('height', this.selectedElement.height);
-            this.img.setAttribute('width', this.selectedElement.width);
-            this.img.style.top = event.clientY - this.selectedElement.height / 2 + "px";
-            this.img.style.left = event.clientX - this.selectedElement.width / 2 + "px";
+    onMouseMove(event: MouseEvent) {
+        if (this.selectedElement) {
+            this.image.nativeElement.style.top = (event.clientY - this.selectedElement.height / 2) + "px";
+            this.image.nativeElement.style.left = (event.clientX - this.selectedElement.width / 2) + "px";
+        }
+    }
+
+    @HostListener('mousedown', ['$event']) onMouseDown(event: MouseEvent) {
+        if (event.which === 1) {
+            if (this.selectedElement !== null) {
+                switch (this.mapService.selectedType) {
+                    case 'decoration':
+                        this.mapCreator.addDecoration(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                    case 'character':
+                        this.mapCreator.addCharacter(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                    case 'collectible':
+                        this.mapCreator.addCollectible(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                    case 'mapElement':
+                        this.mapCreator.addMapElement(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                }
+                if(this._moveingComponent !== null){
+                    this._moveingComponent.setVisible();
+                    this._moveingComponent = null;
+                    this.mapService.selectElement(null);
+                }
+            }
         }
     }
 
     @HostBinding('style.background-image') backgroundImage: string = '';
+    @ViewChild(ModalComponent) modal: ModalComponent;
+
+    private getYCoord(event: MouseEvent): number {
+        return (event.pageY - this.gameMap.nativeElement.offsetTop - this.selectedElement.height / 2);
+    }
+
+    private getXCoord(event: MouseEvent): number {
+        let clientRect = this.gameMap.nativeElement.getBoundingClientRect();
+        let scrolledLeft = -1 * clientRect.left;
+        return event.clientX + scrolledLeft - this.selectedElement.width / 2;
+    }
+
+    constructor(private backgroundService: BackgroundService, private characterService: CharacterService, private mapElementService: MapElementService, private decorationService: DecorationService, private collectibleService: CollectibleService, private mapService: MapService, private mapCreator: MapCreator, private gameMap: ElementRef) {
+    }
+
+    private getSource() {
+        if (this.selectedElement && this.selectedElement.source) {
+            return this.selectedElement.source
+        } else if (this.selectedElement && this.selectedElement.walkAnimation) {
+            return this.selectedElement.walkAnimation[0];
+        }
+    }
 
     ngAfterViewInit(): void {
-        document.querySelector("map").append(this.img);
-    }
-
-    public hideImg(){
-        this.img.style.display = "none";
-    }
-
-    constructor(private backgroundService: BackgroundService, private characterService: CharacterService, private mapElementService: MapElementService, private decorationService: DecorationService, private collectibleService: CollectibleService, private mapService: MapService) {
-        this.img = document.createElement('img');
-        this.img.style.zIndex = "99";
-        this.img.style.position = "fixed";
         this.setListener();
     }
 
-    private onMousemoveOnImage(event){
-        event.stopPropagation();
-        this.img = event.target;
-        this.img.style.position = "fixed";
-        this.img.style.top = event.clientY - this.img.getAttribute("height") / 2 + "px";
-        this.img.style.left = event.clientX - this.img.getAttribute("width") / 2 + "px";
-    }
-
-    private setListener(){
-        this.mapService.notifySelected.subscribe((obj:Element|null)=> {
-            if(obj === null){
-                this.img.src = "";
-                this.selectedElement = null;
-            }else{
-                if(obj.source){
-                    this.img.src = obj.source;
-                }else{
-                    this.img.src = obj.walkAnimation[0];
-                }
-                this.img.addEventListener('mousemove', this.onMousemoveOnImage);
+    private setListener() {
+        this.mapService.notifySelected.subscribe((obj: Element|null) => {
+            if (obj != null) {
                 this.selectedElement = obj;
+                this.image.nativeElement.style.top = (parseInt(this.image.nativeElement.style.top) - this.selectedElement.height / 2) + "px";
+                this.image.nativeElement.style.left = (parseInt(this.image.nativeElement.style.left) - this.selectedElement.width / 2) + "px";
+                switch (this.mapService.selectedType) {
+                    case 'decoration':
+                        break;
+                }
+            } else {
+                this.selectedElement = null;
+                this.image.nativeElement.style.top = "0";
+                this.image.nativeElement.style.left = "0";
             }
-        })
+        });
     }
 
     public setBackground(background: Background) {
@@ -89,4 +117,8 @@ export class GameMapComponent implements OnInit, AfterViewInit {
     ngOnInit() {
     }
 
+
+    set moveingComponent(value: any) {
+        this._moveingComponent = value;
+    }
 }

@@ -10,12 +10,12 @@ var Decoration = (function (_super) {
     function Decoration() {
         _super.apply(this, arguments);
     }
-    Object.defineProperty(Decoration.prototype, "zcoord", {
+    Object.defineProperty(Decoration.prototype, "zCoord", {
         get: function () {
-            return this._zcoord;
+            return this._zCoord;
         },
         set: function (value) {
-            this._zcoord = value;
+            this._zCoord = value;
         },
         enumerable: true,
         configurable: true

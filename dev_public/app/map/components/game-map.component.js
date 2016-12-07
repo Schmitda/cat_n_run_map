@@ -17,60 +17,90 @@ var collectible_service_1 = require("../../elements/collectible/services/collect
 var core_2 = require("@angular/core");
 var core_3 = require("@angular/core");
 var map_service_1 = require("../../shared/map.service");
+var map_creator_service_1 = require("../../shared/map-creator.service");
+var decoration_component_1 = require("./decoration.component");
+var core_4 = require("@angular/core");
+var modal_component_1 = require("../../ui/components/modal.component");
 var GameMapComponent = (function () {
-    function GameMapComponent(backgroundService, characterService, mapElementService, decorationService, collectibleService, mapService) {
+    function GameMapComponent(backgroundService, characterService, mapElementService, decorationService, collectibleService, mapService, mapCreator, gameMap) {
         this.backgroundService = backgroundService;
         this.characterService = characterService;
         this.mapElementService = mapElementService;
         this.decorationService = decorationService;
         this.collectibleService = collectibleService;
         this.mapService = mapService;
+        this.mapCreator = mapCreator;
+        this.gameMap = gameMap;
+        this.selectedElement = {};
+        this._moveingComponent = null;
         this.backgroundImage = '';
-        this.img = document.createElement('img');
-        this.img.style.zIndex = "99";
-        this.img.style.position = "fixed";
-        this.setListener();
     }
-    GameMapComponent.prototype.onMousemove = function (event) {
-        event.stopPropagation();
+    GameMapComponent.prototype.onMouseMove = function (event) {
         if (this.selectedElement) {
-            this.img.style.display = "block";
-            this.img.setAttribute('height', this.selectedElement.height);
-            this.img.setAttribute('width', this.selectedElement.width);
-            this.img.style.top = event.clientY - this.selectedElement.height / 2 + "px";
-            this.img.style.left = event.clientX - this.selectedElement.width / 2 + "px";
+            this.image.nativeElement.style.top = (event.clientY - this.selectedElement.height / 2) + "px";
+            this.image.nativeElement.style.left = (event.clientX - this.selectedElement.width / 2) + "px";
+        }
+    };
+    GameMapComponent.prototype.onMouseDown = function (event) {
+        if (event.which === 1) {
+            if (this.selectedElement !== null) {
+                switch (this.mapService.selectedType) {
+                    case 'decoration':
+                        this.mapCreator.addDecoration(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                    case 'character':
+                        this.mapCreator.addCharacter(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                    case 'collectible':
+                        this.mapCreator.addCollectible(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                    case 'mapElement':
+                        this.mapCreator.addMapElement(this.selectedElement, this.getYCoord(event), this.getXCoord(event));
+                        break;
+                }
+                if (this._moveingComponent !== null) {
+                    this._moveingComponent.setVisible();
+                    this._moveingComponent = null;
+                    this.mapService.selectElement(null);
+                }
+            }
+        }
+    };
+    GameMapComponent.prototype.getYCoord = function (event) {
+        return (event.pageY - this.gameMap.nativeElement.offsetTop - this.selectedElement.height / 2);
+    };
+    GameMapComponent.prototype.getXCoord = function (event) {
+        var clientRect = this.gameMap.nativeElement.getBoundingClientRect();
+        var scrolledLeft = -1 * clientRect.left;
+        return event.clientX + scrolledLeft - this.selectedElement.width / 2;
+    };
+    GameMapComponent.prototype.getSource = function () {
+        if (this.selectedElement && this.selectedElement.source) {
+            return this.selectedElement.source;
+        }
+        else if (this.selectedElement && this.selectedElement.walkAnimation) {
+            return this.selectedElement.walkAnimation[0];
         }
     };
     GameMapComponent.prototype.ngAfterViewInit = function () {
-        document.querySelector("map").append(this.img);
-    };
-    GameMapComponent.prototype.hideImg = function () {
-        this.img.style.display = "none";
-    };
-    GameMapComponent.prototype.onMousemoveOnImage = function (event) {
-        event.stopPropagation();
-        this.img = event.target;
-        this.img.style.position = "fixed";
-        this.img.style.top = event.clientY - this.img.getAttribute("height") / 2 + "px";
-        this.img.style.left = event.clientX - this.img.getAttribute("width") / 2 + "px";
+        this.setListener();
     };
     GameMapComponent.prototype.setListener = function () {
         var _this = this;
         this.mapService.notifySelected.subscribe(function (obj) {
-            if (obj === void 0) { obj = null; }
-            if (obj === null) {
-                _this.img.src = "";
-                _this.selectedElement = null;
+            if (obj != null) {
+                _this.selectedElement = obj;
+                _this.image.nativeElement.style.top = (parseInt(_this.image.nativeElement.style.top) - _this.selectedElement.height / 2) + "px";
+                _this.image.nativeElement.style.left = (parseInt(_this.image.nativeElement.style.left) - _this.selectedElement.width / 2) + "px";
+                switch (_this.mapService.selectedType) {
+                    case 'decoration':
+                        break;
+                }
             }
             else {
-                if (obj.source) {
-                    _this.img.src = obj.source;
-                }
-                else {
-                    _this.img.src = obj.walkAnimation[0];
-                }
-                _this.img.addEventListener('mousemove', _this.onMousemoveOnImage);
-                _this.selectedElement = obj;
+                _this.selectedElement = null;
+                _this.image.nativeElement.style.top = "0";
+                _this.image.nativeElement.style.left = "0";
             }
         });
     };
@@ -80,24 +110,46 @@ var GameMapComponent = (function () {
     };
     GameMapComponent.prototype.ngOnInit = function () {
     };
+    Object.defineProperty(GameMapComponent.prototype, "moveingComponent", {
+        set: function (value) {
+            this._moveingComponent = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    __decorate([
+        core_4.ViewChild('image'), 
+        __metadata('design:type', Object)
+    ], GameMapComponent.prototype, "image", void 0);
     __decorate([
         core_3.HostListener('mousemove', ['$event']), 
         __metadata('design:type', Function), 
         __metadata('design:paramtypes', [MouseEvent]), 
         __metadata('design:returntype', void 0)
-    ], GameMapComponent.prototype, "onMousemove", null);
+    ], GameMapComponent.prototype, "onMouseMove", null);
+    __decorate([
+        core_3.HostListener('mousedown', ['$event']), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [MouseEvent]), 
+        __metadata('design:returntype', void 0)
+    ], GameMapComponent.prototype, "onMouseDown", null);
     __decorate([
         core_2.HostBinding('style.background-image'), 
         __metadata('design:type', String)
     ], GameMapComponent.prototype, "backgroundImage", void 0);
+    __decorate([
+        core_4.ViewChild(modal_component_1.ModalComponent), 
+        __metadata('design:type', modal_component_1.ModalComponent)
+    ], GameMapComponent.prototype, "modal", void 0);
     GameMapComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'game-map',
             templateUrl: '../templates/game-map.component.html',
             styleUrls: ['../css/game-map.component.min.css'],
+            entryComponents: [decoration_component_1.DecorationComponent]
         }), 
-        __metadata('design:paramtypes', [background_service_1.BackgroundService, character_service_1.CharacterService, map_element_service_1.MapElementService, decoration_service_1.DecorationService, collectible_service_1.CollectibleService, map_service_1.MapService])
+        __metadata('design:paramtypes', [background_service_1.BackgroundService, character_service_1.CharacterService, map_element_service_1.MapElementService, decoration_service_1.DecorationService, collectible_service_1.CollectibleService, map_service_1.MapService, map_creator_service_1.MapCreator, core_1.ElementRef])
     ], GameMapComponent);
     return GameMapComponent;
 }());

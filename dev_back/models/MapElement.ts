@@ -29,7 +29,7 @@ var mapElementSchema = new mongoose.Schema({
         required:true,
         default: true,
     },
-    zcoord: {
+    zCoord: {
         type: Number,
         required: true,
         default: 1000,

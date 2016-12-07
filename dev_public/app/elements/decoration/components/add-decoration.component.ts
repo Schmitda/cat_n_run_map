@@ -16,7 +16,7 @@ export class AddDecorationComponent implements OnInit {
 
     constructor(private formGenerator: FormGenerator, private decorationService: DecorationService, private router: Router, private fileService:FileService) {
         this.form = this.formGenerator.generateElementForm();
-        this.form.addControl('zcoord', new FormControl(500));
+        this.form.addControl('zCoord', new FormControl(500));
     }
 
     private setFile(event){

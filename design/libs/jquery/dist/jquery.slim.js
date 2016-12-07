@@ -805,7 +805,7 @@ function Sizzle( selector, context, results, seed ) {
 							return results;
 						}
 
-					// Element context
+					// BaseElement context
 					} else {
 
 						// Support: IE, Opera, Webkit
@@ -843,7 +843,7 @@ function Sizzle( selector, context, results, seed ) {
 					newContext = context;
 					newSelector = selector;
 
-				// qSA looks outside Element context, which is not what we want
+				// qSA looks outside BaseElement context, which is not what we want
 				// Thanks to Andrew Dupont for this workaround technique
 				// Support: IE <=8
 				// Exclude object elements
@@ -1388,7 +1388,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 	---------------------------------------------------------------------- */
 	hasCompare = rnative.test( docElem.compareDocumentPosition );
 
-	// Element contains another
+	// BaseElement contains another
 	// Purposefully self-exclusive
 	// As in, an element does not contain itself
 	contains = hasCompare || rnative.test( docElem.contains ) ?
@@ -2087,7 +2087,7 @@ Expr = Sizzle.selectors = {
 			return !Expr.pseudos["empty"]( elem );
 		},
 
-		// Element/input types
+		// BaseElement/input types
 		"header": function( elem ) {
 			return rheader.test( elem.nodeName );
 		},

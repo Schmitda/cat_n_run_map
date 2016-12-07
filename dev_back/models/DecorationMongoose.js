@@ -22,7 +22,7 @@ var decorationSchema = new mongoose.Schema({
         required: true,
         default: false,
     },
-    zcoord: {
+    zCoord: {
         type: Number,
         required: true,
         default: 500,
