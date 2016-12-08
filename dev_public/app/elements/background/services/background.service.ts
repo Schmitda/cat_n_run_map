@@ -44,4 +44,9 @@ export class BackgroundService {
     private extractData(res: Response) {
         return res.json() || {};
     }
+
+    public getFirst() {
+        return this.http.get('/api/background/first')
+            .map(this.extractData);
+    }
 }

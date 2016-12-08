@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
     <router-outlet></router-outlet>
     </div>
     <element-context-menu-modal></element-context-menu-modal>
+    <map-load-modal></map-load-modal>
+    <map-save-modal></map-save-modal>
     <overlay-component></overlay-component>
 </div>
 `,

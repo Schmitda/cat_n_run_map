@@ -14,10 +14,16 @@ var collectibleRouter = require("./routes/backend/collectible.router");
 var decorationRouter = require("./routes/backend/decoration.router");
 var characterRouter = require("./routes/backend/character.router");
 var mapelementRouter = require("./routes/backend/map-element.router");
+var mapRouter = require("./routes/backend/map.router");
 var WebApi = (function () {
     function WebApi(app, port) {
         this.app = app;
         this.port = port;
+        app.use(function (req, res, next) {
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+            next();
+        });
         this.configureMiddleware(app);
         this.configureRoutes(app);
     }
@@ -47,6 +53,7 @@ var WebApi = (function () {
     };
     WebApi.prototype.configureRoutes = function (app) {
         app.use('/api/background', backgroundRouter);
+        app.use('/api/map', mapRouter);
         app.use('/api/decoration', decorationRouter);
         app.use('/api/collectible', collectibleRouter);
         app.use('/api/character', characterRouter);

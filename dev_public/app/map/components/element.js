@@ -13,22 +13,36 @@ var core_2 = require("@angular/core");
 var Element_1 = require("../../models/Element");
 var BaseElement = (function () {
     function BaseElement() {
-        this.hidden = false;
+        this._hidden = false;
     }
     BaseElement.prototype.onMouseDblClick = function (event) {
         this.mapService.selectElement(this.element);
-        this.hidden = true;
+        this._hidden = true;
         this.gameMap.moveingComponent = this;
         this.setSelectedType();
+        console.log(event);
+        if (event) {
+            event.stopPropagation();
+        }
     };
     BaseElement.prototype.onContextMenu = function (event) {
         this.modalService.elementContextMenuModal.show();
         this.modalService.elementContextMenuModal.baseElement = this;
     };
     BaseElement.prototype.setVisible = function () {
-        this.hidden = false;
+        this._hidden = false;
     };
     BaseElement.prototype.ngOnInit = function () { };
+    Object.defineProperty(BaseElement.prototype, "hidden", {
+        get: function () {
+            return this._hidden;
+        },
+        set: function (value) {
+            this._hidden = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     __decorate([
         core_2.Input(), 
         __metadata('design:type', Element_1.Element)

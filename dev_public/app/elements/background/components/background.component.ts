@@ -4,6 +4,7 @@ import {Observable} from "rxjs/Observable";
 import {Observer} from "rxjs";
 import {Http} from "@angular/http";
 import {BackgroundService} from "../services/background.service";
+import {Router} from "@angular/router";
 
 @Component({
     moduleId: module.id,
@@ -15,7 +16,7 @@ export class BackgroundComponent implements OnInit {
     private form: FormGroup;
     private file: File;
 
-    constructor(private fb: FormBuilder, private backgroundService: BackgroundService) {
+    constructor(private fb: FormBuilder, private backgroundService: BackgroundService, private router: Router) {
         this.form = fb.group({
             'name': ['',Validators.required],
             'source': ['', ]//TODO FileValidator
@@ -26,8 +27,9 @@ export class BackgroundComponent implements OnInit {
         if(this.form.valid){
             let background = this.form.value;
             background.source = this.file;
-            this.backgroundService.save(background)
-                .subscribe(() => {});
+            this.backgroundService.save(background).subscribe(() => {
+                this.router.navigate(['/map'])
+            });
         }
     }
 

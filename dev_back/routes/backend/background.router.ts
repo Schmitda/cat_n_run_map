@@ -23,6 +23,13 @@ backgroundRouter.get('/', (req: express.Request, res: express.Response) => {
         })
 });
 
+backgroundRouter.get('/first', (req: express.Request, res: express.Response) => {
+    Background.findOne().exec()
+        .then(function(result: IBackground){
+            res.json(result);
+        });
+});
+
 
 
 backgroundRouter.get('/:id', (req: express.Request, res: express.Response) => {

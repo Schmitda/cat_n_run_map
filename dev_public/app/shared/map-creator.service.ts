@@ -38,7 +38,13 @@ export class MapCreator{
             xCoord: number
         }
         ]=[];
+    private id;
+    private _name;
 
+
+    get name() {
+        return this._name;
+    }
 
     public addDecoration(decoration: Decoration, yCoord: number, xCoord: number){
         let doesAlreadyExist = false;
@@ -97,6 +103,24 @@ export class MapCreator{
         }
     }
 
+    public setId(id:string){
+        this.id = id;
+    }
+
+    setName(name:string) {
+        this._name = name;
+    }
+
+    loadMap(map: any) {
+        this._decorations = map.map.decorations;
+        this._characters = map.map.characters;
+        this._mapElements = map.map.mapElements;
+        this._background = map.map.background;
+        this._collectibles = map.map.collectibles;
+        this.setName(map.map.name);
+        this.setId(map._id);
+    }
+
     public addMapElement(element: Character, yCoord: number, xCoord: number){
         let doesAlreadyExist = false;
         this._mapElements.forEach((item, index:number) => {
@@ -115,6 +139,48 @@ export class MapCreator{
             });
         }
         console.log(this._mapElements);
+    }
+
+    public deleteComponent(componentToDelete: any) {
+        this._decorations.forEach((decoration, index)=> {
+            if(decoration.decoration == componentToDelete){
+                this._decorations.splice(index,1);
+                console.log("here");
+            }
+        });
+
+        this._collectibles.forEach((collectible, index)=> {
+            if(collectible.collectible == componentToDelete){
+                this._collectibles.splice(index,1);
+            }
+        });
+
+        this._mapElements.forEach((mapElement, index)=> {
+            if(mapElement.mapElement == componentToDelete){
+                this._mapElements.splice(index,1);
+            }
+        });
+
+        this._characters.forEach((character, index)=> {
+            if(character.character == componentToDelete){
+                this._characters.splice(index,1);
+            }
+        });
+    }
+
+    public generateMap() {
+        console.log(this);
+        return {
+            map: {
+                name: this._name,
+                background: this._background,
+                decorations: this._decorations,
+                mapElements: this._mapElements,
+                collectibles: this._collectibles,
+                characters: this._characters,
+            },
+            _id: this.id
+        };
     }
 
 
@@ -157,4 +223,6 @@ export class MapCreator{
     set characters(value: any) {
         this._characters = value;
     }
+
+
 }

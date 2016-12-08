@@ -17,6 +17,8 @@ var ModalService = (function () {
         this.overlayService.backgroundChanged.subscribe(function (value) {
             if (value === false) {
                 _this.elementContextMenuModal.isVisible = false;
+                _this._mapSaveModal.isVisible = false;
+                _this.mapLoadModal.isVisible = false;
             }
         });
     }
@@ -26,6 +28,26 @@ var ModalService = (function () {
         },
         set: function (value) {
             this._elementContextMenuModal = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ModalService.prototype, "mapSaveModal", {
+        get: function () {
+            return this._mapSaveModal;
+        },
+        set: function (value) {
+            this._mapSaveModal = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ModalService.prototype, "mapLoadModal", {
+        get: function () {
+            return this._mapLoadModal;
+        },
+        set: function (value) {
+            this._mapLoadModal = value;
         },
         enumerable: true,
         configurable: true

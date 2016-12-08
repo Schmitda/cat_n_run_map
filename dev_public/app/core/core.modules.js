@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var user_service_service_1 = require("./services/user-service.service");
-var my_nav_component_1 = require("./my-nav.component");
+var my_nav_component_1 = require("./components/my-nav.component");
 var auth_service_1 = require("../auth/auth.service");
 var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
@@ -29,14 +29,17 @@ var overlay_component_1 = require("../ui/components/overlay.component");
 var overlay_service_1 = require("../ui/services/overlay.service");
 var element_context_menu_modal_component_1 = require("../ui/components/element-context-menu-modal.component");
 var modal_service_1 = require("../ui/services/modal.service");
+var map_save_service_1 = require("../shared/map-save.service");
+var map_save_modal_component_1 = require("../ui/components/map-save-modal.component");
+var map_load_modal_component_1 = require("../ui/components/map-load-modal.component");
 var CoreModule = (function () {
     function CoreModule() {
     }
     CoreModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.ReactiveFormsModule],
-            declarations: [my_nav_component_1.MyNavComponent, element_context_menu_modal_component_1.ElementContextMenuModalComponent, overlay_component_1.OverlayComponent],
-            exports: [my_nav_component_1.MyNavComponent, common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule, element_context_menu_modal_component_1.ElementContextMenuModalComponent, overlay_component_1.OverlayComponent],
+            imports: [common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.ReactiveFormsModule, forms_1.FormsModule],
+            declarations: [my_nav_component_1.MyNavComponent, element_context_menu_modal_component_1.ElementContextMenuModalComponent, overlay_component_1.OverlayComponent, map_save_modal_component_1.MapSaveModalComponent, map_load_modal_component_1.MapLoadModalComponent],
+            exports: [my_nav_component_1.MyNavComponent, common_1.CommonModule, platform_browser_1.BrowserModule, http_1.HttpModule, element_context_menu_modal_component_1.ElementContextMenuModalComponent, overlay_component_1.OverlayComponent, map_save_modal_component_1.MapSaveModalComponent, map_load_modal_component_1.MapLoadModalComponent],
             providers: [
                 user_service_service_1.UserService,
                 auth_service_1.AuthGuard,
@@ -50,7 +53,8 @@ var CoreModule = (function () {
                 map_service_1.MapService,
                 map_creator_service_1.MapCreator,
                 overlay_service_1.OverlayService,
-                modal_service_1.ModalService
+                modal_service_1.ModalService,
+                map_save_service_1.MapSaveService
             ]
         }), 
         __metadata('design:paramtypes', [])

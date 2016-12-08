@@ -2,120 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b69af9c-b699-4b6d-b734-5d87a360703e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/map/components/decoration.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/map/components/element.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/map/json/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/overlay.service.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/wochenplan.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/typescript-compiler.xml" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/Map.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/ui/css/map-save-modal.component.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js" afterPath="$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/gridle/js/gridle-eq.js" afterPath="$PROJECT_DIR$/design/libs/gridle/js/gridle-eq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/gridle/sass/gridle/_api.scss" afterPath="$PROJECT_DIR$/design/libs/gridle/sass/gridle/_api.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/design/libs/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/design/libs/jquery/dist/jquery.slim.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/jquery/external/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/design/libs/jquery/external/sizzle/dist/sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/api.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/api.min.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/api.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/form.css" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/message.css" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/message.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/popup.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/popup.min.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/popup.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/sticky.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/sticky.min.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/sticky.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/transition.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/transition.min.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/transition.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/visibility.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/visibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/components/visibility.min.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/components/visibility.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/semantic.css" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/semantic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/semantic.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/semantic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/dist/semantic.min.js" afterPath="$PROJECT_DIR$/design/libs/semantic/dist/semantic.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/src/definitions/behaviors/api.js" afterPath="$PROJECT_DIR$/design/libs/semantic/src/definitions/behaviors/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/src/definitions/behaviors/visibility.js" afterPath="$PROJECT_DIR$/design/libs/semantic/src/definitions/behaviors/visibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/src/definitions/collections/form.less" afterPath="$PROJECT_DIR$/design/libs/semantic/src/definitions/collections/form.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/src/definitions/collections/message.less" afterPath="$PROJECT_DIR$/design/libs/semantic/src/definitions/collections/message.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/src/definitions/modules/popup.js" afterPath="$PROJECT_DIR$/design/libs/semantic/src/definitions/modules/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/src/definitions/modules/sticky.js" afterPath="$PROJECT_DIR$/design/libs/semantic/src/definitions/modules/sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/src/definitions/modules/transition.js" afterPath="$PROJECT_DIR$/design/libs/semantic/src/definitions/modules/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design/libs/semantic/tasks/docs/metadata.js" afterPath="$PROJECT_DIR$/design/libs/semantic/tasks/docs/metadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/BackgroundMongoose.js" afterPath="$PROJECT_DIR$/dev_back/models/BackgroundMongoose.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/BackgroundMongoose.js.map" afterPath="$PROJECT_DIR$/dev_back/models/BackgroundMongoose.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/Character.js" afterPath="$PROJECT_DIR$/dev_back/models/Character.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/Character.ts" afterPath="$PROJECT_DIR$/dev_back/models/Character.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/Collectible.js" afterPath="$PROJECT_DIR$/dev_back/models/Collectible.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/Collectible.ts" afterPath="$PROJECT_DIR$/dev_back/models/Collectible.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.js" afterPath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts" afterPath="$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/MapElement.js" afterPath="$PROJECT_DIR$/dev_back/models/MapElement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/models/MapElement.ts" afterPath="$PROJECT_DIR$/dev_back/models/MapElement.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.js" afterPath="$PROJECT_DIR$/dev_back/WebApi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.js.map" afterPath="$PROJECT_DIR$/dev_back/WebApi.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.ts" afterPath="$PROJECT_DIR$/dev_back/WebApi.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js.map" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.component.js" afterPath="$PROJECT_DIR$/dev_public/app/app.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/app.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.module.ts" afterPath="$PROJECT_DIR$/dev_public/app/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.js" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.min.css" afterPath="$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.scss" afterPath="$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html" afterPath="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/map-element/templates/add-map-element.component.html" afterPath="$PROJECT_DIR$/dev_public/app/elements/map-element/templates/add-map-element.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/index.html" afterPath="$PROJECT_DIR$/dev_public/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" afterPath="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/character.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/character.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/element.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/element.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/element.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/element.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/element.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/element.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/map.module.js" afterPath="$PROJECT_DIR$/dev_public/app/map/map.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/map.module.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/map.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/map.module.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/map.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/character.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/character.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/collectible.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/collectible.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Decoration.js" afterPath="$PROJECT_DIR$/dev_public/app/models/Decoration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/models/Decoration.ts" afterPath="$PROJECT_DIR$/dev_public/app/models/Decoration.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map.service.js" afterPath="$PROJECT_DIR$/dev_public/app/shared/map.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/shared/map.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/shared/map.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/shared.module.js.map" afterPath="$PROJECT_DIR$/dev_public/app/shared/shared.module.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/shared.module.ts" afterPath="$PROJECT_DIR$/dev_public/app/shared/shared.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/map-element.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/map-element.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js" afterPath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js" afterPath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.min.css" afterPath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.scss" afterPath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html" afterPath="$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/css/style.css" afterPath="$PROJECT_DIR$/dev_public/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/gridle/js/gridle-eq.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/gridle/js/gridle-eq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/jquery/dist/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/jquery/dist/jquery.slim.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/jquery/external/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/jquery/external/sizzle/dist/sizzle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/api.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/api.min.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/api.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/form.css" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/message.css" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/message.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/popup.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/popup.min.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/popup.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/sticky.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/sticky.min.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/sticky.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/transition.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/transition.min.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/transition.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/visibility.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/visibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/visibility.min.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/components/visibility.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/semantic.css" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/semantic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/semantic.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/semantic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/semantic.min.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/dist/semantic.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/behaviors/api.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/behaviors/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/behaviors/visibility.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/behaviors/visibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/collections/form.less" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/collections/form.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/collections/message.less" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/collections/message.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/modules/popup.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/modules/popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/modules/sticky.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/modules/sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/modules/transition.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/src/definitions/modules/transition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/libs/semantic/tasks/docs/metadata.js" afterPath="$PROJECT_DIR$/dev_public/assets/libs/semantic/tasks/docs/metadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" afterPath="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/sass/style.scss" afterPath="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -129,15 +77,45 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="decoration.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/decoration.component.ts">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="game-map.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="178" lean-forward="false" selection-start-line="15" selection-start-column="166" selection-end-line="15" selection-end-column="178" />
+            <state relative-caret-position="423">
+              <caret line="120" column="46" lean-forward="false" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="46" />
               <folding>
-                <element signature="e#0#92#0" expanded="true" />
+                <element signature="e#0#166#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game-map.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game-map.component.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/map.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,45 +123,9 @@
       <file leaf-file-name="element.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/element.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            <state relative-caret-position="219">
+              <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="37" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="overlay.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/overlay.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#75#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modal.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -191,55 +133,55 @@
       <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="306">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
-                <marker date="1481135162429" expanded="true" signature="117:333" ph="..." />
-                <marker date="1481135162429" expanded="true" signature="173:220" ph="..." />
+                <marker date="1481221761822" expanded="true" signature="117:409" ph="..." />
+                <marker date="1481221761822" expanded="true" signature="173:220" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overlay.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/ui/services/overlay.service.ts">
+      <file leaf-file-name="background.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="element-context-menu-modal.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="408">
               <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
-                <element signature="e#0#61#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="element-context-menu-modal.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html">
+      <file leaf-file-name="background.router.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/background.router.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="493">
+              <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/modal.component.ts">
+      <file leaf-file-name="my-nav.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="442">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collectible.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -259,22 +201,45 @@
       <find>y</find>
       <find>GameMap</find>
       <find>MapSeri</find>
-      <find>mapService</find>
-      <find>MapCreator</find>
       <find>collectibles</find>
       <find>zcoo</find>
       <find>z</find>
       <find>zcoord</find>
-      <find>selectedType</find>
       <find>mapCreator</find>
+      <find>mapService</find>
+      <find>selectedType</find>
+      <find>this.move</find>
+      <find>_moveingComponent</find>
+      <find>MapCreator</find>
+      <find>changeDecorationVisibility</find>
+      <find>.noS</find>
+      <find>decorationComponent</find>
+      <find>moveingComponent</find>
+      <find>notify</find>
+      <find>Background</find>
+      <find>MapSave</find>
+      <find>month</find>
+      <find>downloadCurrentMap</find>
+      <find>createJson</find>
+      <find>saveMap</find>
+      <find>loadMap</find>
+      <find>setName</find>
+      <find>background</find>
+      <find>setBackground</find>
+      <find>$</find>
+      <find>backgroundImage</find>
     </findStrings>
     <replaceStrings>
       <replace>zCoord</replace>
+      <replace>mapElementComponent</replace>
+      <replace>Map</replace>
+      <replace>any</replace>
+      <replace>day</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public</dir>
       <dir>C:\Users\Danis\PhpstormProjects\jump_run_map</dir>
       <dir>C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\map</dir>
+      <dir>C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -283,53 +248,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/shared/map.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/map.module.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/templates/collectible.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/templates/map-element.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/templates/character.component.html" />
-        <option value="$PROJECT_DIR$/dev_back/models/Character.ts" />
-        <option value="$PROJECT_DIR$/dev_back/models/Collectible.ts" />
-        <option value="$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts" />
-        <option value="$PROJECT_DIR$/dev_back/models/MapElement.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/elements/map-element/templates/add-map-element.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/models/Decoration.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/components/character.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/background.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/css/modal.component.min.scss" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/components/background.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/services/background.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/css/overlay.component.min.scss" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/modal.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/overlay.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/shared/shared.module.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/css/modal.component.min.css" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.min.scss" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.min.css" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/css/modal.component.scss" />
         <option value="$PROJECT_DIR$/dev_public/app/map/components/decoration.component.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/components/modal.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/css/overlay.component.scss" />
         <option value="$PROJECT_DIR$/dev_public/assets/sass/_helper.scss" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/components/overlay.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/index.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/character.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/templates/map-element.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/templates/collectible.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/templates/character.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/element.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/core/my-nav.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts" />
+        <option value="$USER_HOME$/Downloads/map20161208 (2).json" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/map-save-modal.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/css/map-save-modal.component.scss" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html" />
+        <option value="$PROJECT_DIR$/dev_back/models/Map.ts" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/map.router.ts" />
+        <option value="$USER_HOME$/Downloads/map20161208 (4).json" />
+        <option value="$PROJECT_DIR$/dev_public/app/shared/map-save.service.ts" />
+        <option value="$USER_HOME$/Downloads/Natiis fancy Map20161208 (1).json" />
+        <option value="$USER_HOME$/Downloads/Natiis fancy Map20161208 (2).json" />
+        <option value="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/load-map-modal.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/components/load-map-modal.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.scss" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/components/overlay.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html" />
-        <option value="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/components/element.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/index.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/components/map-load-modal.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/components/map-save-modal.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/map-save-modal.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/templates/map-load-modal.component.html" />
+        <option value="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
+        <option value="$USER_HOME$/Downloads/Test20161208 (2).json" />
+        <option value="$PROJECT_DIR$/dev_back/WebApi.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" />
       </list>
     </option>
   </component>
@@ -352,7 +321,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1176" />
@@ -684,6 +653,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -732,8 +727,42 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="collectible" />
+              <option name="myItemId" value="background" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elements" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="background" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="background.component.ts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -758,6 +787,112 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-nav.component.scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jump_run_map" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev_back" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -766,10 +901,20 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\ui\css" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\ui\templates" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_back\models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\core\components" />
+      <recent name="C:\Users\Danis\PhpstormProjects\jump_run_map\dev_public\app\core" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -800,6 +945,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -833,35 +984,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481121964778</updated>
-      <workItem from="1481121968050" duration="13550000" />
+      <workItem from="1481121968050" duration="14754000" />
+      <workItem from="1481182157298" duration="1602000" />
+      <workItem from="1481205206051" duration="273000" />
+      <workItem from="1481206091841" duration="16040000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13550000" />
+    <option name="totallyTimeSpent" value="32669000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -948,8 +1102,6 @@
         <option value="$PROJECT_DIR$/dev_public/app/map/map.routing.js.map" />
         <option value="$PROJECT_DIR$/dev_public/app/auth/auth.service.js" />
         <option value="$PROJECT_DIR$/dev_public/app/auth/auth.service.js.map" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js" />
-        <option value="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js.map" />
         <option value="$PROJECT_DIR$/dev_public/app/core/services/file.service.js" />
         <option value="$PROJECT_DIR$/dev_public/app/core/services/file.service.js.map" />
         <option value="$PROJECT_DIR$/dev_public/app/core/services/user-service.service.js" />
@@ -1046,6 +1198,32 @@
         <option value="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js" />
         <option value="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js.map" />
+        <option value="$PROJECT_DIR$/../breguet_dev/dev_public/app/shared/pipes/order-by-limit.pipe.js" />
+        <option value="$PROJECT_DIR$/../breguet_dev/dev_public/app/shared/pipes/order-by-limit.pipe.js.map" />
+        <option value="$PROJECT_DIR$/../breguet_dev/dev_public/app/shared/pipes/order-by-limit-filter.pipe.js" />
+        <option value="$PROJECT_DIR$/../breguet_dev/dev_public/app/shared/pipes/order-by-limit-filter.pipe.js.map" />
+        <option value="$PROJECT_DIR$/dev_back/models/Map.js.map" />
+        <option value="$PROJECT_DIR$/dev_back/models/Map.js" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/map.router.js" />
+        <option value="$PROJECT_DIR$/dev_back/routes/backend/map.router.js.map" />
+        <option value="$PROJECT_DIR$/dev_public/app/shared/map-save.service.js.map" />
+        <option value="$PROJECT_DIR$/dev_public/app/shared/map-save.service.js" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/components/map-save-modal.component.js" />
+        <option value="$PROJECT_DIR$/dev_public/app/ui/components/map-save-modal.component.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/game-map.component.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/game-map.component.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/element.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/decoration.component.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/decoration.component.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/element.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/shared/services/map.service.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/shared/services/map.service.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/shared/services/map-creator.service.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/shared/services/map-creator.service.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/game-map.module.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/game-map.module.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/map-load-modal.component.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/map-load-modal.component.js.map" />
       </list>
     </option>
   </component>
@@ -1057,266 +1235,23 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/collectible.component.html">
+    <entry file="file://$USER_HOME$/Downloads/map20161208 (1).json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="196" lean-forward="false" selection-start-line="0" selection-start-column="196" selection-end-line="0" selection-end-column="196" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/map-element.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="81" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="196" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Character.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Element.ts">
+    <entry file="file://$USER_HOME$/Downloads/map20161208 (2).json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="408">
+          <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/Character.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/Collectible.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/DecorationMongoose.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_back/models/MapElement.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/components/add-decoration.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/decoration/templates/add-decoration.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/map-element/components/add-map-element.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/map-element/templates/add-map-element.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Decoration.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/character.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="195" lean-forward="false" selection-start-line="0" selection-start-column="195" selection-end-line="0" selection-end-column="195" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/map.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/map.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/map-element.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/character.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/map.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/map.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/collectible/services/collectible.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1004">
-          <caret line="102" column="30" lean-forward="false" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/shared.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/modal.component.html">
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/map-save-modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1324,173 +1259,419 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/modal.component.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/overlay.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="66" column="53" lean-forward="true" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#96#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/modal.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/overlay.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/_helper.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <marker date="1481135162429" expanded="true" signature="117:333" ph="..." />
-            <marker date="1481135162429" expanded="true" signature="173:220" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/overlay.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/services/overlay.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="41" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/decoration.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="178" lean-forward="false" selection-start-line="15" selection-start-column="166" selection-end-line="15" selection-end-column="178" />
-          <folding>
-            <element signature="e#0#92#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="596">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/element.ts">
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/modal.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/models/Map.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/map20161208 (4).json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/map.router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Natiis fancy Map20161208.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Natiis fancy Map20161208 (1).json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Natiis fancy Map20161208 (2).json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Test20161208 (1).json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/map-save-modal.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/map-save.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="49" column="76" lean-forward="false" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
           <folding>
-            <element signature="e#0#82#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/map-load-modal.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/services/overlay.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/map-save-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="23" column="191" lean-forward="false" selection-start-line="23" selection-start-column="191" selection-end-line="23" selection-end-column="191" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/map-load-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/map-save-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/assets/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="199" column="21" lean-forward="false" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Test20161208 (2).json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/decoration.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/character.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/map.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/map-load-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/core/core.modules.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="29" column="85" lean-forward="false" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/map.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/WebApi.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/models/Background.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="171" column="26" lean-forward="false" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <marker date="1481221761822" expanded="true" signature="117:409" ph="..." />
+            <marker date="1481221761822" expanded="true" signature="173:220" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/background.router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/element.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="120" column="46" lean-forward="false" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/map.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
           <folding />
         </state>
       </provider>

@@ -1,7 +1,5 @@
 /*INCLUDES*/
 @import "variables";
-
-
 @import "reset";
 @import 'default_margin_padding';
 @import "helper";
@@ -11,32 +9,27 @@
 @import "modal";
 @import "tabs";
 @import "font";
-
 @import "login";
 @import "register";
 @import "dashboard";
 
-
-
-html, body{
+html, body {
   font-family: "Roboto Regular", Arial, Helvetica, SansSerif;
   background-color: #e1e1e1;
   min-width: 100vw;
   min-height: 100vh;
 }
 
-
-h1{
+h1 {
   font-size: 24px;
   color: $primary-color;
 }
-
 
 main {
   height: calc(100vh - 50px);
 }
 
-.white{
+.white {
   background-color: white;
 }
 
@@ -63,20 +56,20 @@ input, select, textarea {
   background-image: none;
   border: 1px solid #ccc;
   /* border-radius: 4px; */
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-input.error{
+input.error {
   outline: none !important;
-  border:1px solid $primary-color;
-  box-shadow: 0 0 4px lighten($primary-color,20%);
+  border: 1px solid $primary-color;
+  box-shadow: 0 0 4px lighten($primary-color, 20%);
 }
 
-textarea{
+textarea {
   height: auto;
   font-family: "Roboto Regular", Arial, SansSerif;
 }
@@ -89,26 +82,26 @@ small.error {
   padding: 3px 5px;
   box-sizing: border-box;
   color: white;
-  a{
+  a {
     font-weight: bold;
     color: white;
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: $primary-color;
 }
 
-a:hover{
-  color: lighten($primary-color,10%);
+a:hover {
+  color: lighten($primary-color, 10%);
   transition-duration: $transition-duration;
 }
 
 input:focus, textarea:focus {
   outline: none !important;
-  border:1px solid $primary-color;
-  box-shadow: 0 0 4px lighten($primary-color,20%);
+  border: 1px solid $primary-color;
+  box-shadow: 0 0 4px lighten($primary-color, 20%);
 }
 
 .card-element {
@@ -125,7 +118,7 @@ input:focus, textarea:focus {
   background-color: white;
 }
 
-.card-item{
+.card-item {
   border-bottom: 1px solid #e1e1e1;
 }
 
@@ -133,30 +126,76 @@ input:focus, textarea:focus {
   height: 50px;
 }
 
-.card-list-item{
+.card-list-item {
   justify-content: center;
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #e1e1e1;
 }
-.card-list-item:hover{
+
+.card-list-item:hover {
   cursor: pointer;
-  background-color: darken(white,5%);
+  background-color: darken(white, 5%);
   transition-duration: $transition-duration;
 }
 
 ::-webkit-scrollbar {
   width: 0.5em;
-  height: 0.5em; }
+  height: 0.5em;
+}
 
 ::-webkit-scrollbar-thumb {
-  background: slategray; }
+  background: slategray;
+}
 
 ::-webkit-scrollbar-track {
-  background: #b8c0c8; }
+  background: #b8c0c8;
+}
 
 .middle-of-page {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
+
+.small-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  background-color: white;
+  padding: 10px 50px;
+}
+
+
+.modal-item {
+  padding: 15px 30px;
+  border-bottom: 1px solid lightgray;
+  color: #272727;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
+.modal-item:hover {
+  cursor: pointer;
+  background-color: #e1e1e1;
+  transition-duration: 500ms;
+}
+
+.simple-modal-wrapper{
+  transform: translate(-50%,-50%);
+  position: absolute;
+  z-index: 10001;
+  left:50%;
+  top:50%;
+  background-color: white;
+}
+
+
+.modal-scroll{
+  max-height: 500px;
+  overflow-y: scroll;
+}

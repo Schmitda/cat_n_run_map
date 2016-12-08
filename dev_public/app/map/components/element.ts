@@ -19,14 +19,18 @@ export abstract class BaseElement implements OnInit {
     protected gameMap: GameMapComponent;
     protected modalService: ModalService;
     protected mapService: MapService;
-    protected hidden: boolean = false;
+    private _hidden: boolean = false;
 
     @HostListener('dblclick', ['$event'])
     onMouseDblClick(event?:MouseEvent){
         this.mapService.selectElement(this.element);
-        this.hidden = true;
+        this._hidden = true;
         this.gameMap.moveingComponent = this;
         this.setSelectedType();
+        console.log(event);
+        if(event){
+            event.stopPropagation();
+        }
     }
 
     @HostListener('contextmenu', ['$event'])
@@ -36,7 +40,7 @@ export abstract class BaseElement implements OnInit {
     }
 
     public setVisible(){
-        this.hidden = false;
+        this._hidden = false;
     }
 
     public abstract setSelectedType();
@@ -48,5 +52,11 @@ export abstract class BaseElement implements OnInit {
 
     ngOnInit() { }
 
+    get hidden(): boolean {
+        return this._hidden;
+    }
 
+    set hidden(value: boolean) {
+        this._hidden = value;
+    }
 }

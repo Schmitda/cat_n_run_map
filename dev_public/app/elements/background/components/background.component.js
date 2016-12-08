@@ -11,21 +11,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var forms_1 = require("@angular/forms");
 var background_service_1 = require("../services/background.service");
+var router_1 = require("@angular/router");
 var BackgroundComponent = (function () {
-    function BackgroundComponent(fb, backgroundService) {
+    function BackgroundComponent(fb, backgroundService, router) {
         this.fb = fb;
         this.backgroundService = backgroundService;
+        this.router = router;
         this.form = fb.group({
             'name': ['', forms_1.Validators.required],
             'source': ['',] //TODO FileValidator
         });
     }
     BackgroundComponent.prototype.submit = function () {
+        var _this = this;
         if (this.form.valid) {
             var background = this.form.value;
             background.source = this.file;
-            this.backgroundService.save(background)
-                .subscribe(function () { });
+            this.backgroundService.save(background).subscribe(function () {
+                _this.router.navigate(['/map']);
+            });
         }
     };
     BackgroundComponent.prototype.uploadFileTest = function (event) {
@@ -40,7 +44,7 @@ var BackgroundComponent = (function () {
             templateUrl: '../templates/background.component.html',
             styleUrls: ['../css/background.component.min.scss'],
         }), 
-        __metadata('design:paramtypes', [forms_1.FormBuilder, background_service_1.BackgroundService])
+        __metadata('design:paramtypes', [forms_1.FormBuilder, background_service_1.BackgroundService, router_1.Router])
     ], BackgroundComponent);
     return BackgroundComponent;
 }());

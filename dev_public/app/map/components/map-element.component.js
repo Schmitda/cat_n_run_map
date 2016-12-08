@@ -20,12 +20,14 @@ var core_1 = require('@angular/core');
 var element_1 = require("./element");
 var game_map_component_1 = require("./game-map.component");
 var map_service_1 = require("../../shared/map.service");
+var modal_service_1 = require("../../ui/services/modal.service");
 var MapElementComponent = (function (_super) {
     __extends(MapElementComponent, _super);
-    function MapElementComponent(mapService, gameMap) {
+    function MapElementComponent(mapService, gameMap, modalService) {
         _super.call(this);
         this.mapService = mapService;
         this.gameMap = gameMap;
+        this.modalService = modalService;
     }
     MapElementComponent.prototype.setSelectedType = function () {
         this.mapService.selectedType = "mapElement";
@@ -40,7 +42,7 @@ var MapElementComponent = (function (_super) {
             styleUrls: ['../css/map-element.component.min.css'],
         }),
         __param(1, core_1.Inject(core_1.forwardRef(function () { return game_map_component_1.GameMapComponent; }))), 
-        __metadata('design:paramtypes', [map_service_1.MapService, game_map_component_1.GameMapComponent])
+        __metadata('design:paramtypes', [map_service_1.MapService, game_map_component_1.GameMapComponent, modal_service_1.ModalService])
     ], MapElementComponent);
     return MapElementComponent;
 }(element_1.BaseElement));

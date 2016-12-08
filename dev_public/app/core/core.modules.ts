@@ -1,15 +1,14 @@
 import {
-    ModuleWithProviders, NgModule,
-    Optional, SkipSelf
+    NgModule
 }       from '@angular/core';
 import {CommonModule}      from '@angular/common';
 import {UserService} from "./services/user-service.service";
-import {MyNavComponent} from "./my-nav.component";
+import {MyNavComponent} from "./components/my-nav.component";
 import {AuthGuard} from "../auth/auth.service";
 import {BrowserModule} from "@angular/platform-browser";
 import {HttpModule} from "@angular/http";
 import {BackgroundService} from "../elements/background/services/background.service";
-import {ReactiveFormsModule} from "@angular/forms";
+import {ReactiveFormsModule, FormsModule} from "@angular/forms";
 import {FileService} from "./services/file.service";
 import {FormGenerator} from "../shared/form-generator.service";
 import {CollectibleService} from "../elements/collectible/services/collectible.service";
@@ -22,12 +21,14 @@ import {OverlayComponent} from "../ui/components/overlay.component";
 import {OverlayService}  from "../ui/services/overlay.service";
 import {ElementContextMenuModalComponent} from "../ui/components/element-context-menu-modal.component";
 import {ModalService} from "../ui/services/modal.service";
-import {ModalComponent} from "../ui/components/modal.component";
+import {MapSaveService} from "../shared/map-save.service";
+import {MapSaveModalComponent} from "../ui/components/map-save-modal.component";
+import {MapLoadModalComponent} from "../ui/components/map-load-modal.component";
 
 @NgModule({
-    imports: [CommonModule, BrowserModule, HttpModule, ReactiveFormsModule],
-    declarations: [MyNavComponent, ElementContextMenuModalComponent, OverlayComponent],
-    exports: [MyNavComponent, CommonModule, BrowserModule, HttpModule, ElementContextMenuModalComponent, OverlayComponent],
+    imports: [CommonModule, BrowserModule, HttpModule, ReactiveFormsModule, FormsModule],
+    declarations: [MyNavComponent, ElementContextMenuModalComponent, OverlayComponent, MapSaveModalComponent, MapLoadModalComponent],
+    exports: [MyNavComponent, CommonModule, BrowserModule, HttpModule, ElementContextMenuModalComponent, OverlayComponent, MapSaveModalComponent, MapLoadModalComponent],
     providers: [
         UserService,
         AuthGuard,
@@ -41,7 +42,8 @@ import {ModalComponent} from "../ui/components/modal.component";
         MapService,
         MapCreator,
         OverlayService,
-        ModalService
+        ModalService,
+        MapSaveService
     ]
 })
 export class CoreModule {

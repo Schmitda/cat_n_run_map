@@ -20,6 +20,12 @@ backgroundRouter.get('/', function (req, res) {
         res.json(result);
     });
 });
+backgroundRouter.get('/first', function (req, res) {
+    Background.findOne().exec()
+        .then(function (result) {
+        res.json(result);
+    });
+});
 backgroundRouter.get('/:id', function (req, res) {
     Background.findById(req.params.id).exec()
         .then(function (result) {

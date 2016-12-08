@@ -4,6 +4,7 @@ import {OverlayService} from "../services/overlay.service";
 import {ModalService} from "../services/modal.service";
 import {MapService} from "../../shared/map.service";
 import {BaseElement} from "../../map/components/element";
+import {MapCreator} from "../../shared/map-creator.service";
 
 @Component({
     moduleId: module.id,
@@ -19,13 +20,18 @@ export class ElementContextMenuModalComponent extends ModalComponent implements 
         return !this._isVisible;
     }
 
-    constructor(protected overlayService: OverlayService, private modalService: ModalService, private mapService: MapService) {
+    constructor(protected overlayService: OverlayService, private modalService: ModalService, private mapService: MapService, private mapCreator: MapCreator) {
         super();
         this.modalService.elementContextMenuModal = this;
     }
 
     ngOnInit() {
 
+    }
+
+    private deleteElement(){
+        this.mapCreator.deleteComponent(this.baseElement.element);
+        this.hide();
     }
 
     private moveElement(){

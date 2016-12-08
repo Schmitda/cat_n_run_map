@@ -21,8 +21,11 @@ var map_creator_service_1 = require("../../shared/map-creator.service");
 var decoration_component_1 = require("./decoration.component");
 var core_4 = require("@angular/core");
 var modal_component_1 = require("../../ui/components/modal.component");
+var character_component_1 = require("./character.component");
+var map_element_component_1 = require("./map-element.component");
 var GameMapComponent = (function () {
     function GameMapComponent(backgroundService, characterService, mapElementService, decorationService, collectibleService, mapService, mapCreator, gameMap) {
+        var _this = this;
         this.backgroundService = backgroundService;
         this.characterService = characterService;
         this.mapElementService = mapElementService;
@@ -34,6 +37,9 @@ var GameMapComponent = (function () {
         this.selectedElement = {};
         this._moveingComponent = null;
         this.backgroundImage = '';
+        this.backgroundService.getFirst().subscribe(function (result) {
+            _this.setBackground(result);
+        });
     }
     GameMapComponent.prototype.onMouseMove = function (event) {
         if (this.selectedElement) {
@@ -41,8 +47,16 @@ var GameMapComponent = (function () {
             this.image.nativeElement.style.left = (event.clientX - this.selectedElement.width / 2) + "px";
         }
     };
+    GameMapComponent.prototype.contextMenu = function (event) {
+        if (this.selectedElement) {
+            this.mapService.selectElement(null);
+            this.mapCreator.deleteComponent(this._moveingComponent.element);
+            this.moveingComponent = null;
+        }
+    };
     GameMapComponent.prototype.onMouseDown = function (event) {
         if (event.which === 1) {
+            console.log("here");
             if (this.selectedElement !== null) {
                 switch (this.mapService.selectedType) {
                     case 'decoration':
@@ -74,6 +88,21 @@ var GameMapComponent = (function () {
         var scrolledLeft = -1 * clientRect.left;
         return event.clientX + scrolledLeft - this.selectedElement.width / 2;
     };
+    GameMapComponent.prototype.changeDecorationVisibility = function () {
+        this.decorationComponents.forEach(function (decorationComponent) {
+            decorationComponent.hidden = !decorationComponent.hidden;
+        });
+    };
+    GameMapComponent.prototype.changeMapElementVisibility = function () {
+        this.mapElementComponents.forEach(function (mapElementComponent) {
+            mapElementComponent.hidden = !mapElementComponent.hidden;
+        });
+    };
+    GameMapComponent.prototype.changeCharacterVisibility = function () {
+        this.characterComponents.forEach(function (characterComponent) {
+            characterComponent.hidden = !characterComponent.hidden;
+        });
+    };
     GameMapComponent.prototype.getSource = function () {
         if (this.selectedElement && this.selectedElement.source) {
             return this.selectedElement.source;
@@ -92,10 +121,6 @@ var GameMapComponent = (function () {
                 _this.selectedElement = obj;
                 _this.image.nativeElement.style.top = (parseInt(_this.image.nativeElement.style.top) - _this.selectedElement.height / 2) + "px";
                 _this.image.nativeElement.style.left = (parseInt(_this.image.nativeElement.style.left) - _this.selectedElement.width / 2) + "px";
-                switch (_this.mapService.selectedType) {
-                    case 'decoration':
-                        break;
-                }
             }
             else {
                 _this.selectedElement = null;
@@ -106,6 +131,8 @@ var GameMapComponent = (function () {
     };
     GameMapComponent.prototype.setBackground = function (background) {
         this.background = background;
+        this.mapCreator.background = background;
+        console.log(background);
         this.backgroundImage = 'url(' + this.background.source + ')';
     };
     GameMapComponent.prototype.ngOnInit = function () {
@@ -122,11 +149,33 @@ var GameMapComponent = (function () {
         __metadata('design:type', Object)
     ], GameMapComponent.prototype, "image", void 0);
     __decorate([
+        core_1.ViewChildren(decoration_component_1.DecorationComponent), 
+        __metadata('design:type', core_1.QueryList)
+    ], GameMapComponent.prototype, "decorationComponents", void 0);
+    __decorate([
+        core_1.ViewChildren(map_element_component_1.MapElementComponent), 
+        __metadata('design:type', core_1.QueryList)
+    ], GameMapComponent.prototype, "mapElementComponents", void 0);
+    __decorate([
+        core_1.ViewChildren(character_component_1.CharacterComponent), 
+        __metadata('design:type', core_1.QueryList)
+    ], GameMapComponent.prototype, "characterComponents", void 0);
+    __decorate([
+        core_4.ViewChild(modal_component_1.ModalComponent), 
+        __metadata('design:type', modal_component_1.ModalComponent)
+    ], GameMapComponent.prototype, "modal", void 0);
+    __decorate([
         core_3.HostListener('mousemove', ['$event']), 
         __metadata('design:type', Function), 
         __metadata('design:paramtypes', [MouseEvent]), 
         __metadata('design:returntype', void 0)
     ], GameMapComponent.prototype, "onMouseMove", null);
+    __decorate([
+        core_3.HostListener('contextmenu', ['$event']), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
+        __metadata('design:returntype', void 0)
+    ], GameMapComponent.prototype, "contextMenu", null);
     __decorate([
         core_3.HostListener('mousedown', ['$event']), 
         __metadata('design:type', Function), 
@@ -137,10 +186,6 @@ var GameMapComponent = (function () {
         core_2.HostBinding('style.background-image'), 
         __metadata('design:type', String)
     ], GameMapComponent.prototype, "backgroundImage", void 0);
-    __decorate([
-        core_4.ViewChild(modal_component_1.ModalComponent), 
-        __metadata('design:type', modal_component_1.ModalComponent)
-    ], GameMapComponent.prototype, "modal", void 0);
     GameMapComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

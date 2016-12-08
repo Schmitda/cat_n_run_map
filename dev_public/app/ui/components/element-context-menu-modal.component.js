@@ -18,13 +18,15 @@ var modal_component_1 = require("./modal.component");
 var overlay_service_1 = require("../services/overlay.service");
 var modal_service_1 = require("../services/modal.service");
 var map_service_1 = require("../../shared/map.service");
+var map_creator_service_1 = require("../../shared/map-creator.service");
 var ElementContextMenuModalComponent = (function (_super) {
     __extends(ElementContextMenuModalComponent, _super);
-    function ElementContextMenuModalComponent(overlayService, modalService, mapService) {
+    function ElementContextMenuModalComponent(overlayService, modalService, mapService, mapCreator) {
         _super.call(this);
         this.overlayService = overlayService;
         this.modalService = modalService;
         this.mapService = mapService;
+        this.mapCreator = mapCreator;
         this._isVisible = false;
         this.modalService.elementContextMenuModal = this;
     }
@@ -39,6 +41,10 @@ var ElementContextMenuModalComponent = (function (_super) {
         configurable: true
     });
     ElementContextMenuModalComponent.prototype.ngOnInit = function () {
+    };
+    ElementContextMenuModalComponent.prototype.deleteElement = function () {
+        this.mapCreator.deleteComponent(this.baseElement.element);
+        this.hide();
     };
     ElementContextMenuModalComponent.prototype.moveElement = function () {
         this.baseElement.onMouseDblClick();
@@ -65,7 +71,7 @@ var ElementContextMenuModalComponent = (function (_super) {
             templateUrl: '../templates/element-context-menu-modal.component.html',
             styleUrls: ['../css/element-context-menu-modal.component.min.css'],
         }), 
-        __metadata('design:paramtypes', [overlay_service_1.OverlayService, modal_service_1.ModalService, map_service_1.MapService])
+        __metadata('design:paramtypes', [overlay_service_1.OverlayService, modal_service_1.ModalService, map_service_1.MapService, map_creator_service_1.MapCreator])
     ], ElementContextMenuModalComponent);
     return ElementContextMenuModalComponent;
 }(modal_component_1.ModalComponent));

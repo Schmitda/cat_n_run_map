@@ -1,0 +1,9 @@
+<div class="small-modal">
+    <form [formGroup]="form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input formControlName="name" name="name" id="name">
+        </div>
+        <button (click)="save()" class="btn full-width">Save</button>
+    </form>
+</div>

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {AppComponent} from "./app.component";
 import {CoreModule} from "./core/core.modules";
 import {routing} from "./app.routing";
-import {MyNavComponent} from "./core/my-nav.component";
+import {MyNavComponent} from "./core/components/my-nav.component";
 
 
 @NgModule({

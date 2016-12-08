@@ -5,8 +5,10 @@
         </div>
         <div class="right">
             <a>New</a>
-            <a>Save</a>
-            <a>Publish</a>
+            <a (click)="saveMap()">Save</a>
+            <a (click)="loadMap()">Load</a>
+            <a (click)="createJson()">JSON</a>
+            <a >Publish</a>
             <a (click)="logout()">Logoff</a>
         </div>
     </nav>

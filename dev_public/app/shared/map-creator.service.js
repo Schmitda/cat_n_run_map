@@ -16,6 +16,13 @@ var MapCreator = (function () {
         this._mapElements = [];
         this._characters = [];
     }
+    Object.defineProperty(MapCreator.prototype, "name", {
+        get: function () {
+            return this._name;
+        },
+        enumerable: true,
+        configurable: true
+    });
     MapCreator.prototype.addDecoration = function (decoration, yCoord, xCoord) {
         var _this = this;
         var doesAlreadyExist = false;
@@ -73,6 +80,21 @@ var MapCreator = (function () {
             });
         }
     };
+    MapCreator.prototype.setId = function (id) {
+        this.id = id;
+    };
+    MapCreator.prototype.setName = function (name) {
+        this._name = name;
+    };
+    MapCreator.prototype.loadMap = function (map) {
+        this._decorations = map.map.decorations;
+        this._characters = map.map.characters;
+        this._mapElements = map.map.mapElements;
+        this._background = map.map.background;
+        this._collectibles = map.map.collectibles;
+        this.setName(map.map.name);
+        this.setId(map._id);
+    };
     MapCreator.prototype.addMapElement = function (element, yCoord, xCoord) {
         var _this = this;
         var doesAlreadyExist = false;
@@ -92,6 +114,44 @@ var MapCreator = (function () {
             });
         }
         console.log(this._mapElements);
+    };
+    MapCreator.prototype.deleteComponent = function (componentToDelete) {
+        var _this = this;
+        this._decorations.forEach(function (decoration, index) {
+            if (decoration.decoration == componentToDelete) {
+                _this._decorations.splice(index, 1);
+                console.log("here");
+            }
+        });
+        this._collectibles.forEach(function (collectible, index) {
+            if (collectible.collectible == componentToDelete) {
+                _this._collectibles.splice(index, 1);
+            }
+        });
+        this._mapElements.forEach(function (mapElement, index) {
+            if (mapElement.mapElement == componentToDelete) {
+                _this._mapElements.splice(index, 1);
+            }
+        });
+        this._characters.forEach(function (character, index) {
+            if (character.character == componentToDelete) {
+                _this._characters.splice(index, 1);
+            }
+        });
+    };
+    MapCreator.prototype.generateMap = function () {
+        console.log(this);
+        return {
+            map: {
+                name: this._name,
+                background: this._background,
+                decorations: this._decorations,
+                mapElements: this._mapElements,
+                collectibles: this._collectibles,
+                characters: this._characters,
+            },
+            _id: this.id
+        };
     };
     Object.defineProperty(MapCreator.prototype, "background", {
         get: function () {

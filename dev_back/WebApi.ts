@@ -14,12 +14,18 @@ import collectibleRouter = require("./routes/backend/collectible.router");
 import decorationRouter = require("./routes/backend/decoration.router");
 import characterRouter = require("./routes/backend/character.router");
 import mapelementRouter = require("./routes/backend/map-element.router");
+import mapRouter = require("./routes/backend/map.router");
 
 
 
 export class WebApi{
 
     constructor(private app: express.Express, private port:number) {
+        app.use(function(req, res, next) {
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+            next();
+        });
         this.configureMiddleware(app);
         this.configureRoutes(app);
     }
@@ -51,6 +57,7 @@ export class WebApi{
 
     private configureRoutes(app: express.Express){
         app.use('/api/background', backgroundRouter);
+        app.use('/api/map', mapRouter);
         app.use('/api/decoration', decorationRouter);
         app.use('/api/collectible', collectibleRouter);
         app.use('/api/character', characterRouter);

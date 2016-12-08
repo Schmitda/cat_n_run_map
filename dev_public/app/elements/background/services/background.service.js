@@ -41,6 +41,10 @@ var BackgroundService = (function () {
     BackgroundService.prototype.extractData = function (res) {
         return res.json() || {};
     };
+    BackgroundService.prototype.getFirst = function () {
+        return this.http.get('/api/background/first')
+            .map(this.extractData);
+    };
     BackgroundService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http, file_service_1.FileService])
