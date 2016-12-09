@@ -15,6 +15,8 @@ export class MapCreator{
             decoration: Decoration,
             yCoord: number,
             xCoord: number
+            xRatio: number,
+            yRatio: number,
         }
         ]=[];
     private _collectibles: [
@@ -40,8 +42,8 @@ export class MapCreator{
         ]=[];
     private id;
     private _name;
-    private _width;
-    private _height;
+    private _width = 0;
+    private _height = 0;
 
 
     get name() {
@@ -50,30 +52,40 @@ export class MapCreator{
 
     public addDecoration(decoration: Decoration, yCoord: number, xCoord: number){
         let doesAlreadyExist = false;
+        let xRatio = xCoord / this.width * 100;
+        let yRatio = yCoord / this.height * 100;
         this._decorations.forEach((decorationObj, index:number) => {
             if(decorationObj.decoration === decoration){
                 doesAlreadyExist = true;
                 this._decorations[index].xCoord = xCoord;
                 this._decorations[index].yCoord = yCoord;
+                this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
         if(!doesAlreadyExist){
             this._decorations.push({
                 decoration: Object.assign({},decoration),
+                xCoord: xCoord,
                 yCoord: yCoord,
-                xCoord: xCoord
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
     }
 
     public addCharacter(element: Character, yCoord: number, xCoord: number){
         let doesAlreadyExist = false;
+        let xRatio = xCoord / this.width * 100;
+        let yRatio = yCoord / this.height * 100;
         this._characters.forEach((item, index:number) => {
             if(item.character === element){
                 doesAlreadyExist = true;
                 this._characters[index].xCoord = xCoord;
                 this._characters[index].yCoord = yCoord;
+                this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
@@ -82,17 +94,23 @@ export class MapCreator{
                 character: Object.assign({},element),
                 yCoord: yCoord,
                 xCoord: xCoord
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
     }
 
     public addCollectible(element: Character, yCoord: number, xCoord: number){
         let doesAlreadyExist = false;
+        let xRatio = xCoord / this.width * 100;
+        let yRatio = yCoord / this.height * 100;
         this._collectibles.forEach((item, index:number) => {
             if(item.collectible === element){
                 doesAlreadyExist = true;
                 this._collectibles[index].xCoord = xCoord;
                 this._collectibles[index].yCoord = yCoord;
+                this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
@@ -101,6 +119,8 @@ export class MapCreator{
                 collectible: Object.assign({},element),
                 yCoord: yCoord,
                 xCoord: xCoord
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
     }
@@ -125,11 +145,15 @@ export class MapCreator{
 
     public addMapElement(element: Character, yCoord: number, xCoord: number){
         let doesAlreadyExist = false;
+        let xRatio = xCoord / this.width * 100;
+        let yRatio = yCoord / this.height * 100;
         this._mapElements.forEach((item, index:number) => {
             if(item.mapElement === element){
                 doesAlreadyExist = true;
                 this._mapElements[index].xCoord = xCoord;
                 this._mapElements[index].yCoord = yCoord;
+                this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
@@ -138,6 +162,8 @@ export class MapCreator{
                 mapElement: Object.assign({},element),
                 yCoord: yCoord,
                 xCoord: xCoord
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
         console.log(this._mapElements);

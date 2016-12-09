@@ -37,6 +37,7 @@ var GameMapComponent = (function () {
         this.selectedElement = {};
         this._moveingComponent = null;
         this.backgroundImage = '';
+        this.width = '10000px';
         this.backgroundService.getFirst().subscribe(function (result) {
             _this.setBackground(result);
         });
@@ -113,6 +114,10 @@ var GameMapComponent = (function () {
     };
     GameMapComponent.prototype.ngAfterViewInit = function () {
         this.setListener();
+        //TODO Natii: map width/height
+        this.height = parseInt(window.getComputedStyle(this.gameMap.nativeElement).height);
+        this.mapCreator.width = parseInt(this.width);
+        this.mapCreator.height = this.height;
     };
     GameMapComponent.prototype.setListener = function () {
         var _this = this;
@@ -135,9 +140,6 @@ var GameMapComponent = (function () {
         this.mapCreator.background = background;
         console.log(background);
         this.backgroundImage = 'url(' + this.background.source + ')';
-        //TODO: this.mapCreator.setwidth
-        //this.mapCreator.width =
-        //this.mapService
     };
     GameMapComponent.prototype.ngOnInit = function () {
     };
@@ -190,6 +192,10 @@ var GameMapComponent = (function () {
         core_2.HostBinding('style.background-image'), 
         __metadata('design:type', String)
     ], GameMapComponent.prototype, "backgroundImage", void 0);
+    __decorate([
+        core_2.HostBinding('style.width'), 
+        __metadata('design:type', String)
+    ], GameMapComponent.prototype, "width", void 0);
     GameMapComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

@@ -15,6 +15,8 @@ var MapCreator = (function () {
         this._collectibles = [];
         this._mapElements = [];
         this._characters = [];
+        this._width = 0;
+        this._height = 0;
     }
     Object.defineProperty(MapCreator.prototype, "name", {
         get: function () {
@@ -26,30 +28,40 @@ var MapCreator = (function () {
     MapCreator.prototype.addDecoration = function (decoration, yCoord, xCoord) {
         var _this = this;
         var doesAlreadyExist = false;
+        var xRatio = xCoord / this.width * 100;
+        var yRatio = yCoord / this.height * 100;
         this._decorations.forEach(function (decorationObj, index) {
             if (decorationObj.decoration === decoration) {
                 doesAlreadyExist = true;
                 _this._decorations[index].xCoord = xCoord;
                 _this._decorations[index].yCoord = yCoord;
+                _this._decorations[index].xRatio = xRatio;
+                _this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
         if (!doesAlreadyExist) {
             this._decorations.push({
                 decoration: Object.assign({}, decoration),
+                xCoord: xCoord,
                 yCoord: yCoord,
-                xCoord: xCoord
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
     };
     MapCreator.prototype.addCharacter = function (element, yCoord, xCoord) {
         var _this = this;
         var doesAlreadyExist = false;
+        var xRatio = xCoord / this.width * 100;
+        var yRatio = yCoord / this.height * 100;
         this._characters.forEach(function (item, index) {
             if (item.character === element) {
                 doesAlreadyExist = true;
                 _this._characters[index].xCoord = xCoord;
                 _this._characters[index].yCoord = yCoord;
+                _this._decorations[index].xRatio = xRatio;
+                _this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
@@ -57,18 +69,24 @@ var MapCreator = (function () {
             this._characters.push({
                 character: Object.assign({}, element),
                 yCoord: yCoord,
-                xCoord: xCoord
+                xCoord: xCoord,
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
     };
     MapCreator.prototype.addCollectible = function (element, yCoord, xCoord) {
         var _this = this;
         var doesAlreadyExist = false;
+        var xRatio = xCoord / this.width * 100;
+        var yRatio = yCoord / this.height * 100;
         this._collectibles.forEach(function (item, index) {
             if (item.collectible === element) {
                 doesAlreadyExist = true;
                 _this._collectibles[index].xCoord = xCoord;
                 _this._collectibles[index].yCoord = yCoord;
+                _this._decorations[index].xRatio = xRatio;
+                _this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
@@ -76,7 +94,9 @@ var MapCreator = (function () {
             this._collectibles.push({
                 collectible: Object.assign({}, element),
                 yCoord: yCoord,
-                xCoord: xCoord
+                xCoord: xCoord,
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
     };
@@ -98,11 +118,15 @@ var MapCreator = (function () {
     MapCreator.prototype.addMapElement = function (element, yCoord, xCoord) {
         var _this = this;
         var doesAlreadyExist = false;
+        var xRatio = xCoord / this.width * 100;
+        var yRatio = yCoord / this.height * 100;
         this._mapElements.forEach(function (item, index) {
             if (item.mapElement === element) {
                 doesAlreadyExist = true;
                 _this._mapElements[index].xCoord = xCoord;
                 _this._mapElements[index].yCoord = yCoord;
+                _this._decorations[index].xRatio = xRatio;
+                _this._decorations[index].yRatio = yRatio;
                 return;
             }
         });
@@ -110,7 +134,9 @@ var MapCreator = (function () {
             this._mapElements.push({
                 mapElement: Object.assign({}, element),
                 yCoord: yCoord,
-                xCoord: xCoord
+                xCoord: xCoord,
+                xRatio: xRatio,
+                yRatio: yRatio,
             });
         }
         console.log(this._mapElements);

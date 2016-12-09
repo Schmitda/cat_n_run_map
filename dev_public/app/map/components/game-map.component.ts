@@ -28,6 +28,7 @@ export class GameMapComponent implements OnInit, AfterViewInit {
     private background: Background;
     private selectedElement: Element = {};
     private _moveingComponent: any = null;
+    private height: number;
     @ViewChild('image') image;
     @ViewChildren(DecorationComponent) decorationComponents: QueryList<DecorationComponent>;
     @ViewChildren(MapElementComponent) mapElementComponents: QueryList<MapElementComponent>;
@@ -80,6 +81,7 @@ export class GameMapComponent implements OnInit, AfterViewInit {
     }
 
     @HostBinding('style.background-image') backgroundImage: string = '';
+    @HostBinding('style.width') width: string = '10000px';
 
 
     private getYCoord(event: MouseEvent): number {
@@ -126,6 +128,10 @@ export class GameMapComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit(): void {
         this.setListener();
+        //TODO Natii: map width/height
+        this.height = parseInt(window.getComputedStyle(this.gameMap.nativeElement).height);
+        this.mapCreator.width = parseInt(this.width);
+        this.mapCreator.height = this.height;
     }
 
     private setListener() {
@@ -147,9 +153,6 @@ export class GameMapComponent implements OnInit, AfterViewInit {
         this.mapCreator.background = background;
         console.log(background);
         this.backgroundImage = 'url(' + this.background.source + ')';
-        //TODO: this.mapCreator.setwidth
-        //this.mapCreator.width =
-        //this.mapService
     }
 
     ngOnInit() {
