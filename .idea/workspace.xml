@@ -2,68 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b69af9c-b699-4b6d-b734-5d87a360703e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_back/models/Map.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev_public/app/ui/css/map-save-modal.component.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js" afterPath="$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dev_public/app/core/my-nav.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/components/my-nav.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.js" afterPath="$PROJECT_DIR$/dev_back/WebApi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.js.map" afterPath="$PROJECT_DIR$/dev_back/WebApi.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/WebApi.ts" afterPath="$PROJECT_DIR$/dev_back/WebApi.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js.map" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" afterPath="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.component.js" afterPath="$PROJECT_DIR$/dev_public/app/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/app.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/app.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/app.module.ts" afterPath="$PROJECT_DIR$/dev_public/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.js" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.js.map" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" afterPath="$PROJECT_DIR$/dev_public/app/core/core.modules.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" afterPath="$PROJECT_DIR$/dev_public/app/core/templates/my-nav.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/elements/character/services/character.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/character.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/character.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/character.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/collectible.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/element.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/element.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/element.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/element.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/element.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/element.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/map/components/map-element.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/character.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/character.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/collectible.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/collectible.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/decoration.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/map/templates/map-element.component.html" afterPath="$PROJECT_DIR$/dev_public/app/map/templates/map-element.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js" afterPath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js" afterPath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js.map" afterPath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts" afterPath="$PROJECT_DIR$/dev_public/app/ui/components/element-context-menu-modal.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.min.css" afterPath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.scss" afterPath="$PROJECT_DIR$/dev_public/app/ui/css/element-context-menu-modal.component.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js.map" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts" afterPath="$PROJECT_DIR$/dev_public/app/ui/services/modal.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html" afterPath="$PROJECT_DIR$/dev_public/app/ui/templates/element-context-menu-modal.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/css/style.css" afterPath="$PROJECT_DIR$/dev_public/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_public/assets/sass/style.scss" afterPath="$PROJECT_DIR$/dev_public/assets/sass/style.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="game-map.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="game-map.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="120" column="46" lean-forward="false" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="46" />
+            <state relative-caret-position="559">
+              <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
               <folding>
                 <element signature="e#0#166#0" expanded="true" />
               </folding>
@@ -94,17 +36,27 @@
         <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game-map.component.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game-map.component.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev_public/app/map/css/game-map.component.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map-element.router.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/map-element.router.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,22 +75,9 @@
       <file leaf-file-name="element.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/element.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
+            <state relative-caret-position="340">
               <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="37" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-              <folding>
-                <marker date="1481221761822" expanded="true" signature="117:409" ph="..." />
-                <marker date="1481221761822" expanded="true" signature="173:220" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -146,8 +85,8 @@
       <file leaf-file-name="background.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -159,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/background.router.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="493">
-              <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+              <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -169,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -294,11 +233,11 @@
         <option value="$USER_HOME$/Downloads/Test20161208 (2).json" />
         <option value="$PROJECT_DIR$/dev_back/WebApi.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/shared/map-creator.service.ts" />
-        <option value="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/elements/background/services/background.service.ts" />
         <option value="$PROJECT_DIR$/dev_back/routes/backend/background.router.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/app.component.ts" />
         <option value="$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts" />
+        <option value="$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts" />
       </list>
     </option>
   </component>
@@ -342,7 +281,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -749,40 +687,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="elements" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="background.component.ts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jump_run_map" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev_public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -895,6 +799,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -988,15 +893,16 @@
       <workItem from="1481182157298" duration="1602000" />
       <workItem from="1481205206051" duration="273000" />
       <workItem from="1481206091841" duration="16040000" />
+      <workItem from="1481266150248" duration="1229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32669000" />
+    <option name="totallyTimeSpent" value="33898000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1004,7 +910,6 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1016,6 +921,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1224,6 +1130,14 @@
         <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/game-map.module.js.map" />
         <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/map-load-modal.component.js" />
         <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/map-load-modal.component.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/map-element.component.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/collectible.component.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/map-element.component.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/character.component.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/collectible.component.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/components/character.component.js" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/services/character.service.js.map" />
+        <option value="$PROJECT_DIR$/../cat_n_run/dev_public/app/game-map/services/character.service.js" />
       </list>
     </option>
   </component>
@@ -1235,37 +1149,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/map20161208 (1).json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/map20161208 (2).json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/map-save-modal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/ui/templates/map-save-modal.html" />
     <entry file="file://$PROJECT_DIR$/dev_public/app/ui/components/modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1273,9 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
           <caret line="45" column="0" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,7 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="52" lean-forward="false" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,7 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1339,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="42" lean-forward="false" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1347,7 +1231,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1355,9 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="49" column="76" lean-forward="false" selection-start-line="49" selection-start-column="76" selection-end-line="49" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,7 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1373,9 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="36" column="46" lean-forward="true" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,7 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1391,7 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1399,7 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,9 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="23" column="191" lean-forward="false" selection-start-line="23" selection-start-column="191" selection-end-line="23" selection-end-column="191" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1417,7 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1425,9 +1294,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1435,7 +1301,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1443,7 +1308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
           <caret line="199" column="21" lean-forward="false" selection-start-line="199" selection-start-column="21" selection-end-line="199" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1451,7 +1315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1459,7 +1322,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1477,7 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1485,7 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1493,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1501,7 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1509,9 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1519,9 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="29" column="85" lean-forward="false" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1529,9 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1539,9 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1549,7 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1557,7 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1565,7 +1409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1573,9 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="171" column="26" lean-forward="false" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1590,7 +1430,7 @@
     <entry file="file://$PROJECT_DIR$/dev_public/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <marker date="1481221761822" expanded="true" signature="117:409" ph="..." />
             <marker date="1481221761822" expanded="true" signature="173:220" ph="..." />
@@ -1600,8 +1440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/elements/background/components/background.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="476">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
@@ -1611,7 +1451,7 @@
     <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/background.router.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
-          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1619,7 +1459,7 @@
     <entry file="file://$PROJECT_DIR$/dev_public/app/core/css/my-nav.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1636,19 +1476,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/element.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="340">
           <caret line="27" column="37" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="120" column="46" lean-forward="false" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#166#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1663,7 +1493,7 @@
     <entry file="file://$PROJECT_DIR$/dev_public/app/map/templates/game-map.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1673,6 +1503,24 @@
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_back/routes/backend/map-element.router.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev_public/app/map/components/game-map.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#166#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

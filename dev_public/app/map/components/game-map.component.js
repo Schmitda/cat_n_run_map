@@ -50,8 +50,13 @@ var GameMapComponent = (function () {
     GameMapComponent.prototype.contextMenu = function (event) {
         if (this.selectedElement) {
             this.mapService.selectElement(null);
-            this.mapCreator.deleteComponent(this._moveingComponent.element);
-            this.moveingComponent = null;
+            try {
+                this.mapCreator.deleteComponent(this._moveingComponent.element);
+                this.moveingComponent = null;
+            }
+            catch (e) {
+                console.error(e);
+            }
         }
     };
     GameMapComponent.prototype.onMouseDown = function (event) {
