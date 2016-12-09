@@ -117,6 +117,7 @@ var GameMapComponent = (function () {
     GameMapComponent.prototype.setListener = function () {
         var _this = this;
         this.mapService.notifySelected.subscribe(function (obj) {
+            if (obj === void 0) { obj = null; }
             if (obj != null) {
                 _this.selectedElement = obj;
                 _this.image.nativeElement.style.top = (parseInt(_this.image.nativeElement.style.top) - _this.selectedElement.height / 2) + "px";
@@ -134,6 +135,9 @@ var GameMapComponent = (function () {
         this.mapCreator.background = background;
         console.log(background);
         this.backgroundImage = 'url(' + this.background.source + ')';
+        //TODO: this.mapCreator.setwidth
+        //this.mapCreator.width =
+        //this.mapService
     };
     GameMapComponent.prototype.ngOnInit = function () {
     };

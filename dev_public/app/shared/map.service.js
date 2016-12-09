@@ -15,6 +15,7 @@ var MapService = (function () {
         this._notifySelected = new BehaviorSubject_1.BehaviorSubject(undefined);
     }
     MapService.prototype.selectElement = function (obj) {
+        if (obj === void 0) { obj = null; }
         if (obj === null) {
             this._selected = null;
             this._notifySelected.next(null);

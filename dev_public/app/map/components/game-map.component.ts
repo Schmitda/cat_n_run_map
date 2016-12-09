@@ -147,6 +147,9 @@ export class GameMapComponent implements OnInit, AfterViewInit {
         this.mapCreator.background = background;
         console.log(background);
         this.backgroundImage = 'url(' + this.background.source + ')';
+        //TODO: this.mapCreator.setwidth
+        //this.mapCreator.width =
+        //this.mapService
     }
 
     ngOnInit() {

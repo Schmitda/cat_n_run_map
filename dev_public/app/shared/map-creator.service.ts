@@ -40,6 +40,8 @@ export class MapCreator{
         ]=[];
     private id;
     private _name;
+    private _width;
+    private _height;
 
 
     get name() {
@@ -178,6 +180,8 @@ export class MapCreator{
                 mapElements: this._mapElements,
                 collectibles: this._collectibles,
                 characters: this._characters,
+                width: this._width,
+                height: this._height
             },
             _id: this.id
         };
@@ -224,5 +228,19 @@ export class MapCreator{
         this._characters = value;
     }
 
+    get width() {
+        return this._width;
+    }
 
+    set width(value) {
+        this._width = value;
+    }
+
+    get height() {
+        return this._height;
+    }
+
+    set height(value) {
+        this._height = value;
+    }
 }

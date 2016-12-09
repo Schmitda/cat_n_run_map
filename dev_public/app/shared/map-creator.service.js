@@ -149,6 +149,8 @@ var MapCreator = (function () {
                 mapElements: this._mapElements,
                 collectibles: this._collectibles,
                 characters: this._characters,
+                width: this._width,
+                height: this._height
             },
             _id: this.id
         };
@@ -199,6 +201,26 @@ var MapCreator = (function () {
         },
         set: function (value) {
             this._characters = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(MapCreator.prototype, "width", {
+        get: function () {
+            return this._width;
+        },
+        set: function (value) {
+            this._width = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(MapCreator.prototype, "height", {
+        get: function () {
+            return this._height;
+        },
+        set: function (value) {
+            this._height = value;
         },
         enumerable: true,
         configurable: true

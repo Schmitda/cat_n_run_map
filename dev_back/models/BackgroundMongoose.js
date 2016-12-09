@@ -17,4 +17,4 @@ var backgroundSchema = new mongoose.Schema({
 });
 var Background = mongoose.model("Background", backgroundSchema);
 module.exports = Background;
-//# sourceMappingURL=BackgroundMongoose.js.map
+//# sourceMappingURL=backgroundMongoose.js.map
