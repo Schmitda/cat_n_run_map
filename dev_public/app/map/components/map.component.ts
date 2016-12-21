@@ -25,6 +25,8 @@ export class MapComponent implements OnInit {
     private mapElements: MapElement[];
     private decorations: Decoration[];
     private backgrounds: Background[];
+    private height: Number;
+    private width: Number;
 
 
     @HostListener('mousemove', ['$event'])
@@ -105,6 +107,4 @@ export class MapComponent implements OnInit {
     }
 
     ngOnInit() { }
-
-
 }
