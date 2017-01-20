@@ -14,6 +14,9 @@ var collectibleSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
+    reward: {
+        type: String
+    },
     height: {
         type: Number,
         required: true,

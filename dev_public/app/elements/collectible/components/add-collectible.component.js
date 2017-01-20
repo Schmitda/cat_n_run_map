@@ -30,6 +30,7 @@ var AddCollectibleComponent = (function () {
         this.collectibleStructure.addSelectElement(new SelectElement_1.SelectElement('Speed', 'speed'));
         this.collectibleStructure.addSelectElement(new SelectElement_1.SelectElement('Life', 'life'));
         this.collectibleStructure.addSelectElement(new SelectElement_1.SelectElement('Invulnerable', 'invulnerable'));
+        this.collectibleStructure.addSelectElement(new SelectElement_1.SelectElement('WinningPoint', 'winningPoint'));
     }
     AddCollectibleComponent.prototype.setFile = function (event) {
         this.file = event.srcElement.files[0];

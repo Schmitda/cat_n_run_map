@@ -10,7 +10,6 @@ $kind:(
   (margin, padding)
 );
 
-
 @each $sizeName, $size in $margin-padding{
   @each $name in $kind{
     .#{$name}-tb-#{$sizeName}  {#{$name}:$size 0};

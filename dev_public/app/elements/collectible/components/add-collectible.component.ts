@@ -26,6 +26,7 @@ export class AddCollectibleComponent implements OnInit {
         this.collectibleStructure.addSelectElement(new SelectElement('Speed', 'speed'));
         this.collectibleStructure.addSelectElement(new SelectElement('Life', 'life'));
         this.collectibleStructure.addSelectElement(new SelectElement('Invulnerable', 'invulnerable'));
+        this.collectibleStructure.addSelectElement(new SelectElement('WinningPoint', 'winningPoint'));
     }
 
     private setFile(event){

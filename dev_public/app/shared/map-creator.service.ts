@@ -59,8 +59,8 @@ export class MapCreator{
                 doesAlreadyExist = true;
                 this._decorations[index].xCoord = xCoord;
                 this._decorations[index].yCoord = yCoord;
-                this._decorations[index].xRatio = xRatio;
-                this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -68,9 +68,9 @@ export class MapCreator{
             this._decorations.push({
                 decoration: Object.assign({},decoration),
                 xCoord: xCoord,
-                yCoord: yCoord,
-                xRatio: xRatio,
-                yRatio: yRatio,
+                yCoord: yCoord
+                /*xRatio: xRatio,
+                yRatio: yRatio,*/
             });
         }
     }
@@ -84,8 +84,8 @@ export class MapCreator{
                 doesAlreadyExist = true;
                 this._characters[index].xCoord = xCoord;
                 this._characters[index].yCoord = yCoord;
-                this._decorations[index].xRatio = xRatio;
-                this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -94,8 +94,8 @@ export class MapCreator{
                 character: Object.assign({},element),
                 yCoord: yCoord,
                 xCoord: xCoord
-                xRatio: xRatio,
-                yRatio: yRatio,
+                /*xRatio: xRatio,
+                yRatio: yRatio,*/
             });
         }
     }
@@ -109,8 +109,8 @@ export class MapCreator{
                 doesAlreadyExist = true;
                 this._collectibles[index].xCoord = xCoord;
                 this._collectibles[index].yCoord = yCoord;
-                this._decorations[index].xRatio = xRatio;
-                this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -119,8 +119,8 @@ export class MapCreator{
                 collectible: Object.assign({},element),
                 yCoord: yCoord,
                 xCoord: xCoord
-                xRatio: xRatio,
-                yRatio: yRatio,
+                /*xRatio: xRatio,
+                yRatio: yRatio,*/
             });
         }
     }
@@ -152,8 +152,8 @@ export class MapCreator{
                 doesAlreadyExist = true;
                 this._mapElements[index].xCoord = xCoord;
                 this._mapElements[index].yCoord = yCoord;
-                this._decorations[index].xRatio = xRatio;
-                this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -162,8 +162,8 @@ export class MapCreator{
                 mapElement: Object.assign({},element),
                 yCoord: yCoord,
                 xCoord: xCoord
-                xRatio: xRatio,
-                yRatio: yRatio,
+                /*xRatio: xRatio,
+                yRatio: yRatio,*/
             });
         }
         console.log(this._mapElements);

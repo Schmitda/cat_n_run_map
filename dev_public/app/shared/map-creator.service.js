@@ -35,8 +35,8 @@ var MapCreator = (function () {
                 doesAlreadyExist = true;
                 _this._decorations[index].xCoord = xCoord;
                 _this._decorations[index].yCoord = yCoord;
-                _this._decorations[index].xRatio = xRatio;
-                _this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -44,9 +44,7 @@ var MapCreator = (function () {
             this._decorations.push({
                 decoration: Object.assign({}, decoration),
                 xCoord: xCoord,
-                yCoord: yCoord,
-                xRatio: xRatio,
-                yRatio: yRatio,
+                yCoord: yCoord
             });
         }
     };
@@ -60,8 +58,8 @@ var MapCreator = (function () {
                 doesAlreadyExist = true;
                 _this._characters[index].xCoord = xCoord;
                 _this._characters[index].yCoord = yCoord;
-                _this._decorations[index].xRatio = xRatio;
-                _this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -69,9 +67,7 @@ var MapCreator = (function () {
             this._characters.push({
                 character: Object.assign({}, element),
                 yCoord: yCoord,
-                xCoord: xCoord,
-                xRatio: xRatio,
-                yRatio: yRatio,
+                xCoord: xCoord
             });
         }
     };
@@ -85,8 +81,8 @@ var MapCreator = (function () {
                 doesAlreadyExist = true;
                 _this._collectibles[index].xCoord = xCoord;
                 _this._collectibles[index].yCoord = yCoord;
-                _this._decorations[index].xRatio = xRatio;
-                _this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -94,9 +90,7 @@ var MapCreator = (function () {
             this._collectibles.push({
                 collectible: Object.assign({}, element),
                 yCoord: yCoord,
-                xCoord: xCoord,
-                xRatio: xRatio,
-                yRatio: yRatio,
+                xCoord: xCoord
             });
         }
     };
@@ -125,8 +119,8 @@ var MapCreator = (function () {
                 doesAlreadyExist = true;
                 _this._mapElements[index].xCoord = xCoord;
                 _this._mapElements[index].yCoord = yCoord;
-                _this._decorations[index].xRatio = xRatio;
-                _this._decorations[index].yRatio = yRatio;
+                /*this._decorations[index].xRatio = xRatio;
+                this._decorations[index].yRatio = yRatio;*/
                 return;
             }
         });
@@ -134,9 +128,7 @@ var MapCreator = (function () {
             this._mapElements.push({
                 mapElement: Object.assign({}, element),
                 yCoord: yCoord,
-                xCoord: xCoord,
-                xRatio: xRatio,
-                yRatio: yRatio,
+                xCoord: xCoord
             });
         }
         console.log(this._mapElements);
