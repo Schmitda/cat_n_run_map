@@ -1,7 +1,6 @@
 import mongoose = require("mongoose");
 import IBackground = require("./IBackground");
 
-interface IBackgroundModel extends IBackground, mongoose.Document { }
 
 var backgroundSchema = new mongoose.Schema({
     name: {
@@ -19,5 +18,5 @@ var backgroundSchema = new mongoose.Schema({
     },
 });
 
-var Background = mongoose.model<IBackgroundModel>("Background", backgroundSchema);
+var Background = mongoose.model("Background", backgroundSchema);
 export = Background;
