@@ -9,8 +9,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(router) {
+        this.router = router;
         this.title = 'Minimal NgModule Test';
     }
     AppComponent = __decorate([
@@ -18,7 +20,7 @@ var AppComponent = (function () {
             selector: 'my-app',
             template: "\n<div class=\"wrapper\">\n    <my-nav></my-nav>\n    <div class=\"flex full-space\">\n    <router-outlet></router-outlet>\n    </div>\n    <element-context-menu-modal></element-context-menu-modal>\n    <map-load-modal></map-load-modal>\n    <map-save-modal></map-save-modal>\n    <overlay-component></overlay-component>\n</div>\n",
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], AppComponent);
     return AppComponent;
 }());

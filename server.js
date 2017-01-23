@@ -6,7 +6,7 @@ var FileStore = require('session-file-store')(expressSession);
 var Config_1 = require("./config/Config");
 var WebApi_1 = require("./dev_back/WebApi");
 var db = Config_1.Config.getConfiguration();
-var port = 55;
+var port = 60;
 /****** SETUP-DEV & PRODUCTION ******/
 //SETTING UP DB
 mongoose.connect(db.url);
